@@ -1,0 +1,82 @@
+<div class="container-fluid">
+
+    <div class="row mt-5 justify-content-center">
+
+        <div class="col-12 text-center">
+
+            <img class="rounded project-img" src="{{ project.image }}" alt="" style="width: 140px; height: 140px;">
+
+        </div>
+
+
+    </div>
+
+    <div class="row mb-5 mt-2 text-center justify-content-center">
+
+        <h1 class="col-12">{{'Projet' | translate}} : <strong>{{ project.name | translate }}</strong></h1>
+        <h1 class="col-12 text-warning"> ({{ project.year ? ((project.year | date:"YYYY") + (project.yearEnd ? ' - '+(project.yearEnd | date:"YYYY") : '')) : ('En cours' | translate) }})</h1>
+
+
+        <div class="col-12">
+            <h5><i>{{ project.low_desc | translate }}</i></h5>
+        </div>
+
+
+    </div>
+
+    <div class="row my-5 justify-content-center">
+
+        <div class="col-10 col-md-6 col-lg-4 text-center desc rounded p-4">
+            <span [innerHTML]="project.main_desc | translate"></span>
+        </div>
+
+    </div>
+
+
+    <div class="row justify-content-center" *ngFor="let part of project.parts; let i = index">
+
+        <hr>
+
+        <div class="col-12 col-lg-10">
+            <div class="container-fluid">
+                <div class="row rounded justify-content-center p-4 my-3">
+
+                    <div class="col-12 col-lg-5 p-lg-4 p-2">
+
+                        <h2 *ngIf="part.title" class="mb-lg-4 mb-2"><i>{{ part.title | translate }}</i></h2>
+                        <p class="p-2" [innerHTML]="part.desc | translate"></p>
+
+
+                    </div>
+
+                    <div *ngIf="part.template" class="col-12 col-lg-7 p-2 text-center" [innerHTML]="sanitizer.bypassSecurityTrustHtml(part.template)">
+
+                    </div>
+
+                    <div class="col-12 col-lg-7 p-2" *ngIf="part.video">
+                        <div class="ratio ratio-16x9">
+                            <iframe [src]="part.video" title="YouTube video" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+    <div class="row justify-content-center">
+
+
+        <button (click)="back()" class="btn btn-warning col-5 col-lg-2 my-5">{{'Retour' | translate}}</button>
+
+    </div>
+
+
+</div>

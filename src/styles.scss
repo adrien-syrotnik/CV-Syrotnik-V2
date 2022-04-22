@@ -1,0 +1,157 @@
+/* You can add global styles to this file, and also import other style files */
+
+//@import "~bootstrap/scss/bootstrap.scss";
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container-fluid {
+    overflow-x: hidden;
+}
+
+.rounded {
+    border-radius: 15px!important;
+}
+
+.ng-touched.ng-invalid {
+    border-color: red;
+}
+
+.tooltip-inner {
+    color: black;
+    background-color: #F2Ce3E;
+}
+
+.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: #F2Ce3E;
+}
+
+main {
+    text-align: center;
+    position: relative;
+}
+
+#contact a {
+    color: black;
+}
+
+body.dark {
+    background-color: black;
+    .experience .deploy-icon {
+        filter: invert(1);
+        color: #F2Ce3E;
+    }
+    .tooltip-inner {
+        color: white;
+        background-color: #485461;
+        background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    }
+    .bs-tooltip-top .tooltip-arrow::before {
+        border-top-color: #485461;
+    }
+    .nav-link.active {
+        //background-color: black;
+    }
+    .nav-link img {
+        filter: invert(100);
+    }
+    .experience .deploy-icon {
+        color: white;
+    }
+    .skill {
+        opacity: 0.5;
+        filter: grayscale(1) invert(1);
+        transition: opacity 0.2s ease-in-out;
+    }
+    .skill:hover {
+        opacity: 1;
+    }
+    .link-account {
+        opacity: 1;
+        filter: grayscale(1) invert(1);
+        transition: filter 0.2s ease-in-out;
+    }
+    .link-account:hover {
+        opacity: 1;
+        filter: grayscale(0) invert(0);
+    }
+    #hobbies {
+        color: white;
+    }
+    #contact {
+        color: white;
+        img {
+            filter: invert(100)
+        }
+        a {
+            color: white;
+        }
+    }
+    #skills {
+        color: white;
+    }
+    #experiences {
+        color: white;
+    }
+    .experience {
+        background-color: #485461;
+        background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+        color: white;
+    }
+    #about {
+        color: white;
+    }
+    #projects {
+        color: white;
+    }
+    .project {
+        color: white;
+        img {
+            filter: invert(100) grayscale(100);
+        }
+    }
+    .box-front {
+        //background-color: #cccccc;
+        img {
+            filter: invert(100);
+        }
+        color: #111111;
+    }
+    .box-back {
+        color: #eeeeee;
+    }
+    #sendMailForm {
+        color: white;
+        background-image: radial-gradient( circle farthest-corner at 10% 20%, rgb(27, 27, 27) 0%, rgb(47, 47, 47) 90%);
+    }
+    .submitButton {
+        background-image: radial-gradient( circle farthest-corner at 10% 20%, rgb(185, 185, 185) 0%, rgb(255, 255, 255) 90%);
+    }
+    img.project-img {
+        background: white;
+    }
+    h1,
+    h2,
+    h5,
+    p {
+        color: white;
+    }
+    .desc {
+        background-color: #485461;
+        background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+        color: white;
+    }
+    hr {
+        height: 2px;
+        color: white;
+    }
+    a.link-dark {
+        color: rgb(182, 182, 182);
+    }
+    #contact a {
+        color: white;
+    }
+}

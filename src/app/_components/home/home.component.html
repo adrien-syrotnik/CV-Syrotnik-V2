@@ -1,0 +1,279 @@
+<div class="" style="position: fixed; width: 100px;">
+
+    <app-navbar></app-navbar>
+
+</div>
+
+
+
+
+<div class="container-fluid float-end" id="home-page">
+
+    <div class="row justify-content-center">
+        <div id="mainSquare" class="rounded" style="margin-top: 7em; margin-bottom: 7em; height: 100px; width: 100px; background-image: radial-gradient( circle farthest-corner at 10% 20%, rgb(255, 215, 104) 10%, #F2Ce3E 90%);"></div>
+    </div>
+
+    <div class="row mb-lg-5 mb-0 justify-content-center align-items-center" id="about">
+
+
+
+        <div class="col-8 col-md-6 col-lg-3 text-center mx-3 p-3 mb-lg-3 mb-md-4">
+
+            <img src="assets/images/new_photo.jpg" alt="" class="w-100 rounded">
+
+        </div>
+
+        <div class="col-10 col-md-10 col-lg-4 mx-3 mt-3 mt-lg-0">
+
+
+            <h3 class="title-home mb-md-3 mb-lg-1">{{ 'ABOUT.TITLE' | translate }}</h3>
+            <hr>
+
+            <p [innerHTML]="'ABOUT.DESC' | translate" class="p-2"></p>
+
+        </div>
+    </div>
+    <div class="row mt-4 justify-content-evenly">
+
+        <ng-container *ngFor="let link of linksAccount">
+            <a data-aos="zoom-in-down" data-aos-offset="0" class="col-lg-1 col-5 col-md-3 my-3 text-center" href="{{ link.link }}" target="_blank">
+
+                <img class="link-account rounded" src="{{ link.image }}" data-bs-toggle="tooltip" data-bs-placement="top" title="{{ link.name | translate }}" style="width: 70px; height: 70px;">
+
+            </a>
+        </ng-container>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="row" id="experiences">
+        <div class="container">
+            <div class="row">
+                <h1 class="col text-center title-home" [innerHtml]="'TITLES.EXPERIENCE' | translate" data-aos="zoom-in"></h1>
+            </div>
+            <div class="row accordion my-4" [class.justify-content-end]="i%2 == 0" [class.justify-content-start]="i%2 == 1" *ngFor="let experience of experiences; let i = index">
+                <div class="col-12 col-lg-5 col-md-12 p-3 rounded experience collapsed" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapseExp'+i" aria-expanded="true" [attr.aria-controls]="'#collapseExp'+i" [attr.data-aos]="i%2 == 0 ? 'fade-left' : 'fade-right'">
+                    <div class="container-fluid p-0">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-4 col-md-2 col-lg-2 mb-lg-0 mb-md-2 mb-2">
+                                <img src="{{ experience.image }}" alt="" class="w-100">
+                            </div>
+                            <div class="col-11 col-lg-9 order-3 order-lg-2">
+                                <h5 class="text-center" [class.text-lg-end]="i%2 == 0">{{ experience.date_begin | date:"MM/YYYY" }} - {{ experience.date_end | date:"MM/YYYY" }}</h5>
+                                <strong>{{ experience.company }}</strong> : {{ 'EXPERIENCES.'+experience.key+'.NAME' | translate}}
+                            </div>
+                            <div class="col-2 col-sm-2 col-md-1 col-lg-1 order-2 order-md-2 order-lg-3">
+                                <img src="https://img.icons8.com/ios/50/000000/expand-arrow--v1.png" class="deploy-icon w-100" />
+                            </div>
+                        </div>
+                        <div [id]="'collapseExp'+i" class="row accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body py-0">
+                                <hr/>
+                                <span [innerHtml]="'EXPERIENCES.'+experience.key+'.DESC' | translate"></span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <div class="row" id="projects">
+        <div class="container rounded">
+            <div class="row justify-content-center">
+                <h1 class="col text-center title-home" [innerHtml]="'TITLES.PROJECTS' | translate" data-aos="zoom-in"></h1>
+            </div>
+            <div class="row justify-content-evenly m-md-0 m-lg-5">
+
+                <a data-aos="fade-up-right" class="project rounded col-5 col-md-5 col-lg-2 text-center p-2 m-2" *ngFor="let project of projects; let i = index" routerLink="/project/{{ project.key }}">
+                    <img src="{{ project.image }}">
+                    <br/> {{ project.name | translate }}
+
+                </a>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <div class="row mb-5 justify-content-center" id="skills">
+        <div class="container rounded">
+            <div class="row p-2 mb-5">
+                <h1 class="col text-center title-home" [innerHtml]="'TITLES.SKILLS' | translate" data-aos="zoom-in"></h1>
+            </div>
+            <div class="row justify-content-evenly" *ngFor="let lvlRow of [3,2,1]">
+
+
+                <ng-container *ngFor="let skill of skills">
+
+                    <div data-aos="zoom-in-down" data-aos-offset="0" class="col-lg-3 col-5 col-md-5 my-3 text-center" *ngIf="skill.lvl == lvlRow">
+
+                        <img class="skill" src="{{ skill.image }}" data-bs-toggle="tooltip" data-bs-placement="top" title="{{ skill.name | translate }}">
+
+                    </div>
+                </ng-container>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <div class="row justify-content-center my-lg-5" id="hobbies">
+        <div class="container">
+            <div class="row mb-5">
+                <h1 class="col text-center title-home" [innerHtml]="'TITLES.HOBBIES' | translate" data-aos="zoom-in"></h1>
+            </div>
+            <div class="row justify-content-evenly">
+
+                <div class="col-5 box rounded m-2" *ngFor="let hobbie of hobbies">
+
+
+                    <div data-aos="zoom-in-up" data-aos-offset="-10" class="box-inner rounded">
+                        <div class="box-front rounded p-2">
+                            <img src="{{ hobbie.image }}">
+                            <br/>
+                            <img src="https://img.icons8.com/ios-glyphs/20/000000/chevron-right.png" class="float-end" />
+                        </div>
+                        <div class="box-back rounded p-2">
+                            <p [innerHTML]="'HOBBIES-DESC.'+hobbie.key | translate"></p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center rounded mt-lg-5" id="contact">
+        <div class="container-fluid rounded">
+            <div class="row">
+                <h1 class="col text-center title-home" [innerHtml]="'TITLES.CONTACT' | translate" data-aos="zoom-in"></h1>
+            </div>
+            <div class="row justify-content-evenly">
+
+                <div data-aos="fade-right" data-aos-offset="100" class="col-10 col-md-10 col-lg-4 rounded text-center p-3">
+                    <img src="https://img.icons8.com/ios/50/000000/phone.png" alt="">
+                    <p class="mt-3"><u>0768799238</u></p>
+                </div>
+                <div data-aos="fade-left" data-aos-offset="100" class="col-10 col-md-10 col-lg-4 rounded text-center p-3">
+                    <img src="https://img.icons8.com/ios/50/000000/email.png" alt="">
+                    <p class="mt-3"><a href="mailto:adrien.syrotnik@gmail.com">adrien.syrotnik@gmail.com</a></p>
+                </div>
+
+            </div>
+
+
+            <div class="row justify-content-center my-5" style="overflow-y: hidden;">
+
+                <h1 class="col-12 text-center my-3" [innerHtml]="'TITLES.SENDMAIL' | translate" data-aos="zoom-in"></h1>
+
+
+
+
+                <div class="col-11 col-md-10 col-lg-5" data-aos="fade-up">
+                    <form [formGroup]="sendForm" id="sendMailForm" (ngSubmit)="Submit()" class="container-fluid rounded p-3">
+                        <div class="text-center" [innerHtml]="sendMailHTML"></div>
+                        <div class="row mb-1 p-3 justify-content-center">
+                            <label>{{ 'SENDMAIL.EMAIL' | translate }}</label>
+                            <input type="email" name="email" class="form-control" formControlName="email">
+
+                            <div *ngIf="(!sendForm.controls['email'].valid) && (sendForm.controls['email'].dirty || sendForm.controls['email'].touched)" class="text-danger mb-0">
+
+                                <small *ngIf="sendForm.controls['email'].hasError('required')" [translate]="'ERRORS.REQUIRED'" [translateParams]="{input: 'Email'}"></small>
+                                <small *ngIf="sendForm.controls['email'].hasError('email')" [translate]="'ERRORS.TYPE'" [translateParams]="{input: 'Email', type: 'Email'}"></small>
+
+                            </div>
+
+                        </div>
+                        <div class="row mb-1 p-3 justify-content-center">
+                            <label>{{ 'SENDMAIL.MESSAGE' | translate }}</label>
+                            <textarea name="message" rows="5" class="form-control" formControlName="message"></textarea>
+
+                            <div *ngIf="(!sendForm.controls['message'].valid) && (sendForm.controls['message'].dirty || sendForm.controls['message'].touched)" class="text-danger mb-0">
+
+                                <small *ngIf="sendForm.controls['message'].hasError('required')" [translate]="'ERRORS.REQUIRED'" [translateParams]="{input: 'Message'}"></small>
+
+                            </div>
+
+                        </div>
+                        <div class="row justify-content-center">
+                            <button type="submit" [disabled]="!sendForm.valid" class="submitButton btn col-6 col-md-6 col-lg-2">{{ 'SENDMAIL.SEND' | translate }}</button>
+                        </div>
+
+
+                    </form>
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+</div>
+
+
+<!-- 
+            
+                1 - PResentation Hi i am Adrien, i am sdjqbjk
+            
+                2 - Experience pro
+            
+                3 - projets : logo animé qui flotteù
+            
+                (Page pour chaque projet)
+            
+                4 - compétences
+            
+                5- Loisirs
+            
+                6 - Contacts
+            
+            
+                Page : Contact (send mail ?)
+            
+                Créer les models (experiences, projets, loisirs, compétences)
+            
+            
+             -->

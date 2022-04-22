@@ -1,0 +1,55 @@
+{
+
+    "LANGUAGES": {
+        "FR": "Fançais",
+        "EN": "Anglais"
+    },
+    "ERRORS": {
+        "REQUIRED": "Le champ '{{input}}' est requis.",
+        "TYPE": "Le champ '{{input}}' doit être de type '{{type}}'"
+    },
+    "ABOUT": {
+        "TITLE": "Je m'appelle Adrien, j'ai 20 ans, et je suis actuellement en école d'ingénieurs informatique à Reims, en France.",
+        "DESC": "Futur ingénieur, je travaille actuellement sur différents projets web à l'aide de différentes technologies comme Angular, NodeJS ou encore Laravel. Cependant, j'aimerais me spécialiser dans l'univers du jeu vidéo, car c'est un domaine que j'apprécie tout particulièrement.<br/><br/>J'ai également développé des capacités d'organisation et de travail en groupe, ce qui me permet d'être efficace en équipe.<br/><br/>Si vous souhaitez voir mon CV sous format PDF, veuillez le trouver sur ce <a href='assets/dl/CV Adrien Syrotnik.pdf' download='CV Adrien Syrotnik.pdf'>lien</a>.<br/><br/>Finalement, je tiens à préciser que je suis à la recherche d'un stage se déroulant à l'étranger (hors de la France) à partir de Septembre 2022 pour une durée de 4 mois."
+    },
+    "EXPERIENCES": {
+        "ADEE": {
+            "NAME": "Stage Developpeur Web FullStack",
+            "DESC": "Stage durant lequel je devais continuer le développement une application web de gestion de projet, fait en PHP, HTML, CSS et JS. De plus, je devais m'occuper de la migration de leur base de données en passant de mySQL à SQLServer."
+        },
+        "FLEXNETWORK": {
+            "NAME": "Stage Developpeur Web front-end Angular",
+            "DESC": "Stage durant lequel je devais développer le front-end de la 2ème version de leur application web à l'aide du framework Angular. J'ai donc communiqué avec leur backend à l'aide d'une API et réalisé un développement continue à l'aide de l'outil CI-CD sur GitLab."
+        },
+        "CESI": {
+            "NAME": "Ecole d'ingénieurs informatique",
+            "DESC": "Souhaitant réaliser un Master en informatique, j'ai décidé d'entrer au CESI, une école d'ingénieurs informatique. Projets et méthode \"PBL\", grâce à tout cela, CESI me permet d'augmenter en autonomie, en compétence et en travail en groupe efficacement."
+        }
+    },
+    "HOBBIES-DESC": {
+        "VIDEOGAMES": "Grand fan de jeu vidéo, j'aime autant jouer en solo qu'en équipe comme sur LOL ou CS GO.",
+        "CRYPTO": "Je m'intéresse aux cryptomonnaies, autant au niveau financier, qu'à son niveau technologique.",
+        "PROGRAM": "J'adore développer ! Comme des petits programmes ou alors customiser des jeux comme <u>Minecraft</u>.",
+        "PIANO": "J'aime jouer du piano de temps en temps."
+    },
+    "TITLES": {
+        "EXPERIENCE": "<i>Mes Formations et Expériences</i>",
+        "PROJECTS": "<i>Mes différents projets</i>",
+        "HOBBIES": "<i>Mes passions</i>",
+        "SKILLS": "<i>Mes compétences</i>",
+        "CONTACT": "<i>Contactez moi !</i>",
+        "SENDMAIL": "Envoyez moi un mail !"
+    },
+    "SENDMAIL": {
+        "EMAIL": "Votre e-mail :",
+        "MESSAGE": "Votre message :",
+        "SEND": "Envoyer",
+        "SUCCESS": "Message envoyé avec succès !",
+        "ERROR": "Une erreur est survenue..."
+    },
+    "Unity Game (Not finish)": "Jeu Unity (Non terminé)",
+    "Minesweeper": "Démineur",
+    "Online resume v1": "CV en ligne v1",
+    "Online resume v2": "CV en ligne v2"
+
+}

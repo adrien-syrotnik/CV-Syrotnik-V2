@@ -1,0 +1,99 @@
+{
+
+    "LANGUAGES": {
+        "FR": "French",
+        "EN": "English"
+    },
+    "ERRORS": {
+        "REQUIRED": "Field '{{input}}' is required.",
+        "TYPE": "Field '{{input}}' must be '{{type}}'"
+    },
+    "ABOUT": {
+        "TITLE": "My name is Adrien, I'm 20 years old, and I'm currently in computer science engineering school in Reims, France.",
+        "DESC": "Future engineer, I am currently working on different web projects using different technologies such as Angular, NodeJS or Laravel. However, I would like to specialize in the world of video games, because it's a field I particularly appreciate.<br/><br/>I have also developed organizational and group work skills, which allows me to be efficient in a team.<br/><br/>If you wish to see my resume in PDF format, please find it on this <a href='assets/dl/Adrien Syrotnik resume.pdf' download='Adrien Syrotnik resume.pdf'>link</a>.<br/><br/>Finally, I wanted to specify that I am looking for an internship taking place abroad (outside of France) from September 2022 for a duration of 4 months."
+    },
+    "EXPERIENCES": {
+        "ADEE": {
+            "NAME": "Internship fullStack web developer",
+            "DESC": "Internship during which I had to continue the development of a web application for project management, made in PHP, HTML, CSS and JS. In addition, I had to take care of the migration of their database from mySQL to SQLServer."
+        },
+        "FLEXNETWORK": {
+            "NAME": "Internship Angular front-end web developer",
+            "DESC": "Internship during which I had to develop the front-end of the 2nd version of their web application using the Angular framework. I communicated with their backend using an API and performed continuous development using the CI-CD tool on GitLab."
+        },
+        "CESI": {
+            "NAME": "IT graduate engineering school",
+            "DESC": "Wishing to do a Master in computer science, I decided to enter CESI, a computer engineering school. Projects and method \"PBL\", thanks to all this, CESI allows me to increase in autonomy, skills and group work efficiently."
+        }
+    },
+    "HOBBIES-DESC": {
+        "VIDEOGAMES": "Big fan of video games, I like to play solo as much as in team like on LOL or CS GO.",
+        "CRYPTO": "I'm interested in crypto-currencies, both financially and technologically",
+        "PROGRAM": "I love developing! Like small programs or then customize games like <u>Minecraft</u>.",
+        "PIANO": "I like to play the piano from time to time."
+    },
+    "TITLES": {
+        "EXPERIENCE": "<i>My Trainings and Experiences</i>",
+        "PROJECTS": "<i>My various projects</i>",
+        "HOBBIES": "<i>My hobbies</i>",
+        "SKILLS": "<i>My skills</i>",
+        "CONTACT": "<i>Contact me !</i>",
+        "SENDMAIL": "Send me an email!"
+    },
+    "SENDMAIL": {
+        "EMAIL": "Your email :",
+        "MESSAGE": "Your message :",
+        "SEND": "Send",
+        "SUCCESS": "Message sent successfully !",
+        "ERROR": "An error has occurred..."
+    },
+    "Unity Game (Not finish)": "Unity Game (Not finish)",
+    "Soft Skill - Recherches et réflexions": "Soft Skill - Research and reflection",
+    "Soft Skill - Diagrammes": "Soft Skill - Diagrams",
+    "Soft Skill - Travail en équipe": "Soft Skill - Team work",
+    "Retour": "Return",
+    "En cours": "In progress",
+    "Projet": "Project",
+
+
+    "À l'aide des commandes intégrés au jeu (datapack et command blocks), et à l'aide d'un ami (<a href=\"https://arthurjoris.fr/\" target=\"_blank\">Arthur Joris</a>), nous avons réalisé différents mini-jeux dans le jeu vidéo Minecraft. En voici des exemples :": "Using the game's built-in commands (datapack and command blocks), and with the help of a friend (<a href=\"https://arthurjoris.fr/\" target=\"_blank\">Arthur Joris</a>), we made various mini-games in the Minecraft video game. Here are some examples:",
+    "Réaliser des mini-jeux dans le jeu vidéo Minecraft": "Make mini-games in the video game Minecraft",
+    "Inspiré du célèbre jeu Super Smash Bros, nous avons réalisé un jeu similaire avec des personnages du jeu vidéo qui nous tenaient à cœur.<br/><br/> <i>Link</i> de la série <u>The Legend of Zelda</u>, <i>Doomfist</i> du jeu <u>Overwatch</u>, <i>Edward Kenway</i> de la saga <u>Assassin's Creed</u> ou le personnage de notre jeu vidéo <a href=\"/project/emergency_exit\">Emergency Exit</a>, nous avons créé un total de 10 personnages jouables aux capacités uniques !<br/><br/> Vous pouvez voir une démonstration à partir de la vidéo ci-jointe.": "Inspired by the famous game Super Smash Bros, we made a similar game with our favorite video game characters.<br/><br/><i>Link</i> from <u>The Legend of Zelda</u> series, <i>Doomfist</i> from the game <u>Overwatch</u>, <i>Edward Kenway</i> from the <u>Assassin's Creed</u> saga or the character from our video game <a href=\"/project/emergency_exit\">Emergency Exit</a>, we created a total of 10 playable characters with unique abilities!<br/><br/>You can see a demonstration with the attached video.",
+    "Pour ce projet, nous avions pour but de recopier exactement le jeu <u>Mario Kart</u>.<br/><br/>En passant par la construction des circuits, la reproduction des karts et le système d'objet, nous avons réussi à finalement reproduire ce jeu dans Minecraft.<br/><br/>Étant assez limités, nous avons utilisé des cochons en guise de kart par exemple.<br/><br/>Vous pouvez voir un exemple du jeu via la vidéo ci-jointe.": "For this project, we aimed to copy exactly the game <u>Mario Kart</u>.<br/><br/>Going through the construction of the circuits, the reproduction of the karts and the object system, we finally managed to reproduce this game in Minecraft.<br/><br/>Being quite limited, we used pigs as karts for example.<br/><br/>You can see an example of the game via the attached video.",
+    "Cette fois-ci, ce jeu n'est certainement pas connu de tout le monde. <u>SheepWars</u> était un mode de jeu que j'avais découvert sur un ancien serveur Minecraft. Ce jeu nous ayant manqués, et pour tester nos capacités, nous avons donc décidé de reproduire cet ancien mini-jeu.<br/><br/>Le but est assez simple : 2 équipes s'affrontent sur un terrain dans lequel nous pouvons obtenir des moutons que nous pouvons lancer et ayant certains pouvoirs.<br/><br/> Nous avons par exemple le <i>Mouton Incendiaire</i> qui est représenté sur les images ci-contre, qui après un certain temps explose et répand du feu autour de lui. Le but final : éliminer toute l'équipe adverse !": "This time, this game is certainly not known to everyone.<u>SheepWars</u> was a game mode I had discovered on an old Minecraft server. We missed this game, and to test our abilities, we decided to reproduce this old mini-game.<br/><br/>The goal is quite simple: 2 teams compete on a field in which we can get sheep that we can throw and having certain powers.<br/><br/>For example, we have the <i>Incendiary Sheep</i> which is shown in the images to the right, which after some time explodes and spreads fire around it. The final goal: eliminate the entire opposing team!",
+
+    "Réalisé en processing (langage dérivé du java), j'ai réalisé avec un ami (Arthur Joris), un petit jeu de A à Z. Celui-ci devait être présenté à notre BAC, car il représentait notre note final en ISN (Informatique et Science du Numérique).": "Realized in processing (language derived from java), I realized with a friend (Arthur Joris), a small game from A to Z. This one had to be presented at our BAC, because it represented our final note in ISN (Computer Science and Digital Science).",
+    "Mini jeu vidéo, projet de terminal": "Mini-game, terminal project",
+    "Présentation et téléchargement": "Presentation and download",
+    "Emergency Exit est le nom que nous avons donné à ce jeu. Le but est très simple : s'enfuir.<br/><br/> Nous voulions réaliser ce jeu de A à Z, ainsi nous devions confectionner le gameplay, les images ou encore la physique du jeu en lui-même sur Processing, un langage spécialisé dans le graphisme.<br/><br/>Après plusieurs mois, nous avions enfin terminé notre tout premier jeu vidéo sous le nom de groupe \"Aidia Info\".<br/><br/> Celui-ci dure à peu près 15min, donc si l'envie vous prend, vous pouvez jouer à notre jeu en le téléchargeant avec ce <a href=\"assets/dl/Emergency Exit by Aidia Info.zip\" download=\"Emergency Exit by Aidia Info.zip\">lien</a> (Windows uniquement).": "Emergency Exit is the name we gave to this game. The goal is very simple: to escape.<br/><br/>We wanted to make this game from scratch, so we had to make the gameplay, the images or the physics of the game itself on Processing, a language specialized in graphics.<br/><br/>After several months, we had finally finished our very first video game under the band name \"Aidia Info\".<br/><br/>This one lasts about 15min, so if the urge strikes you, you can play our game by downloading it with this <a href=\"assets/dl/Emergency Exit by Aidia Info.zip\" download=\"Emergency Exit by Aidia Info.zip\">link</a> (Windows only).",
+    "Un jeu gravé !": "An engraved game !",
+    "Après avoir terminé le jeu, nous voulions aller plus loin et avons décidé de graver notre jeu sur un CD. <br/><br/>Ainsi, nous avons réalisé 2 CD nous permettant de garder notre jeu sous format physique.": "After finishing the game, we wanted to go further and decided to burn our game on a CD. <br/><br/>So we made 2 CDs allowing us to keep our game in physical format.",
+
+    "Hébergé sur github, ce premier cv marque mon début dans le monde du web. Vous pouvez aller jeter un coup d'œil avec ce lien : <a href=\"https://adrien-s.github.io/MonCV/\" target=\"_blank\">https://adrien-s.github.io/MonCV/</a>": "Hosted on github, this first resume marks my beginning in the web world. You can go take a look with this link: <a href=\"https://adrien-s.github.io/MonCV/\" target=\"_blank\">https://adrien-s.github.io/MonCV/</a>",
+    "CV en ligne v1 (HTML CSS JS)": "Online resume v1 (HTML CSS JS)",
+
+    "Étant en plein stage concernant Angular, je voulais changer mon site web et en même temps progresser sur ce framework. J'ai donc décidé de le faire sous Angular, bien que cela ne reflète pas l'intégralité du framework. Un meilleur design, un dark mode et différentes traductions étaient mes principaux objectifs concernant ce projet.": "Being in the middle of an internship concerning Angular, I wanted to change my website and at the same time progress on this framework. So I decided to do it under Angular, although it doesn't reflect the whole framework. A better design, a dark mode and different translations were my main goals for this project.",
+    "CV en ligne v2 (Angular)": "Online resume v2 (Angular)",
+
+    "Un de mes principaux objectifs est de travailler dans le domaine du jeu-vidéo, et j'ai donc commencé à réaliser un jeu où on doit lancer des pierres. Bien que le jeu ne soit pas trop avancé, j'ai pour ambition de réaliser un jeu plus tard.": "One of my main goals is to work in the field of video games, so I started to make a game where you have to throw stones. Although the game is not too advanced, I have the ambition to make a game later on.",
+    "Début d'un jeu sur Unity": "Start of a game on Unity",
+    "Un test sur le moteur Unity": "A test on the Unity engine",
+    "Étant très intéressé par le domaine du jeu vidéo, je m'étais intéressé aux différents moteurs de jeu existant sur le marché. <br/><br/> UnrealEngine, CryEngine, Unity, c'est donc sur ce dernier que je me suis penché pour réaliser un petit jeu test.<br/><br/> L'idée de départ était que des monstres apparaissent dans une sorte de grotte et que notre personnage doit leur lancer des projectiles pour les arrêter.<br/><br/>La vidéo suivante représente une démo de ce que j'imaginais avec ce qui semble être un gobelin et des pierres en guise de projectile.": "Being very interested in the field of video games, I was interested in the different game engines existing on the market. <br/><br/>UnrealEngine, CryEngine, Unity, so it's on this last one that I've focused to make a little test game.<br/><br/>The initial idea was that monsters appear in a kind of cave and that our character has to throw projectiles to stop them.<br/><br/>The following video is a demo of what I imagined with what seems to be a goblin and stones as projectiles.",
+
+    "Création d'une application de gestion de rendez-vous sur-mesure sur le framework <i>Laravel</i>. Le but de l'application était de pouvoir rechercher les différents rendez-vous ainsi que les filleuls et les parrains liés à ceux-ci. <br/> <br/> Le nom du logiciel provient de la personne qui m'avait demandé ce logiciel sur-mesure. Différentes statistiques étaient disponibles et permettaient d'obtenir des fonctionnalités supplémentaires que d'autres logiciels, comme <u>Google Agenda</u>, ne proposent pas.": "Created a custom appointment management application on the <i>Laravel</i> framework. The goal of the application was to be able to search for the different appointments as well as the referrals and sponsors linked to them.<br/><br/>The name of the software comes from the person who had asked me for this custom software. Different statistics were available and allowed for additional features that other software, such as <u>Google Calendar</u>, does not offer.",
+    "Logiciel de gestion d'emploi du temps (Laravel, Fullstack)": "Time management software (Laravel, Fullstack)",
+
+    "Création d'une API web via nodeJS. Une première version a été faite en <i>Laravel</i>, mais elle n'a pas abouti. Celle-ci doit permettre de réaliser des achats en ligne et de gérer les stocks d'un petit coin de vente intégré à notre école et géré par les élèves (snacks, boissons).": "Creation of a web API via nodeJS. A first version was made in <i>Laravel</i>, but it did not succeed. This one should allow to make online purchases and to manage the stocks of a small sales corner integrated in our school and managed by the students (snacks, drinks).",
+    "API pour mon école et ses étudiants (NodeJS, Express)": "API for my school and its students (NodeJS, Express)",
+
+    "Le but de cette application était de créer des animations facilement. Je voulais animer des petites idées facilement sans prise de tête, mais je ne connaissais pas de logiciel permettant de faire cela, j'ai donc décidé de créer le mien.": "The purpose of this application was to create animations easily. I wanted to animate small ideas easily without any hassle, but I didn't know of any software that could do that, so I decided to create my own.",
+    "Logiciel d'animation (Processing)": "Animation software (Processing)",
+    "Explication et téléchargement": "Explanation and download",
+    "Créé avec le langage <u>Processing</u>, un dérivé du Java, le principe est le suivant : pouvoir créer des points que l'on peut relier entre eux, puis de pouvoir changer leurs positions dans le temps. Enfin, il suffit de lancer la lecture et le tour est joué !<br/><br/> Comme vous pouvez le voir, j'ai créé cette petite animation ci-contre, à l'aide du logiciel.<br/><br/>Si vous voulez l'essayer, téléchargez-le <a href=\"assets/dl/Animator by Adrien Syrotnik.zip\" download=\"Animator by Adrien Syrotnik.zip\">ici</a> (Windows uniquement).": "Created with the <u>Processing</u> language, a derivative of Java, the principle is as follows: to be able to create points that can be linked together, then to be able to change their positions in time. Finally, you just have to launch the playback and it's done!<br/><br/>As you can see, I created this little animation opposite, using the software.<br/><br/>If you want to try it, download it <a href=\"assets/dl/Animator by Adrien Syrotnik.zip\" download=\"Animator by Adrien Syrotnik.zip\">here</a> (Windows only).",
+
+    "Souhaitant me mettre au défi, j'ai souhaité réaliser mon propre démineur, un jeu iconique.": "Wanting to challenge myself, I wanted to make my own minesweeper, an iconic game.",
+    "Un simple démineur (Processing)": "A simple minesweeper (Processing)",
+    "Programmé en <u>Processing</u>, un dérivé du Java, j'ai réussi à réaliser un démineur 100% fonctionnel. Vous pouvez noter où se trouvent les bombes à l'aide de click droit, et il existe aussi un système \"anti-malchance\" pour éviter de tomber sur une bombe dès le premier coup.<br/><br/>Vous pouvez apercevoir un aperçu avec l'image ci-contre, mais si vous souhaitez tester mon démineur, vous pouvez le télécharger <a href=\"assets/dl/Démineur by Adrien Syrotnik.zip\" download=\"Démineur by Adrien Syrotnik.zip\">ici</a> (Windows uniquement).": "Programmed in <u>Processing</u>, a derivative of Java, I managed to make a 100% functional minesweeper. You can note where the bombs are with right-clicks, and there is also an \"anti-bad luck\" system to avoid running into a bomb on the first hit.<br/><br/>You can see a preview with the image on the right, but if you want to test my minesweeper, you can download it <a href=\"assets/dl/Demineur by Adrien Syrotnik.zip\" download=\"Demineur by Adrien Syrotnik.zip\">here</a> (Windows only)."
+
+
+}

@@ -1,0 +1,41 @@
+<nav id="navbar" class="p-1">
+
+    <div class="d-flex flex-column flex-shrink-0">
+        <div class="dropdown pt-2 ms-3 ms-sm-0">
+            <a id="toggleLanguage" class="dropdown-toggle d-flex align-items-center justify-content-center link-dark text-decoration-none " href="#" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="/assets/svg/flag-icons/{{ translate.getDefaultLang() }}.svg" alt="" style="width: 20px; height: 20px">
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2" style="min-width: 0; padding: 0;">
+                <li><button class="dropdown-item" type="button" *ngFor="let language of languages" (click)="translateStorage.setLanguage(language);">
+                            <img src="/assets/svg/flag-icons/{{ language }}.svg" alt="" style="width: 20px; height: 20px">
+                </button></li>
+            </ul>
+        </div>
+        <div class="form-check form-switch mt-2" id="theme-switch">
+            <input class="form-check-input" type="checkbox" id="checkbox_theme">
+        </div>
+        <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+            <li class="nav-item">
+                <a href="#" class="nav-link py-3 border-bottom" href="#about"><img src="https://img.icons8.com/ios/35/000000/about.png" /></a>
+            </li>
+            <li>
+                <a href="#" class="nav-link py-3 border-bottom" href="#experiences"><img src="https://img.icons8.com/ios/35/000000/find-matching-job.png" /></a>
+            </li>
+            <li>
+                <a href="#" class="nav-link py-3 border-bottom" href="#projects"><img src="https://img.icons8.com/ios/35/000000/project-setup--v2.png" /></a>
+            </li>
+            <li>
+                <a href="#" class="nav-link py-3 border-bottom" href="#skills"><img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/35/000000/external-skills-business-and-management-kiranshastry-lineal-kiranshastry-17.png" /></a>
+            </li>
+            <li>
+                <a href="#" class="nav-link py-3 border-bottom" href="#hobbies"><img src="https://img.icons8.com/ios/35/000000/controller.png" /></a>
+            </li>
+            <li>
+                <a href="#" class="nav-link py-3 border-bottom" href="#contact"><img src="https://img.icons8.com/ios/35/000000/phone.png" /></a>
+            </li>
+        </ul>
+
+
+    </div>
+
+</nav>
