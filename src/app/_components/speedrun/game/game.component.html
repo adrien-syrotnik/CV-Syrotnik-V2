@@ -1,35 +1,52 @@
 <div class="bg-danger">
     {{ error }}
 </div>
-<div class="text-white">
-    
+<div class="text-white container">
+    <div class="row">
 
-    <form #form="ngForm" (submit)="onSubmit()" enctype='multipart/form-data'>
+        <header class="col-12 header">
 
-        <input (change)="data.image = $any($event).target.files[0]" name="image" type="file"/>
-        <input (change)="data.video = $any($event).target.files[0]" name="video" type="file"/>
+        </header>
 
-        <label>Pseudo</label>
-        <input type="text" [(ngModel)]="data.pseudo" name="pseudo" required/>
+        <div class="col-8 offset-2 header">
 
-        <label>Description</label>
-        <input type="text" [(ngModel)]="data.desc" name="desc"/>
+        </div>
 
-        <label>Link</label>
-        <input type="text" [(ngModel)]="data.link" name="link"/>
+        <div class="col-6 offset-2">
 
-        <label>Category</label>
-        <select [(ngModel)]="data.category_id" name="category" required>
-            <option *ngFor="let category of gameCategories" [value]="category.id">{{ category.name }}</option>
-        </select>
+        </div>
+        <div class="col-2">
+
+        </div>
+
+        <form #form="ngForm" (submit)="onSubmit()" enctype='multipart/form-data' class="col-xl-2">
+
+            <input (change)="data.image = $any($event).target.files[0]" name="image" type="file"/>
+            <input (change)="data.video = $any($event).target.files[0]" name="video" type="file"/>
+
+            <label>Pseudo</label>
+            <input type="text" [(ngModel)]="data.pseudo" name="pseudo" required/>
+
+            <label>Description</label>
+            <input type="text" [(ngModel)]="data.desc" name="desc"/>
+
+            <label>Link</label>
+            <input type="text" [(ngModel)]="data.link" name="link"/>
+
+            <label>Category</label>
+            <select [(ngModel)]="data.category_id" name="category" required>
+                <option *ngFor="let category of gameCategories" [value]="category.id">{{ category.name }}</option>
+            </select>
 
 
-        <label>Score</label>
-        <input type="text" mask="Hh:m0:s0:000||m0:s0:000" [dropSpecialCharacters]="false" [(ngModel)]="data.score" name="score" required/>
+            <label>Score</label>
+            <input type="text" mask="Hh:m0:s0:000||m0:s0:000" [dropSpecialCharacters]="false" [(ngModel)]="data.score" name="score" required/>
 
-        <button [disabled]="!form.valid" type="submit">Submit</button>
+            <button [disabled]="!form.valid" type="submit">Submit</button>
 
-    </form>
+        </form>
+
+    </div>
 
 </div>
 
