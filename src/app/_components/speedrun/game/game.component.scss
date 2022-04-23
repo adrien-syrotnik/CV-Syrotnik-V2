@@ -11,11 +11,6 @@ body.dark{background-image:url("/assets/images/background.png");background-size:
 
 .top{height:250px;background-color: rgba(0,0,0,50%);}
 
-.header{height:70px;display:flex;justify-content:center;align-items:center;}
-.header .navbar {display: flex;justify-content: space-around;align-items: center;}
-.header .navbar img{height: 50px;}
-.header .navbar a {color: white;}
-
 .results{margin-right: 8px;padding:0;}
 .results .game-details{display: flex;flex-wrap:wrap;padding:16px;border-top:4px solid black;}
 .results .game-details img{max-width:48px;max-height: 68px;}
