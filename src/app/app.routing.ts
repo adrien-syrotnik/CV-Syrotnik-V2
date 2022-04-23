@@ -5,24 +5,16 @@ import { ProjectComponent } from './_components/project/project.component';
 import { GameComponent } from './_components/speedrun/game/game.component';
 import { SpeedrunComponent } from './_components/speedrun/speedrun.component';
 
-const routes: Routes = [{
+export const appRoutes: Routes = [{
   path: '', component: HomeComponent, data : {animation : 'isFirst'}
 },
 {
   path: 'project/:key', component: ProjectComponent, data : {animation : 'isLast'}
 },
 {
-  path: 'speedrun', component: SpeedrunComponent 
-},
-{
-  path: 'speedrun/:game', component: GameComponent
+  path: 'speedrun',
+  loadChildren: () => import('./modules/speedrun/speedrun.module').then(m => m.SpeedrunModule)
 },
 {
   path: '**', redirectTo: ''
 }];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }

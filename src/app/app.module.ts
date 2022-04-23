@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TranslateStorage } from './_services/translate-storage.service';
 import { HomeComponent } from './_components/home/home.component';
@@ -18,6 +17,8 @@ import { SpeedrunComponent } from './_components/speedrun/speedrun.component';
 import { GameService } from './_services/api/game.service';
 import { GameComponent } from './_components/speedrun/game/game.component';
 import { NgxMaskModule, IConfig } from 'ngx-mask'
+import { RouterModule } from '@angular/router';
+import { appRoutes } from './app.routing';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -31,16 +32,14 @@ export function createTranslateLoader(http: HttpClient) {
     AppComponent,
     HomeComponent,
     NavBarComponent,
-    ProjectComponent,
-    SpeedrunComponent,
-    GameComponent
+    ProjectComponent
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    RouterModule.forRoot(appRoutes, {scrollPositionRestoration: 'enabled'}),
     FormsModule,
-    AppRoutingModule,
     HttpClientModule,
     NgxMaskModule.forRoot(),
     TranslateModule.forRoot({
@@ -54,8 +53,7 @@ export function createTranslateLoader(http: HttpClient) {
   ],
   providers: [
     TranslateStorage,
-    ProjectStorageService,
-    GameService
+    ProjectStorageService
   ],
   bootstrap: [AppComponent]
 })
