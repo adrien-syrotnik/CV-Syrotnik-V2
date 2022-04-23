@@ -1,50 +1,71 @@
 <div class="bg-danger">
     {{ error }}
 </div>
-<div class="text-white container">
-    <div class="row">
+<div class="text-white container-fluid">
+    <div class="row g-2">
+        
 
-        <header class="col-12 header">
+        <div class="col-12 header">
+            <h2>HEADER</h2>
+        </div>
 
-        </header>
-
-        <div class="col-8 offset-2 header">
+        <div class="col-6 offset-3 top">
 
         </div>
 
-        <div class="col-6 offset-2">
+        <div class="col-6 offset-2 results">
+            <div class="game-details">
+                <h2>EMERGENCY EXIT (2019)</h2>
+                <p>Arthur JORIS</p>
+                <p>Adrien SYROTNIK</p>
+                <p>PC</p>
+            </div>
+            <div class="scores">
 
+            </div>
         </div>
-        <div class="col-2">
 
+        <div class="col-2 sidebar">
+            <div class="game-stats">
+                <h2>GAME STATS</h2>
+                <div class="values">
+                    <span class="number">2709</span>
+                    <p>PLAYERS</p>
+                </div>
+                <div class="values">
+                    <span class="number">13 282</span>
+                    <p>RUNS</p>
+                </div>
+            </div>
         </div>
 
-        <form #form="ngForm" (submit)="onSubmit()" enctype='multipart/form-data' class="col-xl-2">
+        <div class="col-12 form">
+            <form #form="ngForm" (submit)="onSubmit()" enctype='multipart/form-data' class="col-xl-2">
 
-            <input (change)="data.image = $any($event).target.files[0]" name="image" type="file"/>
-            <input (change)="data.video = $any($event).target.files[0]" name="video" type="file"/>
-
-            <label>Pseudo</label>
-            <input type="text" [(ngModel)]="data.pseudo" name="pseudo" required/>
-
-            <label>Description</label>
-            <input type="text" [(ngModel)]="data.desc" name="desc"/>
-
-            <label>Link</label>
-            <input type="text" [(ngModel)]="data.link" name="link"/>
-
-            <label>Category</label>
-            <select [(ngModel)]="data.category_id" name="category" required>
-                <option *ngFor="let category of gameCategories" [value]="category.id">{{ category.name }}</option>
-            </select>
-
-
-            <label>Score</label>
-            <input type="text" mask="Hh:m0:s0:000||m0:s0:000" [dropSpecialCharacters]="false" [(ngModel)]="data.score" name="score" required/>
-
-            <button [disabled]="!form.valid" type="submit">Submit</button>
-
-        </form>
+                <input (change)="data.image = $any($event).target.files[0]" name="image" type="file"/>
+                <input (change)="data.video = $any($event).target.files[0]" name="video" type="file"/>
+    
+                <label>Pseudo</label>
+                <input type="text" [(ngModel)]="data.pseudo" name="pseudo" required/>
+    
+                <label>Description</label>
+                <input type="text" [(ngModel)]="data.desc" name="desc"/>
+    
+                <label>Link</label>
+                <input type="text" [(ngModel)]="data.link" name="link"/>
+    
+                <label>Category</label>
+                <select [(ngModel)]="data.category_id" name="category" required>
+                    <option *ngFor="let category of gameCategories" [value]="category.id">{{ category.name }}</option>
+                </select>
+    
+    
+                <label>Score</label>
+                <input type="text" mask="Hh:m0:s0:000||m0:s0:000" [dropSpecialCharacters]="false" [(ngModel)]="data.score" name="score" required/>
+    
+                <button [disabled]="!form.valid" type="submit">Submit</button>
+            </form>
+        </div>
 
     </div>
 
