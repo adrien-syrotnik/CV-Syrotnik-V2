@@ -32,9 +32,9 @@
             </div>
 
             <div class="game-scores">
-                <nav ngbNav #nav="ngbNav" [(activeId)]="activeCategory" class="nav-tabs">
+                <nav ngbNav #nav="ngbNav" [(activeId)]="activeCategory" class="nav-tabs tabs">
                     <ng-container [ngbNavItem]="index" *ngFor="let category of gameCategories; let index = index">
-                        <a ngbNavLink>{{ category.name }}</a>
+                        <a class="tab" ngbNavLink>{{ category.name }}</a>
                         <ng-template ngbNavContent>
                             <game-category [categoryId]="category.id" [gameInfo]="gameInfo"></game-category>
                         </ng-template>
