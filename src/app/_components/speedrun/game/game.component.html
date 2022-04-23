@@ -3,7 +3,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <div class="bg-danger">
     {{ error }}
-    {{ gameStats | json }}
+    {{ gameInfo | json }}
 </div>
 <div class="text-white container-fluid">
     <div class="row g-2">
@@ -24,6 +24,9 @@
                     <h2>{{gameInfo.name}} ( {{gameInfo.released_year}} )</h2>
                     <div class="author-block">
                         <p *ngFor="let author of gameInfo.authors">{{author.first_name}} {{author.last_name}}</p>
+                    </div>
+                    <div class="studio-block">
+                        <p>{{gameInfo.studio}}</p>
                     </div>
                     <div class="plateform-block">
                         <p class="platform">( 
@@ -51,15 +54,18 @@
                 <h2>GAME STATS</h2>
                 <div class="values">
                     <span class="number">{{gameStats.nb_players}}</span>
-                    <p>PLAYER(S)</p>
+                    <p>JOUEUR(S)</p>
                 </div>
                 <div class="values">
                     <span class="number">{{gameStats.nb_runs}}</span>
                     <p>RUN(S)</p>
                 </div>
 
-                <div class="values-line">
-                    <p>Total run time :</p><span>{{gameStats.time_ms}}</span>
+                <div class="values-line odd">
+                    <p>Temps de run cummulé :</p><span>{{convertMsToTime(gameStats.time_ms)}}</span>
+                </div>
+                <div class="values-line even">
+                    <p>Jeu ajouté le :</p><span>{{gameInfo.created_at | date:'d MMMM y'}}</span>
                 </div>
             </div>
         </div>

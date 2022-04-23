@@ -17,10 +17,12 @@ body.dark{background-image:url("/assets/images/background.png");background-size:
 .results .game-details img{max-width:48px;max-height: 68px;}
 .results .game-details .title{padding-left:10px;display: flex;flex-wrap:wrap;width:calc(100% - 48px);font-size:16px;}
 .results .game-details .title h2{width:100%;font-size:16px;}
-.results .game-details .title .author-block {margin-right:8px;width:auto;}
-.results .game-details .title .plateform-block{margin-left:8px;}
+.results .game-details .title .author-block {margin-right:12px;width:auto;}
+.results .game-details .title .plateform-block,
+.results .game-details .title .studio-block{margin:0 12px;}
 .results .game-details .title .author-block p,
-.results .game-details .title .plateform-block p{font-size:12px;margin:0;}
+.results .game-details .title .plateform-block p,
+.results .game-details .title .studio-block{font-size:12px;margin:0;}
 
 .results .game-scores{padding:16px;margin-top:50px;width:100%;border-top:4px solid black;min-height:200px;position: relative;}
 .results .game-scores .tabs {position: absolute;top:-30px;left:0;display:flex;}
@@ -36,6 +38,8 @@ body.dark{background-image:url("/assets/images/background.png");background-size:
 .sidebar .game-stats{display: flex;flex-wrap:wrap;padding: 10px;}
 .sidebar .game-stats h2{width:100%;font-size:16px;}
 .sidebar .game-stats .values{width:auto;display: flex;flex-wrap:wrap;justify-content:center;flex-direction:column;padding:0 5px}
-.sidebar .game-stats .values-line{width:100%;display: flex;flex-wrap:wrap;justify-content:space-between;padding:0 5px}
+.sidebar .game-stats .values-line{width:100%;display: flex;flex-wrap:wrap;justify-content:space-between;padding:0 5px;}
+.sidebar .game-stats .values-line.even{background-color: rgba(0,0,0,80%);}
+.sidebar .game-stats .values-line p{margin: 0;}
 .sidebar .game-stats .values span{font-weight:bold;}
 .sidebar .game-stats .values p{font-size:12px;}
