@@ -68,6 +68,21 @@ export class GameComponent implements OnInit {
 
     }
 
+    convertMsToTime(ms:string){
+        var duration = Number(ms);
+        console.log(ms);
+        var milliseconds = Math.floor((duration % 1000) / 100),
+        seconds = Math.floor((duration / 1000) % 60),
+        minutes = Math.floor((duration / (1000 * 60)) % 60),
+        hours = Math.floor((duration / (1000 * 60 * 60)) % 24);
+
+        var h = (hours < 10) ? "0" + hours : hours;
+        var m = (minutes < 10) ? "0" + minutes : minutes;
+        var s = (seconds < 10) ? "0" + seconds : seconds;
+
+        return h + ":" + m + ":" + s;
+    }
+
 
     onSubmit() {
 
@@ -81,3 +96,5 @@ export class GameComponent implements OnInit {
     }
 
 }
+
+
