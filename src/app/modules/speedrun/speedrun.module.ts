@@ -6,6 +6,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { RouterModule } from "@angular/router";
 import { TranslateModule } from "@ngx-translate/core";
 import { NgxMaskModule } from "ngx-mask";
+import { GameCategoryComponent } from "src/app/_components/speedrun/game/category/game-category.component";
 import { GameComponent } from "src/app/_components/speedrun/game/game.component";
 import { ListGameComponent } from "src/app/_components/speedrun/list-game/list-game.component";
 import { SpeedrunComponent } from "src/app/_components/speedrun/speedrun.component";
@@ -18,7 +19,8 @@ import { SpeedrunRoutes } from "./speedrun.routing";
     declarations: [
         SpeedrunComponent,
         GameComponent,
-        ListGameComponent
+        ListGameComponent,
+        GameCategoryComponent
       ],
       imports: [
         FormsModule,

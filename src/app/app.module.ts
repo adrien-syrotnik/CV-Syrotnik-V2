@@ -1,5 +1,5 @@
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -19,6 +19,12 @@ import { GameComponent } from './_components/speedrun/game/game.component';
 import { NgxMaskModule, IConfig } from 'ngx-mask'
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './app.routing';
+
+import { registerLocaleData } from '@angular/common';
+
+import localeFr from '@angular/common/locales/fr';
+
+registerLocaleData(localeFr);
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -53,7 +59,8 @@ export function createTranslateLoader(http: HttpClient) {
   ],
   providers: [
     TranslateStorage,
-    ProjectStorageService
+    ProjectStorageService,
+    {provide: LOCALE_ID, useValue: "fr-CA" }
   ],
   bootstrap: [AppComponent]
 })
