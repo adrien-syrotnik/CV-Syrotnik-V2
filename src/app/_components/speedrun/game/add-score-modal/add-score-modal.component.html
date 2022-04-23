@@ -1,0 +1,46 @@
+<div class="modal-header"> 
+    <h4 class="modal-title">Submit un score pour {{ gameInfo.name }}/{{ category.name }}</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
+</div>
+<div class="modal-body">
+    <div class="bg-danger">
+        {{ error }}
+    </div>
+    <form #form="ngForm" (submit)="onSubmit()" enctype='multipart/form-data' class="col-xl-2">
+
+        <input (change)="data.image = $any($event).target.files[0]" name="image" type="file"/>
+        <input (change)="data.video = $any($event).target.files[0]" name="video" type="file"/>
+
+        <label>Pseudo</label>
+        <input type="text" [(ngModel)]="data.pseudo" name="pseudo" required/>
+
+        <label>Description</label>
+        <input type="text" [(ngModel)]="data.desc" name="desc"/>
+
+        <label>Link</label>
+        <input type="text" [(ngModel)]="data.link" name="link"/>
+
+        <label>Category</label>
+        <select [(ngModel)]="data.category_id" name="category" required>
+            <option *ngFor="let category of gameCategories" [value]="category.id">{{ category.name }}</option>
+        </select>
+
+
+        <label>Score</label>
+        <input type="text" mask="Hh:m0:s0:000||m0:s0:000" [dropSpecialCharacters]="false" [(ngModel)]="data.score" name="score" required/>
+
+        <button [disabled]="!form.valid" type="submit">Submit</button>
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+</div>
+
+
+
+
+
+
+
+            
+

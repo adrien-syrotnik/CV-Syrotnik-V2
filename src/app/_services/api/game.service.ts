@@ -66,7 +66,7 @@ export class GameService {
      * @param pseudo 
      * @returns 
      */
-    addGameScore(gameId:string, data : {image?:any, video?:any, pseudo:string, score:string, link?:string, desc?:string}) {//score: any, pseudo: string, img : any) {
+    addGameScore(gameId:string, categoryId:string, data : {image?:any, video?:any, pseudo:string, score:string, link?:string, desc?:string}) {
 
         let formData:FormData = new FormData();
         // if(data.image)
@@ -88,7 +88,7 @@ export class GameService {
         // headers.append('Content-Type', 'multipart/form-data');
         // headers.append('Accept', 'application/json');
 
-        return this.http.post(environment.apiUrl + '/game/' + gameId + '/scores', formData);
+        return this.http.post(environment.apiUrl + '/game/' + gameId + '/scores/' + categoryId, formData);
     }
 
 
