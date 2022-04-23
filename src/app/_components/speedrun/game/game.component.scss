@@ -9,12 +9,7 @@ body.dark{background-image:url("/assets/images/background.png");background-size:
 .game-scores,
 .sidebar{background-color: rgba(0,0,0,80%);border-radius:2px;}
 
-.top{height:250px;background-color: rgba(0,0,0,50%);}
-
-.header{height:70px;display:flex;justify-content:center;align-items:center;}
-.header .navbar {display: flex;justify-content: space-around;align-items: center;}
-.header .navbar img{height: 50px;}
-.header .navbar a {color: white;}
+.top{height:250px;background-color: rgba(0,0,0,50%);background-image: url("/assets/images/background-sonic.png");background-position: center;background-repeat:no-repeat;background-size: cover;margin-top:30px;}
 
 .results{margin-right: 8px;padding:0;}
 .results .game-details{display: flex;flex-wrap:wrap;padding:16px;border-top:4px solid black;}
