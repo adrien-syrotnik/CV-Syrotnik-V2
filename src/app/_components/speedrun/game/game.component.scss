@@ -36,5 +36,6 @@ body.dark{background-image:url("/assets/images/background.png");background-size:
 .sidebar .game-stats{display: flex;flex-wrap:wrap;padding: 10px;}
 .sidebar .game-stats h2{width:100%;font-size:16px;}
 .sidebar .game-stats .values{width:auto;display: flex;flex-wrap:wrap;justify-content:center;flex-direction:column;padding:0 5px}
+.sidebar .game-stats .values-line{width:100%;display: flex;flex-wrap:wrap;justify-content:space-between;padding:0 5px}
 .sidebar .game-stats .values span{font-weight:bold;}
 .sidebar .game-stats .values p{font-size:12px;}

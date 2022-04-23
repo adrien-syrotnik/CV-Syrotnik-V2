@@ -15,6 +15,7 @@ declare var bootstrap: any;
 export class GameComponent implements OnInit {
 
     public gameInfo: any;
+    public gameStats: any;
     public error?: string;
     public gameCategories: any;
 
@@ -43,12 +44,22 @@ export class GameComponent implements OnInit {
                     }
                 });
 
+                this.gameService.getGameStats(this.gameInfo.id).subscribe({
+                    next: (gameStats: any) => {
+        
+                        this.gameStats = gameStats.data;
+        
+                    },
+                    error: error => {
+                        this.error = error.error.message;
+                    }
+                })
+
             },
             error: error => {
                 this.error = error.error.message;
             }
         })
-
 
 
     }

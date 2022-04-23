@@ -47,6 +47,15 @@ export class GameService {
     }
 
     /**
+     * Get game stats
+     * @param gameId 
+     * @returns 
+     */
+     getGameStats(gameId: string) {
+        return this.http.get(environment.apiUrl + '/game/' + gameId + '/stats');
+    }
+
+    /**
      * Add game score
      * @param gameId 
      * @param score 
