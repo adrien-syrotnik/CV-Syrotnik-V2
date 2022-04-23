@@ -14,10 +14,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProjectComponent } from './_components/project/project.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProjectStorageService } from './_services/project-storage.service';
+import { SpeedrunComponent } from './_components/speedrun/speedrun.component';
+import { GameService } from './_services/api/game.service';
+import { GameComponent } from './_components/speedrun/game/game.component';
+import { NgxMaskModule, IConfig } from 'ngx-mask'
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
+
+// export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
 
 
 @NgModule({
@@ -25,7 +31,9 @@ export function createTranslateLoader(http: HttpClient) {
     AppComponent,
     HomeComponent,
     NavBarComponent,
-    ProjectComponent
+    ProjectComponent,
+    SpeedrunComponent,
+    GameComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +42,7 @@ export function createTranslateLoader(http: HttpClient) {
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
+    NgxMaskModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
           provide: TranslateLoader,
@@ -45,7 +54,8 @@ export function createTranslateLoader(http: HttpClient) {
   ],
   providers: [
     TranslateStorage,
-    ProjectStorageService
+    ProjectStorageService,
+    GameService
   ],
   bootstrap: [AppComponent]
 })
