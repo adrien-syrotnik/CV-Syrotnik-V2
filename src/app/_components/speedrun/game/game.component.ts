@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { map } from 'rxjs';
@@ -14,10 +14,11 @@ declare var bootstrap: any;
 })
 export class GameComponent implements OnInit {
 
-    public gameInfo: any;
-    public gameStats: any;
+    public gameInfo: any = {};
+    public gameStats: any = {};
     public error?: string;
-    public gameCategories: any;
+    public gameCategories: any = [];
+    public activeCategory = 0;
 
     public data: any = {};
 
@@ -46,9 +47,9 @@ export class GameComponent implements OnInit {
 
                 this.gameService.getGameStats(this.gameInfo.id).subscribe({
                     next: (gameStats: any) => {
-        
+
                         this.gameStats = gameStats.data;
-        
+
                     },
                     error: error => {
                         this.error = error.error.message;
@@ -67,6 +68,8 @@ export class GameComponent implements OnInit {
 
 
     }
+
+
 
 
     onSubmit() {

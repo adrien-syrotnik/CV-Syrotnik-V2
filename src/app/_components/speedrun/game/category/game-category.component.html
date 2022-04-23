@@ -1,0 +1,28 @@
+<table>
+    <thead>
+        <tr>
+            <th class="icon"><img src="/assets/images/trophy.png"></th>
+            <th class="player">Player</th>
+            <th class="time">Real time</th>
+            <th class="date">Date</th>
+            <th class="see"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let score of scores; let index = index" class="m-2">
+            <td [ngSwitch]="index">
+                <img *ngSwitchCase="0" src="/assets/images/1st.png">
+                <img *ngSwitchCase="1" src="/assets/images/2nd.png">
+                <img *ngSwitchCase="2" src="/assets/images/3rd.png">
+                <span *ngSwitchDefault>{{ index }}</span>
+            </td>
+            <td>{{ score.pseudo }}</td>
+            <td>{{ score.score }}</td>
+            <td>{{ score.created_at | date:'dd/MM/YYYY' }}</td>
+            <td><a href="">[voir]</a></td>
+        </tr>
+        <tr *ngIf="scores.length == 0">
+            No data found
+        </tr>
+    </tbody>
+</table>

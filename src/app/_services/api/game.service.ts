@@ -15,8 +15,10 @@ export class GameService {
      * Get all existing games
      * @returns 
      */
-    getGames() {
-        return this.http.get(environment.apiUrl + '/game');
+    getGames(params? : {limit?: number, offset?: number}) {
+        return this.http.get(environment.apiUrl + '/game',{
+            params
+        });
     }
 
     /**
@@ -33,8 +35,10 @@ export class GameService {
      * @param gameId 
      * @returns 
      */
-    getGameScores(gameId: string) {
-        return this.http.get(environment.apiUrl + '/game/' + gameId + '/scores');
+    getGameCategoryScores(gameId: string, category_id:string, params? : {limit?: number, offset?: number}) {
+        return this.http.get(environment.apiUrl + '/game/' + gameId + '/scores/' + category_id, {
+            params
+        });
     }
 
     /**
@@ -86,5 +90,8 @@ export class GameService {
 
         return this.http.post(environment.apiUrl + '/game/' + gameId + '/scores', formData);
     }
+
+
+
 
 }

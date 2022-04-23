@@ -4,6 +4,7 @@ import { NgModule } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { BrowserModule } from "@angular/platform-browser";
 import { RouterModule } from "@angular/router";
+import { NgbNavModule } from "@ng-bootstrap/ng-bootstrap";
 import { TranslateModule } from "@ngx-translate/core";
 import { NgxMaskModule } from "ngx-mask";
 import { GameCategoryComponent } from "src/app/_components/speedrun/game/category/game-category.component";
@@ -25,6 +26,7 @@ import { SpeedrunRoutes } from "./speedrun.routing";
       imports: [
         FormsModule,
         CommonModule,
+        NgbNavModule,
         ReactiveFormsModule,
         RouterModule.forChild(SpeedrunRoutes),
         NgxMaskModule.forChild(),

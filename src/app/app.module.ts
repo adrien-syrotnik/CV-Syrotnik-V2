@@ -23,6 +23,7 @@ import { appRoutes } from './app.routing';
 import { registerLocaleData } from '@angular/common';
 
 import localeFr from '@angular/common/locales/fr';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 registerLocaleData(localeFr);
 
@@ -55,7 +56,8 @@ export function createTranslateLoader(http: HttpClient) {
           deps: [HttpClient]
       }
   }),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgbModule
   ],
   providers: [
     TranslateStorage,

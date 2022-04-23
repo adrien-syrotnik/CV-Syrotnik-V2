@@ -32,60 +32,18 @@
                 </div>
                 
             </div>
+
             <div class="game-scores">
-                <div class="tabs">
-                    <div class="tab tab-in">
-                        <a href="">Any%</a>
-                    </div>
-                    <div class="tab">
-                        <a href="">Any% Cheatless</a>
-                    </div>
-                    <div class="tab">
-                        <a href="">Fastest Crash</a>
-                    </div>
-                </div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th class="icon"><img src="/assets/images/trophy.png"></th>
-                            <th class="player">Player</th>
-                            <th class="time">Real time</th>
-                            <th class="date">Date</th>
-                            <th class="see"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><img src="/assets/images/1st.png"></td>
-                            <td>Arthur</td>
-                            <td>1m 33s</td>
-                            <td>23/04/2022</td>
-                            <td><a href="">[voir]</a></td>
-                        </tr>
-                        <tr>
-                            <td><img src="/assets/images/2nd.png"></td>
-                            <td>Arthur</td>
-                            <td>1m 33s</td>
-                            <td>23/04/2022</td>
-                            <td><a href="">[voir]</a></td>
-                        </tr>
-                        <tr>
-                            <td><img src="/assets/images/3rd.png"></td>
-                            <td>Arthur</td>
-                            <td>1m 33s</td>
-                            <td>23/04/2022</td>
-                            <td><a href="">[voir]</a></td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Arthur</td>
-                            <td>1m 33s</td>
-                            <td>23/04/2022</td>
-                            <td><a href="">[voir]</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+                <nav ngbNav #nav="ngbNav" [(activeId)]="activeCategory" class="nav-tabs">
+                    <ng-container [ngbNavItem]="index" *ngFor="let category of gameCategories; let index = index">
+                        <a ngbNavLink>{{ category.name }}</a>
+                        <ng-template ngbNavContent>
+                            <game-category [categoryId]="category.id" [gameInfo]="gameInfo"></game-category>
+                        </ng-template>
+                    </ng-container>
+                </nav>
+                <div [ngbNavOutlet]="nav" class="mt-2"></div>
+              </div>
         </div>
 
         <div class="col-2 sidebar">
