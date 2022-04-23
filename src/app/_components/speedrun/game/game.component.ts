@@ -74,12 +74,11 @@ export class GameComponent implements OnInit {
         const modalRef = this.modalService.open(AddScoreModalComponent);
         (modalRef.componentInstance as AddScoreModalComponent).gameInfo = this.gameInfo;
         (modalRef.componentInstance as AddScoreModalComponent).gameCategories = this.gameCategories;
-        (modalRef.componentInstance as AddScoreModalComponent).category = this.gameCategories[this.activeCategory];
+        (modalRef.componentInstance as AddScoreModalComponent).data.category_id = this.gameCategories[this.activeCategory].id;
     }
 
     convertMsToTime(ms:string){
         var duration = Number(ms);
-        console.log(ms);
         var milliseconds = Math.floor((duration % 1000) / 100),
         seconds = Math.floor((duration / 1000) % 60),
         minutes = Math.floor((duration / (1000 * 60)) % 60),

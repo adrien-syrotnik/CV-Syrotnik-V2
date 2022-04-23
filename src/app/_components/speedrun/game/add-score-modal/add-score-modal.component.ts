@@ -16,7 +16,6 @@ export class AddScoreModalComponent implements OnInit {
 
     @Input() gameInfo: any = {};
     @Input() gameCategories : any = {};
-    @Input() category: any = {};
 
     public error? : string;
     public data : any = {};
@@ -37,7 +36,7 @@ export class AddScoreModalComponent implements OnInit {
     onSubmit() {
 
         if (this.data.score && this.data.pseudo && (this.data.image || this.data.video || this.data.link))
-            this.gameService.addGameScore(this.gameInfo.id, this.category.id, this.data).subscribe(val => {
+            this.gameService.addGameScore(this.gameInfo.id, this.data).subscribe(val => {
                 console.log(val)
             })
         else
