@@ -11,6 +11,7 @@
             <div class="tile" *ngFor="let game of games">
                 <a [routerLink]="game.url_name"><img src="/assets/games/{{game.url_name}}.png"></a>
                 <a [routerLink]="game.url_name">{{ game.name }}</a>
+                <p>{{ game.released_year }}</p>
             </div>
             
 
