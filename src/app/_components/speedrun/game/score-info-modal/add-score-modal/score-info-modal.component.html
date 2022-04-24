@@ -1,20 +1,32 @@
 <div class="modal-header"> 
     <h4 class="modal-title">Score de {{ scoreInfos.pseudo }}</h4>
-    <h4>{{ scoreInfos.created_at | date:"dd/MM/YYYY" }}</h4>
-    <h4>{{ gameInfos.name }}/{{ scoreInfos.category_name }}</h4>
     <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
 </div>
 <div class="modal-body">
-    <div class="bg-danger">
-        
-    </div>
-    {{ scoreInfos | json }}
 
-    <a *ngIf="scoreInfos.link" [href]="scoreInfos.link" target="_blank">{{ scoreInfos.link }}</a>
-    <a *ngIf="scoreInfos.video" [href]="getVideoUrl()" target="_blank">{{ getVideoUrl() }}</a>
-    <div class="">
-        <img *ngIf="scoreInfos.image" src="{{ getImageUrl() }}" class="w-100">
+    <h5 class="text-center">{{ gameInfos.name }}/{{ scoreInfos.category_name }}</h5>
+
+    <h5 class="text-center">{{ scoreInfos.score }} - {{ scoreInfos.created_at | date:'dd/MM/YYYY' }}</h5>
+
+    <div class="bg-danger">
     </div>
+
+    <div>
+        <label>Lien : </label>
+        <a *ngIf="scoreInfos.link" [href]="scoreInfos.link" target="_blank">{{ scoreInfos.link }}</a>
+    </div>
+
+    <div class="">
+        <label>Video : </label>
+        <a *ngIf="scoreInfos.video" [href]="getVideoUrl()" target="_blank">{{ getVideoUrl() }}</a>
+    </div>
+    <div class="">
+        <label>Image : </label>
+        <div class="">
+            <img *ngIf="scoreInfos.image" src="{{ getImageUrl() }}" class="w-100">
+        </div>
+    </div>
+    
 
 </div>
 
