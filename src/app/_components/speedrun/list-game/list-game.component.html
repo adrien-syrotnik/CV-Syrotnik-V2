@@ -1,15 +1,18 @@
 
-<div class="text-white">
+<div class="text-white container-fluid">
+    <div class="row g-2">
 
-    Games
+        <div class="col-md-6 col-12 offset-md-3 top">
 
-    <div class="bg-warning" *ngFor="let game of games">
+        </div> 
 
-        <a [routerLink]="game.url_name">{{ game.name }}</a>
-        
+        <div class="bg-warning" *ngFor="let game of games">
+
+            <a [routerLink]="game.url_name">{{ game.name }}</a>
+            
 
 
-
+        </div>
     </div>
 
 
