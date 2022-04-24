@@ -1,3 +1,4 @@
+import { ViewEncapsulation } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { GameService } from 'src/app/_services/api/game.service';
@@ -7,7 +8,8 @@ declare var bootstrap: any;
 @Component({
     selector: 'speedrun-game',
     templateUrl: './list-game.component.html',
-    styleUrls: ['./list-game.component.scss']
+    styleUrls: ['./list-game.component.scss'],
+    encapsulation: ViewEncapsulation.None
 })
 export class ListGameComponent implements OnInit {
 
