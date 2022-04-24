@@ -14,6 +14,9 @@ declare var bootstrap: any;
 })
 export class ScoreInfoModalComponent implements OnInit {
 
+    public scoreInfos: any = {};
+    @Input() gameInfos: any = {};
+    @Input() scoreId!: number | string;
 
     constructor(public translate: TranslateService,
         private gameService: GameService,
@@ -24,9 +27,18 @@ export class ScoreInfoModalComponent implements OnInit {
     }
     ngOnInit(): void {
 
+        this.gameService.getScore(this.scoreId).subscribe((data: any) => {
+            this.scoreInfos = data.data;
+        });
 
     }
-
+    
+    getVideoUrl() {
+        return this.gameService.getScoreVideoURL(this.scoreId);
+    }
+    getImageUrl() {
+        return this.gameService.getScoreImageURL(this.scoreId);
+    }
 
 }
 

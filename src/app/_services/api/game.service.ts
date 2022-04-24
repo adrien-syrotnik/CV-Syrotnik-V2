@@ -12,6 +12,33 @@ export class GameService {
     }
 
     /**
+     * Get score infos
+     * @param id 
+     * @returns 
+     */
+    getScore(id:string | number) {
+        return this.http.get(environment.apiUrl + '/score/' + id);
+    }
+
+    /**
+     * Get score video
+     * @param id 
+     * @returns 
+     */
+    getScoreVideoURL(id:string | number) {
+        return environment.apiUrl + '/score/' + id + '/video';
+    }
+
+    /**
+     * Get score image
+     * @param id 
+     * @returns 
+     */
+     getScoreImageURL(id:string | number) {
+        return environment.apiUrl + '/score/' + id + '/image';
+    }
+
+    /**
      * Get all existing games
      * @returns 
      */
