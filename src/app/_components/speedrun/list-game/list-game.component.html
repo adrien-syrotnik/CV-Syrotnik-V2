@@ -6,9 +6,12 @@
 
         </div> 
 
-        <div class="bg-warning" *ngFor="let game of games">
+        <div class="col-xl-8 offset-xl-2 game-list">
 
-            <a [routerLink]="game.url_name">{{ game.name }}</a>
+            <div class="tile" *ngFor="let game of games">
+                <a [routerLink]="game.url_name"><img src="/assets/games/{{game.url_name}}.png"></a>
+                <a [routerLink]="game.url_name">{{ game.name }}</a>
+            </div>
             
 
 
