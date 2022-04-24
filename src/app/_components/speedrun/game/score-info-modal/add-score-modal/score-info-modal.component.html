@@ -1,16 +1,21 @@
 <div class="modal-header"> 
-    <h4 class="modal-title">Submit un score pour</h4>
+    <h4 class="modal-title">Score de {{ scoreInfos.pseudo }}</h4>
+    <h4>{{ scoreInfos.created_at | date:"dd/MM/YYYY" }}</h4>
+    <h4>{{ gameInfos.name }}/{{ scoreInfos.category_name }}</h4>
     <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
 </div>
 <div class="modal-body">
     <div class="bg-danger">
         
     </div>
-    
+    {{ scoreInfos | json }}
 
-</div>
-<div class="modal-footer">
-    <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+    <a *ngIf="scoreInfos.link" [href]="scoreInfos.link" target="_blank">{{ scoreInfos.link }}</a>
+    <a *ngIf="scoreInfos.video" [href]="getVideoUrl()" target="_blank">{{ getVideoUrl() }}</a>
+    <div class="">
+        <img *ngIf="scoreInfos.image" src="{{ getImageUrl() }}" class="w-100">
+    </div>
+
 </div>
 
 
