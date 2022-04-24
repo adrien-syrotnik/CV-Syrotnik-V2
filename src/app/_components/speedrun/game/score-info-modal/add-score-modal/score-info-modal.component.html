@@ -11,19 +11,19 @@
     <div class="bg-danger">
     </div>
 
-    <div>
+    <div *ngIf="scoreInfos.link && scoreInfos.link != 'null'">
         <label>Lien : </label>
-        <a *ngIf="scoreInfos.link" [href]="scoreInfos.link" target="_blank">{{ scoreInfos.link }}</a>
+        <a [href]="scoreInfos.link" target="_blank">{{ scoreInfos.link }}</a>
     </div>
 
-    <div class="">
+    <div class="" *ngIf="scoreInfos.video">
         <label>Video : </label>
-        <a *ngIf="scoreInfos.video" [href]="getVideoUrl()" target="_blank">{{ getVideoUrl() }}</a>
+        <a [href]="getVideoUrl()" target="_blank">{{ getVideoUrl() }}</a>
     </div>
-    <div class="">
+    <div class="" *ngIf="scoreInfos.image">
         <label>Image : </label>
         <div class="">
-            <img *ngIf="scoreInfos.image" src="{{ getImageUrl() }}" class="w-100">
+            <img src="{{ getImageUrl() }}" class="w-100">
         </div>
     </div>
     
