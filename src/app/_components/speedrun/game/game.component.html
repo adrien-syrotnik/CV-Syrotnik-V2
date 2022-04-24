@@ -36,7 +36,7 @@
                     <ng-container [ngbNavItem]="index" *ngFor="let category of gameCategories; let index = index">
                         <a class="tab" ngbNavLink>{{ category.name }}</a>
                         <ng-template ngbNavContent>
-                            <game-category [categoryId]="category.id" [gameInfo]="gameInfo"></game-category>
+                            <game-category [categoryId]="category.id" [emitRefresh]="refreshScore" [gameInfo]="gameInfo"></game-category>
                         </ng-template>
                     </ng-container>
                 </nav>

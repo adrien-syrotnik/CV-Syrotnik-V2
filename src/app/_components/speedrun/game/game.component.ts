@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { AfterViewInit, Component, EventEmitter, OnInit, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateService } from '@ngx-translate/core';
@@ -21,6 +21,8 @@ export class GameComponent implements OnInit {
     public error?: string;
     public gameCategories: any = [];
     public activeCategory = 0;
+
+    public refreshScore = new EventEmitter()
 
     constructor(public translate: TranslateService,
         private activatedRoute: ActivatedRoute,
@@ -75,14 +77,22 @@ export class GameComponent implements OnInit {
         (modalRef.componentInstance as AddScoreModalComponent).gameInfo = this.gameInfo;
         (modalRef.componentInstance as AddScoreModalComponent).gameCategories = this.gameCategories;
         (modalRef.componentInstance as AddScoreModalComponent).data.category_id = this.gameCategories[this.activeCategory].id;
+
+        modalRef.result
+            .then(() => {
+                this.refreshScore.emit();
+            })
+            .catch(() => {
+                this.refreshScore.emit();
+            })
     }
 
-    convertMsToTime(ms:string){
+    convertMsToTime(ms: string) {
         var duration = Number(ms);
         var milliseconds = Math.floor((duration % 1000) / 100),
-        seconds = Math.floor((duration / 1000) % 60),
-        minutes = Math.floor((duration / (1000 * 60)) % 60),
-        hours = Math.floor((duration / (1000 * 60 * 60)) % 24);
+            seconds = Math.floor((duration / 1000) % 60),
+            minutes = Math.floor((duration / (1000 * 60)) % 60),
+            hours = Math.floor((duration / (1000 * 60 * 60)) % 24);
 
         var h = (hours < 10) ? "0" + hours : hours;
         var m = (minutes < 10) ? "0" + minutes : minutes;

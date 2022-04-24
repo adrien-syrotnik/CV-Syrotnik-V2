@@ -19,6 +19,7 @@ export class AddScoreModalComponent implements OnInit {
 
     public error? : string;
     public data : any = {};
+    public submitting = false;
 
     constructor(public translate: TranslateService,
         private gameService: GameService,
@@ -35,10 +36,13 @@ export class AddScoreModalComponent implements OnInit {
 
     onSubmit() {
 
-        if (this.data.score && this.data.pseudo && (this.data.image || this.data.video || this.data.link))
+        if (this.data.score && this.data.pseudo && (this.data.image || this.data.video || this.data.link)) {
             this.gameService.addGameScore(this.gameInfo.id, this.data).subscribe(val => {
-                console.log(val)
+                this.activeModal.close();
             })
+            this.data = {};
+            this.submitting = true;
+        }
         else
             this.error = "Veuillez remplir tous les champs";
 

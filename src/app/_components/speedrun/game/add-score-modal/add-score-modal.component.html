@@ -6,7 +6,8 @@
     <div class="bg-danger">
         {{ error }}
     </div>
-    <form #form="ngForm" (submit)="onSubmit()" enctype='multipart/form-data' class="col-xl-2">
+    <span *ngIf="submitting">Envoie des données...</span>
+    <form *ngIf="!submitting" #form="ngForm" (submit)="onSubmit()" enctype='multipart/form-data' class="col-xl-2">
 
         <input (change)="data.image = $any($event).target.files[0]" name="image" type="file"/>
         <input (change)="data.video = $any($event).target.files[0]" name="video" type="file"/>
