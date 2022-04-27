@@ -1,5 +1,6 @@
 import { Injectable } from "@angular/core";
 import { DomSanitizer } from "@angular/platform-browser";
+import { last } from "rxjs";
 import { Project } from "../models/project";
 
 @Injectable({
@@ -46,6 +47,22 @@ export class ProjectStorageService {
         title: 'Un jeu gravé !',
         desc : 'Après avoir terminé le jeu, nous voulions aller plus loin et avons décidé de graver notre jeu sur un CD. <br/><br/>Ainsi, nous avons réalisé 2 CD nous permettant de garder notre jeu sous format physique.',
         template: this.createImageTab(['assets/images/emergency_cd1.jpg','assets/images/emergency_cd2.jpg'])
+      }]
+    },{
+      key: 'speedrun',
+      main_desc: 'Souhaitant réaliser un speedrun sur le jeu Emergency Exit, et étant donné que le site de speedrun.com est très limité, j\'ai décidé de réaliser un site web qui va permettre de réaliser des speedruns sur ce jeu. <br/><br/>En plus de cela, j\'ai réalisé des scripts permettant de se chronométrer lorsque l\'on souhaite réaliser un speedrun.',
+      image: 'assets/images/speedrun-logo.png',
+      low_desc: 'Reproduction du site speedrun.com et réalisation de scripts de speedrun',
+      name: 'Speedrun',
+      year: new Date('2022-04'),
+      parts : [{
+        title: 'Un site web : un backend et un frontend',
+        desc : 'Pour réaliser ce projet, il fallait pouvoir stocker les informations dans une base de données, et il fallait donc réaliser un backend en plus du frontend. J\'ai décidé de réaliser le backend en utilisant le framework Express.js, et le frontend en utilisant Angular.js. <br/><br/> Le frontend s\'est également fait en collaboration avec Arthur Joris, la même personne ayant développée Emergency Exit avec moi. <br/><br/>Vous pouvez retrouver le site web via le lien suivant : <a href="https://syrotnik.online/speedrun" target="_blank">syrotnik.online/speedrun</a>',
+        template: this.createImageTab(['assets/images/speedrun-site1.png','assets/images/speedrun-site2.png'])
+      },{
+        title: 'Comment chronométrer précisément ?',
+        desc : 'Une des problématiques que j\'ai rencontrée lors de la réalisation de ce projet est de pouvoir réaliser un chronomètre précis. <br/><br/>J\'ai donc décidé de réaliser un script qui permet de réaliser un chronomètre précis. <br/><br/> La méthode consistait à récupérer les pointeurs d\'adresses utilisés par l\'application puis de les utiliser dans un script permettant de les interpréter et d\'activer ou non le chronomètre. </br></br> J\'ai réalisé une vidéo à ce sujet : <a href="https://youtu.be/TrgG9KnDgK8" target="_blank">https://youtu.be/TrgG9KnDgK8</a>',
+        template: this.createImageTab(['assets/images/speedrun-credit.png','assets/images/cheat-engine.png','assets/images/speedrun-script.png'])
       }]
     }, {
       key: 'online_resume_v1',

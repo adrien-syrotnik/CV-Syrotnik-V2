@@ -104,7 +104,7 @@
             <div class="row justify-content-evenly m-md-0 m-lg-5">
 
                 <a data-aos="fade-up-right" class="project rounded col-5 col-md-5 col-lg-2 text-center p-2 m-2" *ngFor="let project of projects; let i = index" routerLink="/project/{{ project.key }}">
-                    <img src="{{ project.image }}">
+                    <img src="{{ project.image }}" style="width: 70px; height: 70px;">
                     <br/> {{ project.name | translate }}
 
                 </a>
@@ -121,7 +121,7 @@
             <div class="row p-2 mb-5">
                 <h1 class="col text-center title-home" [innerHtml]="'TITLES.SKILLS' | translate" data-aos="zoom-in"></h1>
             </div>
-            <div class="row justify-content-evenly" *ngFor="let lvlRow of [3,2,1]">
+            <div class="row justify-content-evenly" *ngFor="let lvlRow of [3,2,1,0]">
 
 
                 <ng-container *ngFor="let skill of skills">
@@ -247,7 +247,7 @@
 
 
 
-
+    <a class="float-end" [routerLink]="['speedrun']">Fast as fnck (speedrun)</a>
 
 
 

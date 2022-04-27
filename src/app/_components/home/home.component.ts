@@ -141,9 +141,19 @@ export class HomeComponent implements OnInit, OnDestroy {
       lvl: 1
     },
     {
+      image: 'https://img.icons8.com/ios/70/000000/cheat-engine.png',
+      name: 'Cheat Engine',
+      lvl: 1
+    },
+    {
       image: 'https://img.icons8.com/ios-filled/70/000000/unity.png',
       name: 'Unity',
-      lvl: 1
+      lvl: 0
+    },
+    {
+      image: 'https://img.icons8.com/nolan/70/unreal-engine.png',
+      name: 'Unreal Engine',
+      lvl: 0
     },
     {
       image: 'https://img.icons8.com/windows/70/000000/wix.png',

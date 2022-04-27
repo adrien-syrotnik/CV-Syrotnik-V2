@@ -155,5 +155,14 @@ body.dark {
         color: white;
     }
 }
+
+body.dark.speedrun-page {
+    background-image: url("/assets/images/background-pixel1.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+};
+
 /* Importing Bootstrap SCSS file. */
+
 @import '~bootstrap/scss/bootstrap';
