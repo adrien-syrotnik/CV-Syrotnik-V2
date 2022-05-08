@@ -10,7 +10,8 @@
     },
     "ABOUT": {
         "TITLE": "My name is Adrien, I'm 20 years old, and I'm currently in computer science engineering school in Reims, France.",
-        "DESC": "Future engineer, I am currently working on different web projects using different technologies such as Angular, NodeJS or Laravel. However, I would like to specialize in the world of video games, because it's a field I particularly appreciate.<br/><br/>I have also developed organizational and group work skills, which allows me to be efficient in a team.<br/><br/>If you wish to see my resume in PDF format, please find it on this <a href='assets/dl/Adrien Syrotnik resume.pdf' download='Adrien Syrotnik resume.pdf'>link</a>.<br/><br/>Finally, I wanted to specify that I am looking for an internship taking place abroad (outside of France) from September 2022 for a duration of 4 months."
+        "DESC": "Future engineer, I am currently working on different web projects using different technologies such as Angular, NodeJS or Laravel. In addition to that, I am interested in the world of video games: I have realized different projects around this field.<br/><br/>I have also developed organizational and communication skills, which allow me to be effective in a team, but also independently.<br/><br/>If you wish to see my resume in PDF format, please find it on this <a href='assets/dl/Adrien Syrotnik resume.pdf' download='Adrien Syrotnik resume.pdf'>link</a>.<br/><br/>Finally, I wanted to specify that I am looking for an internship taking place abroad (outside of France) from September 2022 for a duration of 4 months.",
+        "SHORT_DESC": "Hello, my name is Adrien, I'm 20 years old, and I'm currently in computer science engineering school in Reims, France.<br/> I am currently working on different web projects using different technologies such as Angular, NodeJS or Laravel. In addition to that, I am interested in the world of video games: I have realized different projects around this field.<br/>I have also developed organizational and communication skills, which allow me to be effective in a team, but also independently."
     },
     "EXPERIENCES": {
         "ADEE": {
@@ -37,8 +38,11 @@
         "PROJECTS": "<i>My various projects</i>",
         "HOBBIES": "<i>My hobbies</i>",
         "SKILLS": "<i>My skills</i>",
-        "CONTACT": "<i>Contact me !</i>",
-        "SENDMAIL": "Send me an email!"
+        "CONTACT": "<i>Contact me</i>",
+        "SENDMAIL": "Send me an email!",
+        "FUNSKILLS": "My skills in progress",
+        "ABOUT": "<i>About me</i>",
+        "LANGUAGES": "<i>Languages</i>"
     },
     "SENDMAIL": {
         "EMAIL": "Your email :",
@@ -47,16 +51,20 @@
         "SUCCESS": "Message sent successfully !",
         "ERROR": "An error has occurred..."
     },
+
+    "MORE_INFOS": "More information <a href='{{link}}'>here</a>.",
+
     "Unity Game (Not finish)": "Unity Game (Not finish)",
     "Soft Skill - Recherches et réflexions": "Soft Skill - Research and reflection",
     "Soft Skill - Diagrammes": "Soft Skill - Diagrams",
     "Soft Skill - Travail en équipe": "Soft Skill - Team work",
+    "Montage vidéo": "Video editing",
     "Retour": "Return",
     "En cours": "In progress",
     "Projet": "Project",
 
 
-    "À l'aide des commandes intégrés au jeu (datapack et command blocks), et à l'aide d'un ami (<a href=\"https://arthurjoris.fr/\" target=\"_blank\">Arthur Joris</a>), nous avons réalisé différents mini-jeux dans le jeu vidéo Minecraft. En voici des exemples :": "Using the game's built-in commands (datapack and command blocks), and with the help of a friend (<a href=\"https://arthurjoris.fr/\" target=\"_blank\">Arthur Joris</a>), we made various mini-games in the Minecraft video game. Here are some examples:",
+    "À l'aide des commandes intégrés au jeu (datapack et command blocks), et à l'aide d'un ami, nous avons réalisé différents mini-jeux dans le jeu vidéo Minecraft.": "Using the game's built-in commands (datapack and command blocks), and with the help of a friend, we made various mini-games in the Minecraft video game.",
     "Réaliser des mini-jeux dans le jeu vidéo Minecraft": "Make mini-games in the video game Minecraft",
     "Inspiré du célèbre jeu Super Smash Bros, nous avons réalisé un jeu similaire avec des personnages du jeu vidéo qui nous tenaient à cœur.<br/><br/> <i>Link</i> de la série <u>The Legend of Zelda</u>, <i>Doomfist</i> du jeu <u>Overwatch</u>, <i>Edward Kenway</i> de la saga <u>Assassin's Creed</u> ou le personnage de notre jeu vidéo <a href=\"/project/emergency_exit\">Emergency Exit</a>, nous avons créé un total de 10 personnages jouables aux capacités uniques !<br/><br/> Vous pouvez voir une démonstration à partir de la vidéo ci-jointe.": "Inspired by the famous game Super Smash Bros, we made a similar game with our favorite video game characters.<br/><br/><i>Link</i> from <u>The Legend of Zelda</u> series, <i>Doomfist</i> from the game <u>Overwatch</u>, <i>Edward Kenway</i> from the <u>Assassin's Creed</u> saga or the character from our video game <a href=\"/project/emergency_exit\">Emergency Exit</a>, we created a total of 10 playable characters with unique abilities!<br/><br/>You can see a demonstration with the attached video.",
     "Pour ce projet, nous avions pour but de recopier exactement le jeu <u>Mario Kart</u>.<br/><br/>En passant par la construction des circuits, la reproduction des karts et le système d'objet, nous avons réussi à finalement reproduire ce jeu dans Minecraft.<br/><br/>Étant assez limités, nous avons utilisé des cochons en guise de kart par exemple.<br/><br/>Vous pouvez voir un exemple du jeu via la vidéo ci-jointe.": "For this project, we aimed to copy exactly the game <u>Mario Kart</u>.<br/><br/>Going through the construction of the circuits, the reproduction of the karts and the object system, we finally managed to reproduce this game in Minecraft.<br/><br/>Being quite limited, we used pigs as karts for example.<br/><br/>You can see an example of the game via the attached video.",
@@ -69,7 +77,7 @@
     "Un jeu gravé !": "An engraved game !",
     "Après avoir terminé le jeu, nous voulions aller plus loin et avons décidé de graver notre jeu sur un CD. <br/><br/>Ainsi, nous avons réalisé 2 CD nous permettant de garder notre jeu sous format physique.": "After finishing the game, we wanted to go further and decided to burn our game on a CD. <br/><br/>So we made 2 CDs allowing us to keep our game in physical format.",
 
-    "Hébergé sur github, ce premier cv marque mon début dans le monde du web. Vous pouvez aller jeter un coup d'œil avec ce lien : <a href=\"https://adrien-s.github.io/MonCV/\" target=\"_blank\">https://adrien-s.github.io/MonCV/</a>": "Hosted on github, this first resume marks my beginning in the web world. You can go take a look with this link: <a href=\"https://adrien-s.github.io/MonCV/\" target=\"_blank\">https://adrien-s.github.io/MonCV/</a>",
+    "Hébergé sur github, ce premier cv marque mon début dans le monde du web. Vous pouvez aller jeter un coup d'œil avec ce lien : <a href=\"https://adrien-syrotnik.github.io/CV-Syrotnik-V1/\" target=\"_blank\">https://adrien-syrotnik.github.io/CV-Syrotnik-V1/</a>.": "Hosted on github, this first resume marks my beginning in the web world. You can go take a look with this link: <a href=\"https://adrien-syrotnik.github.io/CV-Syrotnik-V1/\" target=\"_blank\">https://adrien-syrotnik.github.io/CV-Syrotnik-V1/</a>.",
     "CV en ligne v1 (HTML CSS JS)": "Online resume v1 (HTML CSS JS)",
 
     "Étant en plein stage concernant Angular, je voulais changer mon site web et en même temps progresser sur ce framework. J'ai donc décidé de le faire sous Angular, bien que cela ne reflète pas l'intégralité du framework. Un meilleur design, un dark mode et différentes traductions étaient mes principaux objectifs concernant ce projet.": "Being in the middle of an internship concerning Angular, I wanted to change my website and at the same time progress on this framework. So I decided to do it under Angular, although it doesn't reflect the whole framework. A better design, a dark mode and different translations were my main goals for this project.",
@@ -100,7 +108,23 @@
     "Un site web : un backend et un frontend" : "A website: a backend and a frontend",
     "Pour réaliser ce projet, il fallait pouvoir stocker les informations dans une base de données, et il fallait donc réaliser un backend en plus du frontend. J'ai décidé de réaliser le backend en utilisant le framework Express.js, et le frontend en utilisant Angular.js. <br/><br/> Le frontend s'est également fait en collaboration avec Arthur Joris, la même personne ayant développée Emergency Exit avec moi. <br/><br/>Vous pouvez retrouver le site web via le lien suivant : <a href=\"https://syrotnik.online/speedrun\" target=\"_blank\">syrotnik.online/speedrun</a>" : "To realize this project, we needed to be able to store the information in a database, so we had to build a backend in addition to the frontend. I decided to build the backend using the Express.js framework, and the frontend using Angular.js.<br/><br/>The frontend also got done in collaboration with Arthur Joris, the same person who developed Emergency Exit with me.<br/><br/>You can find the website via the link below: <a href=\"https://syrotnik.online/speedrun\" target=\"_blank\">syrotnik.online/speedrun</a>",
     "Comment chronométrer précisément ?" : "How to chronometer precisely?",
-    "Une des problématiques que j'ai rencontrée lors de la réalisation de ce projet est de pouvoir réaliser un chronomètre précis. <br/><br/>J'ai donc décidé de réaliser un script qui permet de réaliser un chronomètre précis. <br/><br/> La méthode consistait à récupérer les pointeurs d'adresses utilisés par l'application puis de les utiliser dans un script permettant de les interpréter et d'activer ou non le chronomètre. </br></br> J'ai réalisé une vidéo à ce sujet : <a href=\"https://youtu.be/TrgG9KnDgK8\" target=\"_blank\">https://youtu.be/TrgG9KnDgK8</a>" : "One of the problems I encountered when building this project was to be able to make a precise chronometer. <br/><br/>I decided to make a script which allows to make a precise chronometer. <br/><br/>The method consisted in retrieving the addresses of the pointers used by the application, and using them in a script which allows to interpret them and activate or not the chronometer. <br/><br/>I also made a video on this subject: <a href=\"https://youtu.be/TrgG9KnDgK8\" target=\"_blank\">https://youtu.be/TrgG9KnDgK8</a>"
+    "Une des problématiques que j'ai rencontrée lors de la réalisation de ce projet est de pouvoir réaliser un chronomètre précis. <br/><br/>J'ai donc décidé de réaliser un script qui permet de réaliser un chronomètre précis. <br/><br/> La méthode consistait à récupérer les pointeurs d'adresses utilisés par l'application puis de les utiliser dans un script permettant de les interpréter et d'activer ou non le chronomètre. </br></br> J'ai réalisé une vidéo à ce sujet : <a href=\"https://youtu.be/TrgG9KnDgK8\" target=\"_blank\">https://youtu.be/TrgG9KnDgK8</a>" : "One of the problems I encountered when building this project was to be able to make a precise chronometer. <br/><br/>I decided to make a script which allows to make a precise chronometer. <br/><br/>The method consisted in retrieving the addresses of the pointers used by the application, and using them in a script which allows to interpret them and activate or not the chronometer. <br/><br/>I also made a video on this subject: <a href=\"https://youtu.be/TrgG9KnDgK8\" target=\"_blank\">https://youtu.be/TrgG9KnDgK8</a>",
+
+    "App de gestion de service" : "Service management app",
+    "Système de déploiement" : "Deployment system",
+    "Travail collaboratif" : "Collaborative work",
+    "App de gestion de projet" : "Project management app",
+    "Autonome" : "Autonomous",
+    "Système de sauvegarde" : "Backup system",
+    "POO" : "OOP",
+    "Recréer" : "Recreate",
+    "Adresse mémoire" : "Memory address",
+
+    "Projet réalisé au sein de mon école, l'objectif de celui-ci était de réaliser une application permettant de sauvegarder un dossier dans un autre de manière entièrement sécurisée. Au cours de celui-ci, les notions de design pattern, de socket et de process ont été approfondies." : "Project realized within my school, the objective of this one was to realize an application allowing to save a file in another one in a totally protected way. During this one, the notions of design pattern, socket and process were deepened.",
+    "Stage au cours duquel j'ai repris entièrement le code réalisé par d'anciens stagiaires. Ma mission consistait à finaliser la programmation d'un logiciel interne à l'entreprise, permettant aux membres de l'équipe de gérer l'avancement d'un projet. L'application a été réalisée en PHP et en Javascript." : "Internship during which I took over all the code done by the previous interns. My mission was to finalize the programming of an internal software for the company, allowing the team members to manage the progress of a project. The application was realized in PHP and Javascript.",
+    "Stage au cours duquel j'ai pu apprendre à utiliser le framework javascript Angular et à mettre en place un système d'intégration continue. Mon objectif était de créer une application web frontend permettant d'afficher des contenus provenant d'une API." : "Internship during which I learned how to use the Angular javascript framework and to set up a continuous integration system. My goal was to create a frontend web application that would display content from an API."
+
+
 
 
 }

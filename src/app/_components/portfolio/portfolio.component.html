@@ -1,0 +1,145 @@
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-md-12 text-center mt-3">
+            <h1>Portfolio</h1>
+            <h2>SYROTNIK Adrien - {{yearOld}}</h2>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <hr class="col-4 my-4">
+    </div>
+    
+
+    <div class="row justify-content-center">
+        <div class="col-xl-3 col-8 col-md-4 col-lg-3 col-xxl-2 bg-fade rounded px-4 py-2">
+            <h3 class="text-center" [innerHTML] = "'TITLES.CONTACT' | translate"></h3>
+            <div class="row justify-content-center justify-content-md-start">
+                <ul class="col-6 col-md-12">
+                    <li>
+                        <a href="adrien.syrotnik@gmail.com">adrien.syrotnik@gmail.com</a>
+                    </li>
+                    <li>
+                        (+33)7 68 79 92 38
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="row justify-content-evenly">
+                <ng-container *ngFor="let link of linksAccount">
+                    <a class="col-4 my-1 text-center" href="{{ link.link }}" target="_blank">
+
+                        <img class="link-account rounded" src="{{ link.image }}" data-bs-toggle="tooltip" data-bs-placement="top" title="{{ link.name | translate }}" style="width: 40px; height: 40px;">
+
+                    </a>
+                </ng-container>
+            </div>
+            <h3 class="text-center">Languages</h3>
+            <div class="row justify-content-center justify-content-md-start">
+            <ul class="col-6 col-md-12 mb-0">
+                <li>
+                    {{ 'LANGUAGES.FR' | translate }}
+                </li>
+                <li>
+                    {{ 'LANGUAGES.EN' | translate }}
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div class="col-lg-6 col-10 col-md-7 mt-3 px-5">
+            <h2 class="text-center" [innerHTML] = "'TITLES.ABOUT' | translate"></h2>
+            <p [innerHTML]="'ABOUT.SHORT_DESC' | translate">
+            </p>
+        </div>
+
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-10">
+
+            <!-- MAIN SKILLS -->
+            <div class="container rounded">
+                <div class="row p-2">
+                    <h2 class="col text-center title-home" [innerHtml]="'TITLES.SKILLS' | translate"></h2>
+                </div>
+                <div class="row justify-content-evenly">
+                    <div class="col-lg-3 col-5 col-md-3 my-3 text-center" *ngFor="let skill of mainSkills">
+
+                        <img class="skill" src="{{ skill.image }}" data-bs-toggle="tooltip" data-bs-placement="top" title="{{ skill.name | translate }}">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container rounded">
+                <div class="row p-2">
+                    <h2 class="col text-center title-home" [innerHtml]="'<i>'+('TITLES.FUNSKILLS' | translate) + '<i/>'"></h2>
+                </div>
+                <div class="row justify-content-evenly">
+                    <div class="col-lg-3 col-5 col-md-3 my-3 text-center" *ngFor="let skill of funSkills">
+
+                        <img class="skill" src="{{ skill.image }}" data-bs-toggle="tooltip" data-bs-placement="top" title="{{ skill.name | translate }}">
+
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+
+    </div>
+
+
+    <div class="row justify-content-center">
+        <div class="col-11">
+
+            <div class="row justify-content-center">
+                <h2 class="text-center"><i>{{ ('Projet' | translate) + 's' }}</i></h2>
+                <div class="row col-11 justify-content-around">
+                    <div class="project-portfolio m-2 justify-content-center bg-fade rounded p-3" *ngFor="let project of projects">
+
+                        <div class="row header-project justify-content-around mb-2">
+                            <div class="col-6 col-md-3 col-lg-2 order-lg-0 order-md-0 order-1 text-center mt-3 mt-md-0">
+                                <img class="col-2 w-75 rounded" [src]="project.image">
+                                <hr>
+                                <ul class="text-start mb-0">
+                                    <li *ngFor="let word of project.keywords">{{word | translate}}</li>
+                                </ul>
+                            </div>
+
+                            <div class="col-12 col-md-9 col-lg-10 order-lg-1 order-md-1 order-0">
+                                <div class="row justify-content-center">
+                                    <h3 class="col-lg col-md col-12 text-center text-lg-start text-md-start">{{project.name | translate}} ({{ project.year ? ((project.year | date:"YYYY") + (project.yearEnd ? ' - '+(project.yearEnd | date:"YYYY") : '')) : ('En cours' | translate) }})</h3>
+                                    <div class="col-lg col-md col-10 skills-project d-flex justify-content-lg-end justify-content-md-end justify-content-center">
+                                        <div class="d-inline" *ngFor="let skill of project.skills">
+                                            <img class="skill mx-1" style="height: 50px; width: 50px;" src="{{ skill.image }}" data-bs-toggle="tooltip" data-bs-placement="top" title="{{ skill.name | translate }}">
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="mt-3">
+                                <div class="row">
+                                    <div class="col-12" [innerHTML]="project.main_desc | translate"></div>
+                                    <div *ngIf="project.more_info" class="mt-2">
+                                        <span [innerHTML]="'MORE_INFOS' | translate: {link:'/project/'+project.key}"></span>
+                                    </div>
+                                    <div class="frames justify-content-center d-flex my-2" *ngIf="project.frames && project.frames.length > 0">
+                                        <div class="frame justify-content-center d-flex" *ngFor="let frame of project.frames" [innerHTML]="sanitizer.bypassSecurityTrustHtml(frame)" style="max-width: 400px;">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>

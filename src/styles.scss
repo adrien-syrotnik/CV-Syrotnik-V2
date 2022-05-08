@@ -21,12 +21,31 @@ body {
 }
 
 .tooltip-inner {
-    color: black;
-    background-color: #F2Ce3E;
+    color: black !important;
+    background-color: #F2Ce3E !important;
+}
+
+.bs-tooltip-top .tooltip-arrow {
+    z-index: -1;
 }
 
 .bs-tooltip-top .tooltip-arrow::before {
-    border-top-color: #F2Ce3E;
+    border-top-color: #F2Ce3E !important;
+}
+
+.bg-fade {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgb(255, 215, 104) 10%, #F2Ce3E 90%);
+}
+
+.skill,
+.link-account {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.skill:hover,
+.link-account:hover {
+    opacity: 0.6;
 }
 
 main {
@@ -38,19 +57,27 @@ main {
     color: black;
 }
 
+img.skill {
+    width: 70px;
+    height: 70px;
+}
+
+
+
 body.dark {
+    color: white;
     background-color: black;
     .experience .deploy-icon {
         filter: invert(1);
         color: #F2Ce3E;
     }
     .tooltip-inner {
-        color: white;
-        background-color: #485461;
-        background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+        color: white !important;
+        background-color: #485461 !important;
+        background-image: linear-gradient(315deg, #485461 0%, #28313b 74%) !important;
     }
     .bs-tooltip-top .tooltip-arrow::before {
-        border-top-color: #485461;
+        border-top-color: #485461 !important;
     }
     .nav-link.active {
         //background-color: black;
@@ -123,7 +150,7 @@ body.dark {
     .box-back {
         color: #eeeeee;
     }
-    #sendMailForm {
+    .bg-fade {
         color: white;
         background-image: radial-gradient( circle farthest-corner at 10% 20%, rgb(27, 27, 27) 0%, rgb(47, 47, 47) 90%);
     }

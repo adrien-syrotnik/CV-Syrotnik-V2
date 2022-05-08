@@ -1,5 +1,5 @@
 export interface Skill {
-    image: string;
-    name:string;
-    lvl : number;
+    image: string,
+    name:string,
+    id:string
 }

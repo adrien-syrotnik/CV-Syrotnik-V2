@@ -2,9 +2,6 @@
     width: 75%;
 }
 
-#sendMailForm {
-    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgb(255, 215, 104) 10%, #F2Ce3E 90%);
-}
 
 .submitButton {
     background-image: radial-gradient( circle farthest-corner at 10% 20%, rgb(255, 238, 5) 0%, rgb(252, 255, 88) 90%);
@@ -84,18 +81,8 @@
     }
 }
 
-.skill,
-.link-account {
-    opacity: 1;
-    transition: opacity 0.2s ease-in-out;
-}
 
-.skill:hover,
-.link-account:hover {
-    opacity: 0.6;
-}
-
-#sendMailForm {
+.bg-fade {
     //background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(128, 248, 174, 1) 0%, rgba(223, 244, 148, 1) 90%);
 }
 
@@ -172,7 +159,7 @@
     // .box-back {
     //     color: #eeeeee;
     // }
-    // #sendMailForm {
+    // .bg-fade {
     //     color: white;
     //     background-image: radial-gradient( circle farthest-corner at 10% 20%, rgb(27, 27, 27) 0%, rgb(47, 47, 47) 90%);
     //     #submitButton {

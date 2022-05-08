@@ -1,0 +1,18 @@
+// .img-project {
+//     transition: all 0.5s ease-in-out;
+//     width: 150px;
+// }
+
+// .img-project:hover {
+//     width: 300px;
+// }
+
+// li {
+//     list-style-image: url(/right-arrow.svg);
+//     /* OR */
+//     list-style-type: '👉';
+//     padding-inline-start: 0px;
+//   }
+li::marker {
+  content: "› ";
+}

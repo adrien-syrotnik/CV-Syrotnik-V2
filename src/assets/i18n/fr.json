@@ -10,7 +10,8 @@
     },
     "ABOUT": {
         "TITLE": "Je m'appelle Adrien, j'ai 20 ans, et je suis actuellement en école d'ingénieurs informatique à Reims, en France.",
-        "DESC": "Futur ingénieur, je travaille actuellement sur différents projets web à l'aide de différentes technologies comme Angular, NodeJS ou encore Laravel. Cependant, j'aimerais me spécialiser dans l'univers du jeu vidéo, car c'est un domaine que j'apprécie tout particulièrement.<br/><br/>J'ai également développé des capacités d'organisation et de travail en groupe, ce qui me permet d'être efficace en équipe.<br/><br/>Si vous souhaitez voir mon CV sous format PDF, veuillez le trouver sur ce <a href='assets/dl/CV Adrien Syrotnik.pdf' download='CV Adrien Syrotnik.pdf'>lien</a>.<br/><br/>Finalement, je tiens à préciser que je suis à la recherche d'un stage se déroulant à l'étranger (hors de la France) à partir de Septembre 2022 pour une durée de 4 mois."
+        "DESC": "Futur ingénieur, je travaille actuellement sur différents projets web à l'aide de différentes technologies comme Angular, NodeJS ou encore Laravel. En plus de cela, je suis intéressé par l'univers du jeu vidéo : j'ai réalisé différents projets tournant autour de ce domaine.<br/><br/>J'ai également développé des compétences en matière d'organisation et de communication, qui me permettent d'être efficace au sein d'une équipe, mais aussi de manière indépendante.<br/><br/>Si vous souhaitez voir mon CV sous format PDF, veuillez le trouver sur ce <a href='assets/dl/CV Adrien Syrotnik.pdf' download='CV Adrien Syrotnik.pdf'>lien</a>.<br/><br/>Finalement, je tiens à préciser que je suis à la recherche d'un stage se déroulant à l'étranger (hors de la France) à partir de Septembre 2022 pour une durée de 4 mois.",
+        "SHORT_DESC": "Bonjour, je m'appelle Adrien, j'ai 20 ans, et je suis actuellement en école d'ingénieurs informatique à Reims, en France.<br/> Je travaille actuellement sur différents projets web à l'aide de différentes technologies comme Angular, NodeJS ou encore Laravel.<br/> En plus de cela, je suis intéressé par l'univers du jeu vidéo : j'ai réalisé différents projets tournant autour de ce domaine. J'ai également développé des compétences en matière d'organisation et de communication, qui me permettent d'être efficace au sein d'une équipe, mais aussi de manière indépendante."
     },
     "EXPERIENCES": {
         "ADEE": {
@@ -37,8 +38,11 @@
         "PROJECTS": "<i>Mes différents projets</i>",
         "HOBBIES": "<i>Mes passions</i>",
         "SKILLS": "<i>Mes compétences</i>",
-        "CONTACT": "<i>Contactez moi !</i>",
-        "SENDMAIL": "Envoyez moi un mail !"
+        "CONTACT": "<i>Me contacter</i>",
+        "SENDMAIL": "Envoyez moi un mail !",
+        "FUNSKILLS": "Mes compétences en cours",
+        "ABOUT": "<i>A propos de moi</i>",
+        "LANGUAGES": "<i>Langues</i>"
     },
     "SENDMAIL": {
         "EMAIL": "Votre e-mail :",
@@ -47,6 +51,9 @@
         "SUCCESS": "Message envoyé avec succès !",
         "ERROR": "Une erreur est survenue..."
     },
+
+    "MORE_INFOS": "Plus d'informations <a href='{{link}}'>ici</a>.",
+
     "Unity Game (Not finish)": "Jeu Unity (Non terminé)",
     "Minesweeper": "Démineur",
     "Online resume v1": "CV en ligne v1",

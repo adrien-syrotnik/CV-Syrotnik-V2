@@ -121,12 +121,12 @@
             <div class="row p-2 mb-5">
                 <h1 class="col text-center title-home" [innerHtml]="'TITLES.SKILLS' | translate" data-aos="zoom-in"></h1>
             </div>
-            <div class="row justify-content-evenly" *ngFor="let lvlRow of [3,2,1,0]">
+            <div class="row justify-content-evenly" *ngFor="let lvlRow of skills">
 
 
-                <ng-container *ngFor="let skill of skills">
+                <ng-container *ngFor="let skill of lvlRow">
 
-                    <div data-aos="zoom-in-down" data-aos-offset="0" class="col-lg-3 col-5 col-md-5 my-3 text-center" *ngIf="skill.lvl == lvlRow">
+                    <div data-aos="zoom-in-down" data-aos-offset="0" class="col-lg-3 col-5 col-md-5 my-3 text-center">
 
                         <img class="skill" src="{{ skill.image }}" data-bs-toggle="tooltip" data-bs-placement="top" title="{{ skill.name | translate }}">
 
@@ -195,7 +195,7 @@
 
 
                 <div class="col-11 col-md-10 col-lg-5" data-aos="fade-up">
-                    <form [formGroup]="sendForm" id="sendMailForm" (ngSubmit)="Submit()" class="container-fluid rounded p-3">
+                    <form [formGroup]="sendForm" (ngSubmit)="Submit()" class="container-fluid rounded p-3 bg-fade">
                         <div class="text-center" [innerHtml]="sendMailHTML"></div>
                         <div class="row mb-1 p-3 justify-content-center">
                             <label>{{ 'SENDMAIL.EMAIL' | translate }}</label>
