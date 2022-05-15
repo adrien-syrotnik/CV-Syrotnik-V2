@@ -32,7 +32,7 @@ export class ProjectStorageService {
       ],
       [
         {
-          image: 'https://cdn.icon-icons.com/icons2/2699/PNG/512/angular_logo_icon_169595.png',
+          image: '/assets/images/angular_logo.png',
           name: 'Angular',
           id : 'angular'
         },

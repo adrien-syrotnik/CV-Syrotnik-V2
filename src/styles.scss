@@ -3,10 +3,28 @@
 //@import "~bootstrap/scss/bootstrap.scss";
 html,
 body {
-    height: 100%;
     margin: 0;
+    min-height: 100%;
     font-family: Roboto, "Helvetica Neue", sans-serif;
+    position: relative;
+    // background-image: url('/assets/images/background.jpg');
+    // background-size: 50%;
 }
+
+html::after {
+    content: "";
+    z-index: -100;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-image: url('/assets/images/background.jpg');
+    background-size: 50%;
+    opacity: 0.08;
+    //transform: rotate(60deg);
+}
+
 
 .container-fluid {
     overflow-x: hidden;
@@ -61,8 +79,6 @@ img.skill {
     width: 70px;
     height: 70px;
 }
-
-
 
 body.dark {
     color: white;
@@ -183,12 +199,15 @@ body.dark {
     }
 }
 
-body.dark.speedrun-page {
+body.speedrun-page {
     background-image: url("/assets/images/background-pixel1.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-};
+    z-index: -1;
+}
+
+;
 
 /* Importing Bootstrap SCSS file. */
 
