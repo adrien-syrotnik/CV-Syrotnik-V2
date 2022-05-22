@@ -25,6 +25,17 @@ html::after {
     //transform: rotate(60deg);
 }
 
+body a {
+    color: black;
+    text-decoration: underline;
+    //bold
+    font-weight: bold;
+}
+body a:hover {
+    color: black;
+    text-decoration: none;
+}
+
 
 .container-fluid {
     overflow-x: hidden;
@@ -83,6 +94,12 @@ img.skill {
 body.dark {
     color: white;
     background-color: black;
+
+
+    a {
+        color: #F2Ce3E;
+    }
+
     .experience .deploy-icon {
         filter: invert(1);
         color: #F2Ce3E;
