@@ -9,6 +9,7 @@
         "TYPE": "Field '{{input}}' must be '{{type}}'"
     },
     "ABOUT": {
+        "RESUME_FILE": "Adrien Syrotnik resume.pdf",
         "TITLE": "My name is Adrien, I'm 20 years old, and I'm currently in computer science engineering school in Reims, France.",
         "DESC": "Future engineer, I am currently working on different web projects using different technologies such as Angular, NodeJS or Laravel. In addition to that, I am interested in the world of video games: I have realized different projects around this field.<br/><br/>I have also developed organizational and communication skills, which allow me to be effective in a team, but also independently.<br/><br/>If you wish to see my resume in PDF format, please find it on this <a href='assets/dl/Adrien Syrotnik resume.pdf' download='Adrien Syrotnik resume.pdf'>link</a>.<br/>I also created a portfolio : <a href='/portfolio' target='_blank'>link</a>.<br/><br/>Finally, I wanted to specify that I am looking for an internship taking place abroad (outside of France) from September 2022 for a duration of 4 months.",
         "SHORT_DESC": "Hello, my name is Adrien, I'm 20 years old, and I'm currently in computer science engineering school in Reims, France.<br/> I am currently working on different web projects using different technologies such as Angular, NodeJS or Laravel. In addition to that, I am interested in the world of video games: I have realized different projects around this field.<br/>I have also developed organizational and communication skills, which allow me to be effective in a team, but also independently."
@@ -50,6 +51,9 @@
         "SEND": "Send",
         "SUCCESS": "Message sent successfully !",
         "ERROR": "An error has occurred..."
+    },
+    "FOOTER": {
+        "HOME" : "Home"
     },
 
     "MORE_INFOS": "More information <a href='{{link}}'>here</a>.",

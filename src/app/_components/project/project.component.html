@@ -4,14 +4,14 @@
 
         <div class="col-12 text-center">
 
-            <img class="rounded project-img" src="{{ project.image }}" alt="" style="width: 140px; height: 140px;">
+            <img class="border-round project-img" src="{{ project.image }}" alt="" style="width: 140px; height: 140px;">
 
         </div>
 
 
     </div>
 
-    <div class="row mb-5 mt-2 text-center justify-content-center">
+    <div class="row mt-2 text-center justify-content-center">
 
         <h1 class="col-12">{{'Projet' | translate}} : <strong>{{ project.name | translate }}</strong></h1>
         <h1 class="col-12 text-warning"> ({{ project.year ? ((project.year | date:"YYYY") + (project.yearEnd ? ' - '+(project.yearEnd | date:"YYYY") : '')) : ('En cours' | translate) }})</h1>
@@ -24,9 +24,19 @@
 
     </div>
 
+
+    <div class="row justify-content-center">
+        <div class="my-1 text-center " >
+
+            <img class="skill mx-1" style="width: 50px; height: 50px;" src="{{ skill.image }}" data-bs-toggle="tooltip" data-bs-placement="top" title="{{ skill.name | translate }}" *ngFor="let skill of project.skills">
+    
+        </div>
+    </div>
+    
+
     <div class="row my-5 justify-content-center">
 
-        <div class="col-10 col-md-6 col-lg-4 text-center desc rounded p-4">
+        <div class="col-10 col-md-6 col-lg-4 text-center desc border-round p-4">
             <span [innerHTML]="project.main_desc | translate"></span>
         </div>
 
@@ -39,7 +49,7 @@
 
         <div class="col-12 col-lg-10">
             <div class="container-fluid">
-                <div class="row rounded justify-content-center p-4 my-3">
+                <div class="row border-round justify-content-center p-4 my-3">
 
                     <div class="col-12 col-lg-5 p-lg-4 p-2">
 

@@ -11,7 +11,7 @@ body {
     // background-size: 50%;
 }
 
-html::after {
+body::after {
     content: "";
     z-index: -100;
     top: 0;
@@ -21,9 +21,13 @@ html::after {
     position: absolute;
     background-image: url('/assets/images/background.jpg');
     background-size: 50%;
-    opacity: 0.08;
+    opacity: 0.09;
     //transform: rotate(60deg);
 }
+
+// html::after {
+    
+// }
 
 body a {
     color: black;
@@ -41,8 +45,8 @@ body a:hover {
     overflow-x: hidden;
 }
 
-.rounded {
-    border-radius: 15px!important;
+.border-round {
+    border-radius: 15px;
 }
 
 .ng-touched.ng-invalid {
@@ -90,6 +94,25 @@ img.skill {
     width: 70px;
     height: 70px;
 }
+
+.resume-button {
+    background-color: #ffffff00;
+    border: black 2px solid;
+    color: black;
+  
+    img {
+      filter: invert(0);
+    }
+  }
+  
+  .resume-button:hover {
+    //background-color: white;
+    color: white;
+    img {
+      filter: invert(1);
+    }
+  }
+
 
 body.dark {
     color: white;
@@ -214,6 +237,24 @@ body.dark {
     #contact a {
         color: white;
     }
+
+    .resume-button {
+        background-color: #ffffff00;
+        border: #F2Ce3E 2px solid;
+        color: white;
+      
+        img {
+          filter: invert(1);
+        }
+      }
+      
+      .resume-button:hover {
+        background-color: #F2Ce3E;
+        color: black;
+        img {
+          filter: invert(0);
+        }
+      }
 }
 
 body.speedrun-page {

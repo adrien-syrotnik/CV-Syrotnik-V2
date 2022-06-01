@@ -259,20 +259,33 @@ export class ProjectStorageService {
         title: 'Un test sur le moteur Unity',
         desc: 'Étant très intéressé par le domaine du jeu vidéo, je m\'étais intéressé aux différents moteurs de jeu existant sur le marché. <br/><br/> UnrealEngine, CryEngine, Unity, c\'est donc sur ce dernier que je me suis penché pour réaliser un petit jeu test.<br/><br/> L\'idée de départ était que des monstres apparaissent dans une sorte de grotte et que notre personnage doit leur lancer des projectiles pour les arrêter.<br/><br/>La vidéo suivante représente une démo de ce que j\'imaginais avec ce qui semble être un gobelin et des pierres en guise de projectile.',
         video: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/iTcdKPDxxeI')
-      }]
+      }],
+      skills: [
+        this.getSkill('c#'),
+        this.getSkill('unity'),
+        this.getSkill('recherche')
+      ]
     }, {
       key: 'max_calendar',
       main_desc: 'Création d\'une application de gestion de rendez-vous sur-mesure sur le framework <i>Laravel</i>. Le but de l\'application était de pouvoir rechercher les différents rendez-vous ainsi que les filleuls et les parrains liés à ceux-ci. <br/> <br/> Le nom du logiciel provient de la personne qui m\'avait demandé ce logiciel sur-mesure. Différentes statistiques étaient disponibles et permettaient d\'obtenir des fonctionnalités supplémentaires que d\'autres logiciels, comme <u>Google Agenda</u>, ne proposent pas.',
       image: 'https://img.icons8.com/ios/70/000000/calendar--v1.png',
       low_desc: 'Logiciel de gestion d\'emploi du temps (Laravel, Fullstack)',
       name: 'Max\'s Calendar',
-      year: new Date('2021-02')
+      year: new Date('2021-02'),
+      skills: [
+        this.getSkill('laravel'),
+        this.getSkill('php')
+      ]
     }, {
       key: 'api_rest',
       main_desc: 'Création d\'une API web via nodeJS. Une première version a été faite en <i>Laravel</i>, mais elle n\'a pas abouti. Celle-ci doit permettre de réaliser des achats en ligne et de gérer les stocks d\'un petit coin de vente intégré à notre école et géré par les élèves (snacks, boissons).',
       image: 'https://img.icons8.com/ios/70/000000/cardboard-box.png',
       low_desc: 'API pour mon école et ses étudiants (NodeJS, Express)',
-      name: 'API REST'
+      name: 'API REST',
+      skills: [
+        this.getSkill('javascript'),
+        this.getSkill('nodejs')
+      ]
     }, {
       key: 'minesweeper',
       portfolio: true,
@@ -307,7 +320,11 @@ export class ProjectStorageService {
         title: 'Explication et téléchargement',
         desc: 'Créé avec le langage <u>Processing</u>, un dérivé du Java, le principe est le suivant : pouvoir créer des points que l\'on peut relier entre eux, puis de pouvoir changer leurs positions dans le temps. Enfin, il suffit de lancer la lecture et le tour est joué !<br/><br/> Comme vous pouvez le voir, j\'ai créé cette petite animation ci-contre, à l\'aide du logiciel.<br/><br/>Si vous voulez l\'essayer, téléchargez-le <a href="assets/dl/Animator by Adrien Syrotnik.zip" download="Animator by Adrien Syrotnik.zip">ici</a> (Windows uniquement).',
         template: '<img src="assets/images/animator.gif" class="w-100">'
-      }]
+      }],
+      skills: [
+        this.getSkill('recherche'),
+        this.getSkill('processing')
+      ]
     }];
 
 
@@ -330,7 +347,8 @@ export class ProjectStorageService {
           'Frontend',
           'Système de déploiement',
           'Travail collaboratif'
-        ]
+        ],
+        frames : [this.createImageTab(['assets/images/flex1.png','assets/images/flex2.png'])]
       },
       {
         key: 'gpadee',
@@ -347,7 +365,8 @@ export class ProjectStorageService {
           'App de gestion de projet',
           'Fullstack',
           'Autonome'
-        ]
+        ],
+        frames : [this.createImageTab(['assets/images/adee1.png','assets/images/adee2.png'])]
       },
       {
         key: 'easy_save',

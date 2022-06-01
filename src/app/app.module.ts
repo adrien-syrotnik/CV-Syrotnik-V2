@@ -26,6 +26,7 @@ import localeFr from '@angular/common/locales/fr';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ScoreInfoModalComponent } from './_components/speedrun/game/score-info-modal/add-score-modal/score-info-modal.component';
 import { PortfolioComponent } from './_components/portfolio/portfolio.component';
+import { FooterComponent } from './_components/footer/footer.component';
 
 registerLocaleData(localeFr);
 
@@ -43,7 +44,8 @@ export function createTranslateLoader(http: HttpClient) {
     NavBarComponent,
     ProjectComponent,
     ScoreInfoModalComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
