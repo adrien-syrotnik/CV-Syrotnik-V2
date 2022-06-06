@@ -149,7 +149,7 @@ export class ProjectStorageService {
       year: new Date('2016-02'),
       yearEnd: new Date('2021-10'),
       parts: [{
-        title: 'SSL (Super Smash Liscence)',
+        title: 'SSL (Super Smash Licence)',
         desc: 'Inspiré du célèbre jeu Super Smash Bros, nous avons réalisé un jeu similaire avec des personnages du jeu vidéo qui nous tenaient à cœur.<br/><br/> <i>Link</i> de la série <u>The Legend of Zelda</u>, <i>Doomfist</i> du jeu <u>Overwatch</u>, <i>Edward Kenway</i> de la saga <u>Assassin\'s Creed</u> ou le personnage de notre jeu vidéo <a href="/project/emergency_exit">Emergency Exit</a>, nous avons créé un total de 10 personnages jouables aux capacités uniques !<br/><br/> Vous pouvez voir une démonstration à partir de la vidéo ci-jointe.',
         video: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/wZZJa_QlNus')
       }, {
