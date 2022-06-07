@@ -58,7 +58,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     },
     {
       key: 'FLEXNETWORK',
-      date_begin: new Date("2022-01"),
+      date_begin: new Date("2022-01-02"),
       date_end: new Date("2022-04"),
       image: 'assets/images/flexnetwork.png',
       company: 'FlexNetwork'

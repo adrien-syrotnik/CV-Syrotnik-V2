@@ -75,6 +75,16 @@ export class ProjectStorageService {
           image: 'https://img.icons8.com/color/70/000000/gitlab.png',
           name: 'GitLab',
           id : 'gitlab'
+        },
+        {
+          image: 'https://img.icons8.com/windows/70/000000/nodejs.png',
+          name: 'NodeJS',
+          id : 'nodejs'
+        },
+        {
+          image: 'https://img.icons8.com/color/70/undefined/hadoop-distributed-file-system.png',
+          name: 'Hadoop',
+          id : 'hadoop'
         }
       ],
       [
@@ -84,9 +94,9 @@ export class ProjectStorageService {
           id : 'laravel'
         },
         {
-          image: 'https://img.icons8.com/windows/70/000000/nodejs.png',
-          name: 'NodeJS',
-          id : 'nodejs'
+          image: 'https://img.icons8.com/ios/70/undefined/solidity.png',
+          name: 'Solidity',
+          id : 'solidity'
         },
         {
           image: 'https://img.icons8.com/ios/70/000000/cheat-engine.png',
