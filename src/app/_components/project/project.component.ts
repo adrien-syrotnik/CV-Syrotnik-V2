@@ -27,6 +27,7 @@ export class ProjectComponent implements OnInit {
 
     this.project = this.projectStorage.listProject.find((p) => p.key == this.route.snapshot.paramMap.get('key')) as Project;
 
+
   //   let partsFiltered: {
   //     title?: string | undefined;
   //     desc: string;

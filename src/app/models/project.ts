@@ -12,6 +12,7 @@ export interface Project extends PortfolioProject {
 }
 
 
+
 export interface PortfolioProject {
 
     key : string,
@@ -26,4 +27,29 @@ export interface PortfolioProject {
     skills? : Skill[],
     more_info? : boolean
 
+}
+
+
+
+export interface ProjectTemplate {
+
+    key : string,
+    portfolio? :boolean,
+    name : string,
+    image: string,
+    main_desc: string,
+    low_desc: string,
+    year?: Date,
+    yearEnd?: Date,
+    keywords? : string[],
+    skills? : string[],
+    more_info? : boolean,
+    parts? : {
+        title?:string,
+        desc:string,
+        template?:string,
+        video?:string | any,
+        images?:string[]
+    }[],
+    
 }

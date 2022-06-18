@@ -11,6 +11,9 @@ import { ProjectStorageService } from 'src/app/_services/project-storage.service
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { LinkAccount } from 'src/app/models/link-account';
+import { hobbies as hobbiesTemplate } from 'src/app/templates/hobbies';
+import { experiences as experiencesTemplate } from 'src/app/templates/experienceOrFormation';
+import { linksAccount as linksAccountTemplate } from 'src/app/templates/linkAccount';
 
 declare var anime: any;
 declare var bootstrap: any;
@@ -32,64 +35,15 @@ export class HomeComponent implements OnInit, OnDestroy {
   languages: any[];
 
 
-  linksAccount : LinkAccount[] = [{
-    image : 'assets/images/linkedin.png',
-    link : 'https://www.linkedin.com/in/adrien-syrotnik-8766021a1/',
-    name : 'Linkedin'
-  },
-  {
-    image : 'assets/images/github.png',
-    link : 'https://github.com/adrien-syrotnik',
-    name : 'GitHub'
-  },{
-    image : 'assets/images/codingame.png',
-    link : 'https://www.codingame.com/profile/d315760989a8705b0b09cea559975f003735224',
-    name : 'CodinGame'
-  }]
-
-
-  experiences: ExperienceOrFormation[] = [
-    {
-      key: 'CESI',
-      date_begin: new Date("2019-09"),
-      date_end: new Date("2024-09"),
-      image: 'assets/images/CESI.png',
-      company: 'CESI'
-    },
-    {
-      key: 'FLEXNETWORK',
-      date_begin: new Date("2022-01-02"),
-      date_end: new Date("2022-04"),
-      image: 'assets/images/flexnetwork.png',
-      company: 'FlexNetwork'
-    }, {
-      key: 'ADEE',
-      date_begin: new Date("2021-03"),
-      date_end: new Date("2021-06"),
-      image: 'assets/images/adee.png',
-      company: 'ADEE Electronic'
-    }]
-
-
+  linksAccount : LinkAccount[] = linksAccountTemplate;
+  experiences: ExperienceOrFormation[] = experiencesTemplate;
   projects: Project[];
-
-
-
   skills: Skill[][] = this.projectStorage.listSkill;
 
-  hobbies: Hobbie[] = [{
-    key: 'VIDEOGAMES',
-    image: 'https://img.icons8.com/ios/100/000000/controller.png'
-  }, {
-    key: 'CRYPTO',
-    image: 'https://img.icons8.com/ios/100/000000/bitcoin.png'
-  }, {
-    key: 'PROGRAM',
-    image: 'https://img.icons8.com/ios/100/000000/programming.png'
-  }, {
-    key: 'PIANO',
-    image: 'https://img.icons8.com/ios/100/000000/piano.png'
-  }]
+
+
+
+  hobbies: Hobbie[] = hobbiesTemplate;
 
 
 
