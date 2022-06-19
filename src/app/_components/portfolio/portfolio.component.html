@@ -82,6 +82,19 @@
                 </div>
             </div>
 
+            <div class="container border-round">
+                <div class="row p-2">
+                    <h2 class="col text-center" [innerHtml]="('TITLES.CERTIF' | translate)"></h2>
+                </div>
+                <div class="row justify-content-evenly">
+                    <div class="col-lg-3 col-12 col-sm-5 col-md-3 my-3 text-center" *ngFor="let certificate of certificates">
+
+                        <a href="{{ certificate.url }}" target="_blank"><img style="max-width: 150px;" src="{{ certificate.image }}" data-bs-toggle="tooltip" data-bs-placement="top" title="{{ certificate.name | translate }}"></a>
+
+                    </div>
+                </div>
+            </div>
+
 
         </div>
 

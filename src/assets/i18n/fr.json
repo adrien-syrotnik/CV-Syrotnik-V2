@@ -43,7 +43,8 @@
         "SENDMAIL": "Envoyez moi un mail !",
         "FUNSKILLS": "Mes compétences en cours",
         "ABOUT": "<i>A propos de moi</i>",
-        "LANGUAGES": "<i>Langues</i>"
+        "LANGUAGES": "<i>Langues</i>",
+        "CERTIF" : "<i>Certificats</i>"
     },
     "SENDMAIL": {
         "EMAIL": "Votre e-mail :",
@@ -63,6 +64,8 @@
     "Unity Game (Not finish)": "Jeu Unity (Non terminé)",
     "Minesweeper": "Démineur",
     "Online resume v1": "CV en ligne v1",
-    "Online resume v2": "CV en ligne v2"
+    "Online resume v2": "CV en ligne v2",
+
+    "Issued by" : "Délivré par"
 
 }

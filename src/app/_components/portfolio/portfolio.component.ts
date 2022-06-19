@@ -1,8 +1,10 @@
 import { Component, OnDestroy, OnInit } from "@angular/core";
 import { DomSanitizer } from "@angular/platform-browser";
+import { Certificate } from "src/app/models/certificate";
 import { LinkAccount } from "src/app/models/link-account";
 import { PortfolioProject, Project } from "src/app/models/project";
 import { Skill } from "src/app/models/skill";
+import { certificates } from "src/app/templates/certificates";
 import { ProjectStorageService } from "src/app/_services/project-storage.service";
 
 declare var bootstrap: any;
@@ -39,6 +41,7 @@ export class PortfolioComponent implements OnInit, OnDestroy {
 
   public funSkills: Skill[];
   public mainSkills: Skill[];
+  public certificates: Certificate[] = certificates;
 
   constructor(private projectStorage: ProjectStorageService,
               public sanitizer: DomSanitizer,) {

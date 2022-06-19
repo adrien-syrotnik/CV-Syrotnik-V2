@@ -43,7 +43,8 @@
         "SENDMAIL": "Send me an email!",
         "FUNSKILLS": "My skills in progress",
         "ABOUT": "<i>About me</i>",
-        "LANGUAGES": "<i>Languages</i>"
+        "LANGUAGES": "<i>Languages</i>",
+        "CERTIF" : "<i>Certificates</i>"
     },
     "SENDMAIL": {
         "EMAIL": "Your email :",
@@ -126,8 +127,13 @@
 
     "Projet réalisé au sein de mon école, l'objectif de celui-ci était de réaliser une application permettant de sauvegarder un dossier dans un autre de manière entièrement sécurisée. Au cours de celui-ci, les notions de design pattern, de socket et de process ont été approfondies." : "Project realized within my school, the objective of this one was to realize an application allowing to save a file in another one in a totally protected way. During this one, the notions of design pattern, socket, and process were deepened.",
     "Stage au cours duquel j'ai repris entièrement le code réalisé par d'anciens stagiaires. Ma mission consistait à finaliser la programmation d'un logiciel interne à l'entreprise, permettant aux membres de l'équipe de gérer l'avancement d'un projet. L'application a été réalisée en PHP et en Javascript." : "Internship during which I took over all the coding done by the previous interns. My mission was to finalize the programming of an internal software for the company, allowing the team members to manage the progress of a project. The application was realized in PHP and Javascript.",
-    "Stage au cours duquel j'ai pu apprendre à utiliser le framework javascript Angular et à mettre en place un système d'intégration continue. Mon objectif était de créer une application web frontend permettant d'afficher des contenus provenant d'une API." : "Internship during which I learned how to use the Angular javascript framework and how to set up a continuous integration system. My goal was to create a front-end web application that would display content from an API."
+    "Stage au cours duquel j'ai pu apprendre à utiliser le framework javascript Angular et à mettre en place un système d'intégration continue. Mon objectif était de créer une application web frontend permettant d'afficher des contenus provenant d'une API." : "Internship during which I learned how to use the Angular javascript framework and how to set up a continuous integration system. My goal was to create a front-end web application that would display content from an API.",
 
+
+    "Réalisation d'un tutoriel sur Unity me permettant de créer un jeu de tank en local." : "Realization of a tutorial on Unity that allows me to create a tank game locally.",
+    "Démo d'un jeu de tank (Unity)" : "Demo of a tank game (Unity)",
+    "Réalisation" : "Realization",
+    "Créé à l'aide du logiciel Unity, <i>Tanks!</i> est un mini-jeu multijoueur où 2 joueurs s'affrontent sur une même machine.<br><br>Celui-ci a été réalisé à l'aide d'un tutoriel sur Unity Learn.<br><br>Vous pouvez le télécharger <a href=\"assets/dl/Tanks!.zip\" download=\"Tanks!.zip\">ici</a> (Windows uniquement)." : "Created using Unity, <i>Tanks!</i> is a multiplayer game where 2 players play on the same machine.<br><br>This game was created using a tutorial on Unity Learn.<br><br>You can download it <a href=\"assets/dl/Tanks!.zip\" download=\"Tanks!.zip\">here</a> (Windows only)."
 
 
 

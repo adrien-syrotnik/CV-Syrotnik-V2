@@ -77,6 +77,25 @@ export const projectListTemplate: ProjectTemplate[] = [
             'Game design'
         ],
         more_info: true
+    },
+    {
+        portfolio : true,
+        more_info : true,
+        key: 'tuto-tank',
+        main_desc: 'Réalisation d\'un tutoriel sur Unity me permettant de créer un jeu de tank en local.',
+        image: 'assets/images/tuto-tank.png',
+        low_desc: 'Démo d\'un jeu de tank (Unity)',
+        name: 'Tanks!',
+        year: new Date('2022-06'),
+        parts: [{
+            title: 'Réalisation',
+            desc: 'Créé à l\'aide du logiciel Unity, <i>Tanks!</i> est un mini-jeu multijoueur où 2 joueurs s\'affrontent sur une même machine.<br><br>Celui-ci a été réalisé à l\'aide d\'un tutoriel sur Unity Learn.<br><br>Vous pouvez le télécharger <a href="assets/dl/Tanks!.zip" download="Tanks!.zip">ici</a> (Windows uniquement).',
+            video: 'https://www.youtube.com/embed/S18ViemFLXc'
+        }],
+        skills: [
+            'unity',
+            'csharp'
+        ]
     }, {
         key: 'speedrun',
         portfolio: true,
@@ -128,11 +147,11 @@ export const projectListTemplate: ProjectTemplate[] = [
         more_info: true
     },
     {
-        key: 'unity_game_1',
+        key: 'throw_rock',
         main_desc: 'Un de mes principaux objectifs est de travailler dans le domaine du jeu-vidéo, et j\'ai donc commencé à réaliser un jeu où on doit lancer des pierres. Bien que le jeu ne soit pas trop avancé, j\'ai pour ambition de réaliser un jeu plus tard.',
         image: 'assets/images/unity-test.png',
         low_desc: 'Début d\'un jeu sur Unity',
-        name: 'Unity Game (Not finish)',
+        name: 'Throw Rock',
         year: new Date('2020-02'),
         parts: [{
             title: 'Un test sur le moteur Unity',
@@ -197,23 +216,6 @@ export const projectListTemplate: ProjectTemplate[] = [
         year: new Date('2020-02'),
         parts: [{
             title: 'Explication et téléchargement',
-            desc: 'Créé avec le langage <u>Processing</u>, un dérivé du Java, le principe est le suivant : pouvoir créer des points que l\'on peut relier entre eux, puis de pouvoir changer leurs positions dans le temps. Enfin, il suffit de lancer la lecture et le tour est joué !<br/><br/> Comme vous pouvez le voir, j\'ai créé cette petite animation ci-contre, à l\'aide du logiciel.<br/><br/>Si vous voulez l\'essayer, téléchargez-le <a href="assets/dl/Animator by Adrien Syrotnik.zip" download="Animator by Adrien Syrotnik.zip">ici</a> (Windows uniquement).',
-            template: '<img src="assets/images/animator.gif" class="w-100">'
-        }],
-        skills: [
-            'recherche',
-            'processing'
-        ]
-    },
-    {
-        key: 'tuto-tank',
-        main_desc: 'Réalisation d\'un tutoriel sur Unity me permettant de créer un jeu de tank en local.',
-        image: 'assets/images/tuto-tank.png',
-        low_desc: 'Démo de jeu de tank (Unity)',
-        name: 'Tanks!',
-        year: new Date('2022-06'),
-        parts: [{
-            title: 'Réalisation',
             desc: 'Créé avec le langage <u>Processing</u>, un dérivé du Java, le principe est le suivant : pouvoir créer des points que l\'on peut relier entre eux, puis de pouvoir changer leurs positions dans le temps. Enfin, il suffit de lancer la lecture et le tour est joué !<br/><br/> Comme vous pouvez le voir, j\'ai créé cette petite animation ci-contre, à l\'aide du logiciel.<br/><br/>Si vous voulez l\'essayer, téléchargez-le <a href="assets/dl/Animator by Adrien Syrotnik.zip" download="Animator by Adrien Syrotnik.zip">ici</a> (Windows uniquement).',
             template: '<img src="assets/images/animator.gif" class="w-100">'
         }],

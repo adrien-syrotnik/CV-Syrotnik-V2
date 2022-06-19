@@ -14,6 +14,8 @@ import { LinkAccount } from 'src/app/models/link-account';
 import { hobbies as hobbiesTemplate } from 'src/app/templates/hobbies';
 import { experiences as experiencesTemplate } from 'src/app/templates/experienceOrFormation';
 import { linksAccount as linksAccountTemplate } from 'src/app/templates/linkAccount';
+import { certificates } from 'src/app/templates/certificates';
+import { Certificate } from 'src/app/models/certificate';
 
 declare var anime: any;
 declare var bootstrap: any;
@@ -39,6 +41,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   experiences: ExperienceOrFormation[] = experiencesTemplate;
   projects: Project[];
   skills: Skill[][] = this.projectStorage.listSkill;
+  certificates: Certificate[] = certificates;
 
 
 

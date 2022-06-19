@@ -91,8 +91,7 @@ export class ProjectStorageService {
       this.getSkill('csharp')
     ];
     this.funSkills = [
-      this.getSkill('unity'),
-      this.getSkill('unreal'),
+      this.getSkill('unity')
     ];
   }
 
