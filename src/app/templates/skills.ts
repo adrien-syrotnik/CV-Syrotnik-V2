@@ -30,10 +30,11 @@ export const listSkill : Skill[][] = [
         id : 'csharp'
       },
       {
-        image: 'https://img.icons8.com/ios/70/000000/php-logo.png',
-        name: 'PHP',
-        id : 'php'
-      },
+        image: 'https://img.icons8.com/ios-filled/70/000000/unity.png',
+        name: 'Unity',
+        id : 'unity'
+      }
+      ,
       {
         image: 'https://img.icons8.com/ios-filled/70/000000/javascript.png',
         name: 'Javascript',
@@ -73,6 +74,11 @@ export const listSkill : Skill[][] = [
         image: 'https://img.icons8.com/color/70/undefined/hadoop-distributed-file-system.png',
         name: 'Hadoop',
         id : 'hadoop'
+      },
+      {
+        image: 'https://img.icons8.com/ios/70/000000/php-logo.png',
+        name: 'PHP',
+        id : 'php'
       }
     ],
     [
@@ -105,11 +111,6 @@ export const listSkill : Skill[][] = [
       },
     ],
     [
-      {
-        image: 'https://img.icons8.com/ios-filled/70/000000/unity.png',
-        name: 'Unity',
-        id : 'unity'
-      },
       {
         image: 'https://img.icons8.com/nolan/70/unreal-engine.png',
         name: 'Unreal Engine',
