@@ -2,6 +2,16 @@ import { Certificate } from "../models/certificate";
 
 export const certificates : Certificate[] = [
     {
+        date : new Date('2022-06-26'),
+        name : 'Unity Junior Programmer',
+        url : 'https://www.credly.com/badges/a62c57ac-0c47-4a09-9b56-d9ab5755bf1f',
+        delivered_by : {
+            name : 'Unity Technologies',
+            url : 'https://unity.com/'
+        },
+        image : 'assets/images/certificates/Junior_Programmer-Pathway_Badge.png'
+    },
+    {
         date : new Date('2022-06-18'),
         name : 'Unity Essentials Pathway',
         url : 'https://www.credly.com/badges/60cdb612-a4d8-4df4-bb51-38b67eb8f099',

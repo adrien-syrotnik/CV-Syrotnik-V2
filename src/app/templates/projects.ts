@@ -2,6 +2,47 @@ import { ProjectTemplate } from "../models/project";
 
 export const projectListTemplate: ProjectTemplate[] = [
     {
+        portfolio : true,
+        more_info : true,
+        key: 'basketttooo',
+        main_desc: 'Réalisation d\'un mini-jeu basé sur le basketball.',
+        image: 'assets/images/projects/basketttooo-logo.png',
+        low_desc: 'Création d\'un jeu de basket (Unity)',
+        name: 'Basketttooo',
+        year: new Date('2022-06-25'),
+        parts: [{
+            title: 'Réalisation',
+            desc: 'Créé à l\'aide du logiciel Unity, <i>Baskettooo</i> est un mini-jeu où le joueur devra essayer de marquer le plus de panier possible pour amasser un maximum de point dans un temps imparti.<br><br>Celui-ci a été réalisé dans le cadre de mes leçons réalisées sur Unity Learn.<br><br>Vous pouvez jouer au jeu via ce <a href="https://play.unity.com/mg/other/webgl-builds-213907" target="_blank">lien</a>.',
+            template: `<iframe id='webgl_iframe' frameborder="0" allow="autoplay; fullscreen; vr" allowfullscreen="" allowvr=""
+            mozallowfullscreen="true" src="https://play.unity.com/webgl/07533c62-fd94-4775-828d-1d593af66945?screenshot=false&embedType=embed"  width="810"
+            height="640" onmousewheel="" webkitallowfullscreen="true"></iframe>`
+        }],
+        skills: [
+            'unity',
+            'csharp',
+            'recherche'
+        ]
+    },
+    {
+        portfolio : true,
+        more_info : true,
+        key: 'tuto-tank',
+        main_desc: 'Réalisation d\'un tutoriel sur Unity me permettant de créer un jeu de tank en local.',
+        image: 'assets/images/tuto-tank.png',
+        low_desc: 'Démo d\'un jeu de tank (Unity)',
+        name: 'Tanks!',
+        year: new Date('2022-06'),
+        parts: [{
+            title: 'Réalisation',
+            desc: 'Créé à l\'aide du logiciel Unity, <i>Tanks!</i> est un mini-jeu multijoueur où 2 joueurs s\'affrontent sur une même machine.<br><br>Celui-ci a été réalisé à l\'aide d\'un tutoriel sur Unity Learn.<br><br>Vous pouvez le télécharger <a href="assets/dl/Tanks!.zip" download="Tanks!.zip">ici</a> (Windows uniquement).',
+            video: 'https://www.youtube.com/embed/S18ViemFLXc'
+        }],
+        skills: [
+            'unity',
+            'csharp'
+        ]
+    },
+    {
         key: 'online_resume_v2',
         portfolio: true,
         main_desc: 'Étant en plein stage concernant Angular, je voulais changer mon site web et en même temps progresser sur ce framework. J\'ai donc décidé de le faire sous Angular, bien que cela ne reflète pas l\'intégralité du framework. Un meilleur design, un dark mode et différentes traductions étaient mes principaux objectifs concernant ce projet.',
@@ -18,7 +59,36 @@ export const projectListTemplate: ProjectTemplate[] = [
             'Web design'
         ],
         more_info: true
-    }, {
+    },
+    {
+        key: 'emergency_exit',
+        portfolio: true,
+        main_desc: 'Réalisé en processing (langage dérivé du java), j\'ai réalisé avec un ami (Arthur Joris), un petit jeu de A à Z. Celui-ci devait être présenté à notre BAC, car il représentait notre note final en ISN (Informatique et Science du Numérique).',
+        image: 'assets/images/emergency-logo.png',
+        low_desc: 'Mini jeu vidéo, projet de terminal',
+        name: 'Emergency Exit',
+        year: new Date('2019-02'),
+        parts: [{
+            title: 'Présentation et téléchargement',
+            desc: 'Emergency Exit est le nom que nous avons donné à ce jeu. Le but est très simple : s\'enfuir.<br/><br/> Nous voulions réaliser ce jeu de A à Z, ainsi nous devions confectionner le gameplay, les images ou encore la physique du jeu en lui-même sur Processing, un langage spécialisé dans le graphisme.<br/><br/>Après plusieurs mois, nous avions enfin terminé notre tout premier jeu vidéo sous le nom de groupe "Aidia Info".<br/><br/> Celui-ci dure à peu près 15min, donc si l\'envie vous prend, vous pouvez jouer à notre jeu en le téléchargeant avec ce <a href="assets/dl/Emergency Exit by Aidia Info.zip" download="Emergency Exit by Aidia Info.zip">lien</a> (Windows uniquement).',
+            images: ['assets/images/emergency_lvl1.PNG', 'assets/images/emergency_lvl2.PNG', 'assets/images/emergency-intro.png', 'assets/images/emergency_end.PNG']
+        }, {
+            title: 'Un jeu gravé !',
+            desc: 'Après avoir terminé le jeu, nous voulions aller plus loin et avons décidé de graver notre jeu sur un CD. <br/><br/>Ainsi, nous avons réalisé 2 CD nous permettant de garder notre jeu sous format physique.',
+            images: ['assets/images/emergency_cd1.jpg', 'assets/images/emergency_cd2.jpg']
+        }],
+        skills: [
+            'processing',
+            'equipe',
+            'recherche'
+        ],
+        keywords: [
+            'POO',
+            'Game design'
+        ],
+        more_info: true
+    }, 
+    {
         key: 'minecraft_modding',
         portfolio: true,
         main_desc: 'À l\'aide des commandes intégrés au jeu (datapack et command blocks), et à l\'aide d\'un ami, nous avons réalisé différents mini-jeux dans le jeu vidéo Minecraft.',
@@ -50,53 +120,8 @@ export const projectListTemplate: ProjectTemplate[] = [
             'Game design'
         ],
         more_info: true
-    }, {
-        key: 'emergency_exit',
-        portfolio: true,
-        main_desc: 'Réalisé en processing (langage dérivé du java), j\'ai réalisé avec un ami (Arthur Joris), un petit jeu de A à Z. Celui-ci devait être présenté à notre BAC, car il représentait notre note final en ISN (Informatique et Science du Numérique).',
-        image: 'assets/images/emergency-logo.png',
-        low_desc: 'Mini jeu vidéo, projet de terminal',
-        name: 'Emergency Exit',
-        year: new Date('2019-02'),
-        parts: [{
-            title: 'Présentation et téléchargement',
-            desc: 'Emergency Exit est le nom que nous avons donné à ce jeu. Le but est très simple : s\'enfuir.<br/><br/> Nous voulions réaliser ce jeu de A à Z, ainsi nous devions confectionner le gameplay, les images ou encore la physique du jeu en lui-même sur Processing, un langage spécialisé dans le graphisme.<br/><br/>Après plusieurs mois, nous avions enfin terminé notre tout premier jeu vidéo sous le nom de groupe "Aidia Info".<br/><br/> Celui-ci dure à peu près 15min, donc si l\'envie vous prend, vous pouvez jouer à notre jeu en le téléchargeant avec ce <a href="assets/dl/Emergency Exit by Aidia Info.zip" download="Emergency Exit by Aidia Info.zip">lien</a> (Windows uniquement).',
-            images: ['assets/images/emergency_lvl1.PNG', 'assets/images/emergency_lvl2.PNG', 'assets/images/emergency-intro.png', 'assets/images/emergency_end.PNG']
-        }, {
-            title: 'Un jeu gravé !',
-            desc: 'Après avoir terminé le jeu, nous voulions aller plus loin et avons décidé de graver notre jeu sur un CD. <br/><br/>Ainsi, nous avons réalisé 2 CD nous permettant de garder notre jeu sous format physique.',
-            images: ['assets/images/emergency_cd1.jpg', 'assets/images/emergency_cd2.jpg']
-        }],
-        skills: [
-            'processing',
-            'equipe',
-            'recherche'
-        ],
-        keywords: [
-            'POO',
-            'Game design'
-        ],
-        more_info: true
     },
     {
-        portfolio : true,
-        more_info : true,
-        key: 'tuto-tank',
-        main_desc: 'Réalisation d\'un tutoriel sur Unity me permettant de créer un jeu de tank en local.',
-        image: 'assets/images/tuto-tank.png',
-        low_desc: 'Démo d\'un jeu de tank (Unity)',
-        name: 'Tanks!',
-        year: new Date('2022-06'),
-        parts: [{
-            title: 'Réalisation',
-            desc: 'Créé à l\'aide du logiciel Unity, <i>Tanks!</i> est un mini-jeu multijoueur où 2 joueurs s\'affrontent sur une même machine.<br><br>Celui-ci a été réalisé à l\'aide d\'un tutoriel sur Unity Learn.<br><br>Vous pouvez le télécharger <a href="assets/dl/Tanks!.zip" download="Tanks!.zip">ici</a> (Windows uniquement).',
-            video: 'https://www.youtube.com/embed/S18ViemFLXc'
-        }],
-        skills: [
-            'unity',
-            'csharp'
-        ]
-    }, {
         key: 'speedrun',
         portfolio: true,
         main_desc: 'Souhaitant réaliser un speedrun sur le jeu Emergency Exit, et étant donné que le site de speedrun.com est très limité, j\'ai décidé de réaliser un site web qui va permettre de réaliser des speedruns sur ce jeu. <br/><br/>En plus de cela, j\'ai réalisé des scripts permettant de se chronométrer lorsque l\'on souhaite réaliser un speedrun.',

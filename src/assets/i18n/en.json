@@ -133,8 +133,10 @@
     "Réalisation d'un tutoriel sur Unity me permettant de créer un jeu de tank en local." : "Realization of a tutorial on Unity that allows me to create a tank game locally.",
     "Démo d'un jeu de tank (Unity)" : "Demo of a tank game (Unity)",
     "Réalisation" : "Realization",
-    "Créé à l'aide du logiciel Unity, <i>Tanks!</i> est un mini-jeu multijoueur où 2 joueurs s'affrontent sur une même machine.<br><br>Celui-ci a été réalisé à l'aide d'un tutoriel sur Unity Learn.<br><br>Vous pouvez le télécharger <a href=\"assets/dl/Tanks!.zip\" download=\"Tanks!.zip\">ici</a> (Windows uniquement)." : "Created using Unity, <i>Tanks!</i> is a multiplayer game where 2 players play on the same machine.<br><br>This game was created using a tutorial on Unity Learn.<br><br>You can download it <a href=\"assets/dl/Tanks!.zip\" download=\"Tanks!.zip\">here</a> (Windows only)."
+    "Créé à l'aide du logiciel Unity, <i>Tanks!</i> est un mini-jeu multijoueur où 2 joueurs s'affrontent sur une même machine.<br><br>Celui-ci a été réalisé à l'aide d'un tutoriel sur Unity Learn.<br><br>Vous pouvez le télécharger <a href=\"assets/dl/Tanks!.zip\" download=\"Tanks!.zip\">ici</a> (Windows uniquement)." : "Created using Unity, <i>Tanks!</i> is a multiplayer game where 2 players play on the same machine.<br><br>This game was created using a tutorial on Unity Learn.<br><br>You can download it <a href=\"assets/dl/Tanks!.zip\" download=\"Tanks!.zip\">here</a> (Windows only).",
 
-
+    "Réalisation d'un mini-jeu basé sur le basketball." : "Realization of a mini-game based on basketball.",
+    "Création d'un jeu de basket (Unity)": "Creation of a basketball game (Unity)",
+    "Créé à l'aide du logiciel Unity, <i>Baskettooo</i> est un mini-jeu où le joueur devra essayer de marquer le plus de panier possible pour amasser un maximum de point dans un temps imparti.<br><br>Celui-ci a été réalisé dans le cadre de mes leçons réalisées sur Unity Learn.<br><br>Vous pouvez jouer au jeu via ce <a href=\"https://play.unity.com/mg/other/webgl-builds-213907\" target=\"_blank\">lien</a>." : "Created using Unity, <i>Baskettooo</i> is a mini-game where the player must try to score the most baskets in a given time to get the most points.<br><br>This game was created in the context of my lessons on Unity Learn.<br><br>You can play the game via this <a href=\"https://play.unity.com/mg/other/webgl-builds-213907\" target=\"_blank\">link</a>."
 
 }
