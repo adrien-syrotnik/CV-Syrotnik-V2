@@ -4,6 +4,26 @@ export const projectListTemplate: ProjectTemplate[] = [
     {
         portfolio : true,
         more_info : true,
+        key: 'os-game',
+        main_desc: 'Souhaitant réaliser un jeu en ligne, ce jeu avait pour but de tester mes récentes compétences en Unity. En plus de cela, j\'ai appris à réaliser un jeu en ligne en utilisant Netcode et Unity Services.',
+        image: 'assets/images/projects/one-shot-logo.png',
+        low_desc: 'Mini-jeu simple multijoueur (Unity / Netcode)',
+        name: 'One Shot',
+        year: new Date('2022-07-18'),
+        parts: [{
+            title: 'Multijoueur et en ligne',
+            desc: '<i>One Shot</i> est un mini-jeu multijoueur où le joueur doit survivre face à ses adversaires. Pour éliminer les autres joueurs, le joueur possède un bâton qui est capable de tirer des lasers qui peuvent tuer d\'un coup, et il peut courir, sauter et glisser.<br><br> Pour réaliser ce jeu, j\'ai dû comprendre et utiliser le plugin Netcode de Unity permettant de réaliser des jeux multijoueurs. Pour essayer mon jeu en ligne, j\'ai également utilisé les "Unity Services" qui m\'ont permis d\'effectuer une liaison avec les autres joueurs partout dans le monde (Relais).<br><br> Vous pouvez télécharger le jeu via ce <a href="/assets/dl/OS Game.zip" download="OS Game.zip">lien</a> (/!\\ Le jeu ne va pas marcher car il faut activer le relais sur les Unity services).',
+            video: 'https://www.youtube.com/embed/_0NoBUmdKkc',
+        }],
+        skills: [
+            'unity',
+            'csharp',
+            'recherche'
+        ]
+    },
+    {
+        portfolio : true,
+        more_info : true,
         key: 'basketttooo',
         main_desc: 'Réalisation d\'un mini-jeu basé sur le basketball.',
         image: 'assets/images/projects/basketttooo-logo.png',
