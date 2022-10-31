@@ -1,0 +1,21 @@
+{
+  "name": "api-syrotnik",
+  "version": "1.0.0",
+  "description": "Api for my CV",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SYROTNIK Adrien",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.17.3",
+    "express-rate-limit": "^6.3.0",
+    "lodash": "^4.17.21",
+    "multer": "^1.4.4",
+    "mysql2": "^2.3.3",
+    "pdf2json": "^2.0.1",
+    "sharp": "^0.30.4"
+  }
+}
