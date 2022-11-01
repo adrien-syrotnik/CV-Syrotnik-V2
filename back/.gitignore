@@ -5,6 +5,7 @@ package-lock.json
 *.gz
 test
 uploads
+.env
 
 # Coveralls
 .nyc_output
