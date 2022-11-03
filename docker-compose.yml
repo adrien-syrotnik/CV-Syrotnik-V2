@@ -1,9 +1,10 @@
 version: '3.8'
 
 x-common-variables: &common-variables
-  MYSQL_DATABASE: syrotnik_cv
-  MYSQL_USER: syrotnik
-  MYSQL_PASSWORD: 123456
+  DB_HOST: $DB_HOST
+  DB_USER: $DB_USER
+  DB_PASSWORD: $DB_PASSWORD
+  DB_NAME: $DB_NAME
 
 services:
   mysql_db:
