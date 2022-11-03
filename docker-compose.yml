@@ -16,7 +16,8 @@ services:
     cap_add:
       - SYS_NICE
     volumes:
-      - "./setup.sql:/docker-entrypoint-initdb.d"
+      - db_data:/var/lib/mysql
+      - "setup.sql:/docker-entrypoint-initdb.d"
     ports:
       - "9906:3306"
     environment:
@@ -61,3 +62,6 @@ services:
       - "traefik.http.services.syrotnik-cv-front.loadbalancer.server.port=80"
       - "traefik.http.routers.syrotnik-cv-front.tls.certresolver=production"
       - "traefik.http.routers.syrotnik-cv-front.service=syrotnik-cv-front"
+
+volumes:
+    db_data:
