@@ -11,7 +11,7 @@ x-common-variables: &common-variables
 
 services:
   mysql_db:
-    image: mysql
+    image: ./
     restart: always
     cap_add:
       - SYS_NICE
