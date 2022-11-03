@@ -17,7 +17,7 @@ services:
       - SYS_NICE
     volumes:
       - db_data:/var/lib/mysql
-      - "setup.sql:/docker-entrypoint-initdb.d"
+      - "/setup.sql:/docker-entrypoint-initdb.d"
     ports:
       - "9906:3306"
     environment:
