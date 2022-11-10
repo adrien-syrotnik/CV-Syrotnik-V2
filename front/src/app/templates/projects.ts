@@ -4,7 +4,76 @@ export const projectListTemplate: ProjectTemplate[] = [
     {
         portfolio : true,
         more_info : true,
+        github : 'https://github.com/adrien-syrotnik/Tech-and-Sorcery',
+        key: 'tech-and-sorcery',
+        main_desc: 'Jeu VR basé sur le jeu Blade and Sorcery, qui devait être réalisé pour finaliser le parcours VR présent sur le site Unity learn. Le but du jeu est d\'utiliser des armes et des sorts pour tuer des adversaires qui apparaissent sous forme de vague.',
+        image: 'assets/images/projects/tech-and-sorcery-logo.png',
+        low_desc: 'Jeu VR de simulation de combat (Unity / XR Toolkit)',
+        name: 'Tech and Sorcery - VR',
+        year: new Date('2022-09-11'),
+        parts: [{
+            title: 'Présentation du jeu',
+            desc: 'Tech and Sorcery est un jeu VR développé sur Unity reprenant les bases du jeu <a href="https://store.steampowered.com/app/629730/Blade_and_Sorcery/">Blade and Sorcery</a>. <br><br> Le but du jeu est le suivant : utiliser des armes et des sorts pour tuer ses ennemis. Vous pouvez trouver ici une vidéo présentant l\'ensemble du projet.<br><br> Différentes compétences ont été nécessaires pour réaliser ce projet. Globalement, au cours de ce projet, j\'ai appris à : créer des shaders, créer des effets VFX, coder une IA, faire de la reconnaissance de mouvement, utiliser XR Toolkit pour faire des interactions avec le joueur en VR...<br><br>Si vous possédez un casque Meta Quest 2, vous pouvez télécharger le jeu via ce <a href="https://www.mediafire.com/file/pfsdlqxk6u1ao3m/Tech_and_Sorcery.zip/file">lien</a>.',
+            video: 'https://www.youtube.com/embed/K_8HuKBucdA',
+        },
+        {
+            title: 'Sorts',
+            desc: 'Lorsque vous arrivez dans le jeu, votre main droite vous permet de dessiner des formes. Ceraines formes sont liées à des symboles (Feu, Terre...) et les dessiner les unes à la suite des autres permet de déclancher des combos et donc de lancer un sort.<br><br> Il existe un total de <span class="text-info">7 symboles et de 8 combos</span> actuellement dans le jeu. Il existe par exemple le sort de la boule de feu. Pour le lancer, il suffit de réaliser un symbole de feu suivi d\'un symbole tourbillon. Celui-ci lancera une boule de feu en face du joueur qui fera des dégâtes aux ennemis touchés. <br><br> Vous pouvez retrouver l\'ensemble des sorts en regardant la vidéo, ou les images présentes ci-contre.',
+            images: [
+                'assets/images/projects/tech-and-sorcery/sort_1.png',
+                'assets/images/projects/tech-and-sorcery/sort_2.png',
+                'assets/images/projects/tech-and-sorcery/sort_3.png',
+                'assets/images/projects/tech-and-sorcery/sort_4.png',
+            ]
+        },
+        {
+            title: 'Armes',
+            desc: 'Que serait un Tech and Sorcery sans ses technologies ? C\'est donc là qu\'interviennent les armes ! <br><br> Il existe 3 armes dans le jeu : un pistolet laser, un bazooka et... un sabre laser ! <br><br> Le <span class="text-primary">pistolet</span> laser est une arme de base, il vous permet de lancer des lasers qui font peu de dégâts aux ennemis mais avec une grande cadence de tir.<br> Le <span class="text-success">bazooka</span> vous permet de faire des explosions à distance, infligeant beaucoup de dégâts. <br> Enfin, le <span class="text-danger">sabre laser</span> permet non seulement d\'infliger de lourds dégâts aux adversaires, mais aussi de couper certains éléments du décor ! <br><br> Vous pouvez retrouver l\'ensemble des armes en regardant la vidéo, ou les images présentes ci-contre.',
+            images: [
+                'assets/images/projects/tech-and-sorcery/weapon_1.png',
+                'assets/images/projects/tech-and-sorcery/weapon_2.png',
+                'assets/images/projects/tech-and-sorcery/weapon_3.png',
+                'assets/images/projects/tech-and-sorcery/weapon_4.png',
+            ]
+        }],
+        skills: [
+            'unity',
+            'csharp',
+            'vr-ar'
+        ]
+    },
+    {
+        portfolio : true,
+        more_info : true,
+        key: 'bronze-matrix',
+        main_desc: 'Application en AR (Réalité Augmenté) réalisée dans le cadre de mon stage et d\'un travail de recherche dans l\'université technologique de Cluj Napoca. Le but de celle-ci est de permettre aux visiteurs d\'un musée de visualiser des objets en 3D dans le monde réel sur un moule en bronze vieux de 2000 ans.',
+        image: 'assets/images/projects/bronze-matrix-logo.jpg',
+        low_desc: 'Visualisation de modèles 3D à l\'aide de la réalité augmentée (Unity / Vuforia)',
+        name: 'Bronze Matrix - AR',
+        year: new Date('2022-09-11'),
+        parts: [
+        {
+            title: 'Réalité augmentée et travaux de recherche',
+            desc: 'Cette application a été conçue dans le cadre d\'un travail de recherche intitulé : <u>"Mise en valeur du patrimoine culturel par la réalité étendue : L\'étude de cas de la matrice dacienne à motifs creux"</u>. <br><br> L\'objectif de cet article était de voir comment la réalité étendue (XR), c\'est-à-dire la réalité virtuelle et la réalité augmentée, pouvait être utilisée pour améliorer l\'expérience des visiteurs d\'un musée. Pour ce faire, une application en réalité augmentée a été réalisée, permettant aux visiteurs de visualiser des objets en 3D sur un moule en bronze vieux de 2000 ans. <br><br> Des animaux ont été gravés sur le moule et l\'application permet de faire ressortir les modèles 3D de chaque animal. Si l\'utilisateur clique dessus, une description et une animation apparaissent. L\'utilisateur a la possibilité de faire pivoter les modèles 3D ou encore de changer les matériaux qui les composent. Enfin, une partie histoire est disponible, permettant à l\'utilisateur d\'observer avec des photos, comment l\'objet a été trouvé. <br><br> Cette application a été réalisée en utilisant Unity et Vuforia.',
+            images: [
+                'assets/images/projects/bronze-matrix/matrix_project_1.jpg',
+                'assets/images/projects/bronze-matrix/matrix_project_2.jpg',
+                'assets/images/projects/bronze-matrix/matrix_project_3.jpg',
+                'assets/images/projects/bronze-matrix/matrix_project_4.jpg',
+            ]
+        }],
+        skills: [
+            'unity',
+            'csharp',
+            'vr-ar',
+            'recherche'
+        ]
+    },
+    {
+        portfolio : true,
+        more_info : true,
         key: 'os-game',
+        github : 'https://github.com/adrien-syrotnik/One-Shot',
         main_desc: 'Souhaitant réaliser un jeu en ligne, ce jeu avait pour but de tester mes récentes compétences en Unity. En plus de cela, j\'ai appris à réaliser un jeu en ligne en utilisant Netcode et Unity Services.',
         image: 'assets/images/projects/one-shot-logo.png',
         low_desc: 'Mini-jeu simple multijoueur (Unity / Netcode)',
@@ -25,6 +94,7 @@ export const projectListTemplate: ProjectTemplate[] = [
         portfolio : true,
         more_info : true,
         key: 'basketttooo',
+        github : 'https://github.com/adrien-syrotnik/Basketttooo-Counting-Prototype',
         main_desc: 'Réalisation d\'un mini-jeu basé sur le basketball.',
         image: 'assets/images/projects/basketttooo-logo.png',
         low_desc: 'Création d\'un jeu de basket (Unity)',
@@ -64,6 +134,7 @@ export const projectListTemplate: ProjectTemplate[] = [
     },
     {
         key: 'online_resume_v2',
+        github : 'https://github.com/adrien-syrotnik/CV-Syrotnik-V2',
         portfolio: true,
         main_desc: 'Étant en plein stage concernant Angular, je voulais changer mon site web et en même temps progresser sur ce framework. J\'ai donc décidé de le faire sous Angular, bien que cela ne reflète pas l\'intégralité du framework. Un meilleur design, un dark mode et différentes traductions étaient mes principaux objectifs concernant ce projet.',
         image: 'assets/images/resume-angular.png',
@@ -175,6 +246,7 @@ export const projectListTemplate: ProjectTemplate[] = [
     },
     {
         key: 'online_resume_v1',
+        github: 'https://github.com/adrien-syrotnik/CV-Syrotnik-V1',
         portfolio: true,
         main_desc: 'Hébergé sur github, ce premier cv marque mon début dans le monde du web. Vous pouvez aller jeter un coup d\'œil avec ce lien : <a href="https://adrien-syrotnik.github.io/CV-Syrotnik-V1/" target="_blank">https://adrien-syrotnik.github.io/CV-Syrotnik-V1/</a>.',
         image: 'assets/images/resume.png',

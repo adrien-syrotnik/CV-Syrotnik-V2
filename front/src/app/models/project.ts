@@ -16,6 +16,7 @@ export interface Project extends PortfolioProject {
 export interface PortfolioProject {
 
     key : string,
+    github? :string,
     name : string,
     image: string,
     main_desc: string,
@@ -35,6 +36,7 @@ export interface ProjectTemplate {
 
     key : string,
     portfolio? :boolean,
+    github? :string,
     name : string,
     image: string,
     main_desc: string,

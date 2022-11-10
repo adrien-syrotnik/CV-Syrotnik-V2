@@ -14,7 +14,7 @@
     <div class="row mt-2 text-center justify-content-center">
 
         <h1 class="col-12">{{'Projet' | translate}} : <strong>{{ project.name | translate }}</strong></h1>
-        <h1 class="col-12 text-warning"> ({{ project.year ? ((project.year | date:"YYYY") + (project.yearEnd ? ' - '+(project.yearEnd | date:"YYYY") : '')) : ('En cours' | translate) }})</h1>
+        <h1 class="col-12 text-warning"> ({{ project.year ? ((project.year | date:"YYYY") + (project.yearEnd ? ' - '+(project.yearEnd | date:"YYYY") : '')) : ('En cours' | translate) }}) </h1>
 
 
         <div class="col-12">
@@ -26,18 +26,24 @@
 
 
     <div class="row justify-content-center">
-        <div class="my-1 text-center " >
+        <div class="my-1 text-center ">
 
             <img class="skill mx-1" style="width: 50px; height: 50px;" src="{{ skill.image }}" data-bs-toggle="tooltip" data-bs-placement="top" title="{{ skill.name | translate }}" *ngFor="let skill of project.skills">
-    
+
         </div>
     </div>
-    
+
 
     <div class="row my-5 justify-content-center">
 
         <div class="col-10 col-md-6 col-lg-4 text-center desc border-round p-4">
             <span [innerHTML]="project.main_desc | translate"></span>
+            <span *ngIf="project.github">
+                <br>
+                <a href="{{ project.github }}" target="_blank" class="float-end">
+                    <img src="assets/images/github.png" class="skill" style="width: 30px; height: 30px;">
+                </a>
+            </span>
         </div>
 
     </div>

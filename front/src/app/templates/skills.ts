@@ -33,8 +33,12 @@ export const listSkill : Skill[][] = [
         image: 'https://img.icons8.com/ios-filled/70/000000/unity.png',
         name: 'Unity',
         id : 'unity'
-      }
-      ,
+      },
+      {
+        image: 'https://img.icons8.com/ios/70/null/virtual-reality.png',
+        name: 'VR - AR',
+        id : 'vr-ar'
+      },
       {
         image: 'https://img.icons8.com/ios-filled/70/000000/javascript.png',
         name: 'Javascript',

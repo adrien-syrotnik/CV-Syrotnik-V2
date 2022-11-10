@@ -12,6 +12,16 @@ export const certificates : Certificate[] = [
         image : 'assets/images/certificates/Junior_Programmer-Pathway_Badge.png'
     },
     {
+        date : new Date('2022-09-11'),
+        name : 'Unity VR Development Pathway',
+        url : 'https://www.credly.com/earner/earned/badge/602a2609-c0ba-44fc-a306-e95230e2a6de',
+        delivered_by : {
+            name : 'Unity Technologies',
+            url : 'https://unity.com/'
+        },
+        image : 'assets/images/certificates/Unity_VR_Development_Pathway_Badge.png'
+    },
+    {
         date : new Date('2022-06-18'),
         name : 'Unity Essentials Pathway',
         url : 'https://www.credly.com/badges/60cdb612-a4d8-4df4-bb51-38b67eb8f099',

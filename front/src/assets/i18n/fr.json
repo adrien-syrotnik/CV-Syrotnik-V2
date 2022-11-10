@@ -16,16 +16,20 @@
     },
     "EXPERIENCES": {
         "ADEE": {
-            "NAME": "Stage Developpeur Web FullStack",
+            "NAME": "Stage développeur Web FullStack",
             "DESC": "Stage durant lequel je devais continuer le développement une application web de gestion de projet, fait en PHP, HTML, CSS et JS. De plus, je devais m'occuper de la migration de leur base de données en passant de mySQL à SQLServer."
         },
         "FLEXNETWORK": {
-            "NAME": "Stage Developpeur Web front-end Angular",
+            "NAME": "Stage développeur Web front-end Angular",
             "DESC": "Stage durant lequel je devais développer le front-end de la 2ème version de leur application web à l'aide du framework Angular. J'ai donc communiqué avec leur backend à l'aide d'une API et réalisé un développement continue à l'aide de l'outil CI-CD sur GitLab."
         },
         "CESI": {
             "NAME": "Ecole d'ingénieurs informatique",
             "DESC": "Souhaitant réaliser un Master en informatique, j'ai décidé d'entrer au CESI, une école d'ingénieurs informatique. Projets et méthode \"PBL\", grâce à tout cela, CESI me permet d'augmenter en autonomie, en compétence et en travail en groupe efficacement."
+        },
+        "UNIVERSITE-TECHNIQUE-CLUJ-NAPOCA": {
+            "NAME": "Stage développeur VR - AR",
+            "DESC": "Stage à l'étranger (Erasmus+) en Roumanie, au cours duquel j'ai dû réaliser différentes applications utilisant la VR et l'AR (réalité virtuelle et augmentée)."
         }
     },
     "HOBBIES-DESC": {
@@ -44,7 +48,7 @@
         "FUNSKILLS": "Mes compétences en cours",
         "ABOUT": "<i>A propos de moi</i>",
         "LANGUAGES": "<i>Langues</i>",
-        "CERTIF" : "<i>Certificats</i>"
+        "CERTIF": "<i>Certificats</i>"
     },
     "SENDMAIL": {
         "EMAIL": "Votre e-mail :",
@@ -54,10 +58,10 @@
         "ERROR": "Une erreur est survenue..."
     },
     "FOOTER": {
-        "HOME" : "Accueil"
+        "HOME": "Accueil"
     },
 
-    "RESUME" : "CV",
+    "RESUME": "CV",
 
     "MORE_INFOS": "Plus d'informations <a href='{{link}}'>ici</a>.",
 
@@ -66,6 +70,6 @@
     "Online resume v1": "CV en ligne v1",
     "Online resume v2": "CV en ligne v2",
 
-    "Issued by" : "Délivré par"
+    "Issued by": "Délivré par"
 
 }
