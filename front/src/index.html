@@ -11,8 +11,15 @@
             dataLayer.push(arguments);
         }
         gtag('js', new Date());
+        gtag('config', 'G-RXPYFFMF4Z', {
+            'send_page_view': false
+        });
 
-        gtag('config', 'G-RXPYFFMF4Z');
+        // Consent denied by default
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied'
+        });
     </script>
 
     <meta charset="utf-8">

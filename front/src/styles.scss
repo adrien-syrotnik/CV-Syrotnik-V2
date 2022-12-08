@@ -26,21 +26,18 @@ body::after {
 }
 
 // html::after {
-    
 // }
-
 body a {
     color: black;
     text-decoration: underline;
     //bold
     font-weight: bold;
 }
+
 body a:hover {
     color: black;
     text-decoration: none;
 }
-
-
 
 .container-fluid {
     overflow-x: hidden;
@@ -100,30 +97,25 @@ img.skill {
     background-color: #ffffff00;
     border: black 2px solid;
     color: black;
-  
     img {
-      filter: invert(0);
+        filter: invert(0);
     }
-  }
-  
-  .resume-button:hover {
+}
+
+.resume-button:hover {
     //background-color: white;
     color: white;
     img {
-      filter: invert(1);
+        filter: invert(1);
     }
-  }
-
+}
 
 body.dark {
     color: white;
     background-color: black;
-
-
     a {
         color: #F2Ce3E;
     }
-
     .experience .deploy-icon {
         filter: invert(1);
         color: #F2Ce3E;
@@ -238,24 +230,21 @@ body.dark {
     #contact a {
         color: white;
     }
-
     .resume-button {
         background-color: #ffffff00;
         border: #F2Ce3E 2px solid;
         color: white;
-      
         img {
-          filter: invert(1);
+            filter: invert(1);
         }
-      }
-      
-      .resume-button:hover {
+    }
+    .resume-button:hover {
         background-color: #F2Ce3E;
         color: black;
         img {
-          filter: invert(0);
+            filter: invert(0);
         }
-      }
+    }
 }
 
 body.speedrun-page {

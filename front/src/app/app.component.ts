@@ -2,6 +2,7 @@ import { animate, query, style, transition, trigger } from '@angular/animations'
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { Gtag } from 'angular-gtag';
 import { TranslateStorage } from './_services/translate-storage.service';
 
 declare var AOS: any;
@@ -14,8 +15,8 @@ declare var AOS: any;
 export class AppComponent {
 
   constructor(public translate: TranslateService,
-    public translateStorage: TranslateStorage) {
-
+    public translateStorage: TranslateStorage,
+    gtag: Gtag) {
     this.detectColorScheme();
 
 

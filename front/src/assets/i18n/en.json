@@ -59,6 +59,11 @@
     "FOOTER": {
         "HOME": "Home"
     },
+
+    "Accepter": "Accept",
+    "Refuser": "Refuse",
+    "Ce site utilise des cookies pour améliorer votre expérience. En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies.": "This site uses cookies to improve your experience. By continuing your navigation on this site, you accept the use of cookies.",
+
     "MORE_INFOS": "More information <a href='{{link}}'>here</a>.",
     "Unity Game (Not finish)": "Unity Game (Not finish)",
     "Soft Skill - Recherches et réflexions": "Soft Skill - Research and reflection",

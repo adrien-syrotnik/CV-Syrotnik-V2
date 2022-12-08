@@ -28,6 +28,9 @@ import { ScoreInfoModalComponent } from './_components/speedrun/game/score-info-
 import { PortfolioComponent } from './_components/portfolio/portfolio.component';
 import { FooterComponent } from './_components/footer/footer.component';
 
+import { GtagModule } from 'angular-gtag';
+import { CookieBannerComponent } from './_components/cookie-banner/cookie-banner.component';
+
 registerLocaleData(localeFr);
 
 export function createTranslateLoader(http: HttpClient) {
@@ -45,7 +48,8 @@ export function createTranslateLoader(http: HttpClient) {
     ProjectComponent,
     ScoreInfoModalComponent,
     PortfolioComponent,
-    FooterComponent
+    FooterComponent,
+    CookieBannerComponent
   ],
   imports: [
     BrowserModule,
@@ -55,6 +59,7 @@ export function createTranslateLoader(http: HttpClient) {
     FormsModule,
     HttpClientModule,
     NgxMaskModule.forRoot(),
+    GtagModule.forRoot({ trackingId: 'G-RXPYFFMF4Z', trackPageviews: true }),
     TranslateModule.forRoot({
       loader: {
           provide: TranslateLoader,
