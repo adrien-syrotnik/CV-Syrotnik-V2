@@ -30,6 +30,8 @@ import { FooterComponent } from './_components/footer/footer.component';
 
 import { GtagModule } from 'angular-gtag';
 import { CookieBannerComponent } from './_components/cookie-banner/cookie-banner.component';
+import { ChatGPTComponent } from './_components/chatGPT/chatGPT.component';
+import { ChatGPTService } from './_services/chatgpt.service';
 
 registerLocaleData(localeFr);
 
@@ -49,7 +51,8 @@ export function createTranslateLoader(http: HttpClient) {
     ScoreInfoModalComponent,
     PortfolioComponent,
     FooterComponent,
-    CookieBannerComponent
+    CookieBannerComponent,
+    ChatGPTComponent
   ],
   imports: [
     BrowserModule,
@@ -73,6 +76,7 @@ export function createTranslateLoader(http: HttpClient) {
   providers: [
     TranslateStorage,
     ProjectStorageService,
+    ChatGPTService,
     {provide: LOCALE_ID, useValue: "fr-CA" }
   ],
   bootstrap: [AppComponent]

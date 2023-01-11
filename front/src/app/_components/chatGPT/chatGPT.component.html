@@ -1,0 +1,34 @@
+<div class="container-fluid">
+
+    <div class="row mt-5 justify-content-center">
+
+        <div *ngIf="!IsKeyPresent" class="col-12 text-center">
+
+            <input type="text" class="form-control" placeholder="Place your key" [(ngModel)]="key" (keydown.enter)="sendKey()">
+
+        </div>
+
+        <div *ngIf="IsKeyPresent" class="col-12 text-center">
+
+            <input type="text" class="form-control" placeholder="Ask me anything" [(ngModel)]="question" (keydown.enter)="sendQuestion()">
+            <button class="btn btn-primary mt-2" (click)="sendQuestion()">Send</button>
+
+        </div>
+
+        <div *ngIf="IsKeyPresent" class="col-12 text-center">
+
+
+            <button class="btn btn-danger mt-2" (click)="logout()" style="margin-top: 10px;">Logout</button>
+
+        </div>
+
+        <div class="col-12" *ngIf="IsKeyPresent">
+            <textarea rows="10" class="m-5 form-control">{{ result }}</textarea>
+
+        </div>
+
+
+    </div>
+
+
+</div>
