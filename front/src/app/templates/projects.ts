@@ -45,6 +45,29 @@ export const projectListTemplate: ProjectTemplate[] = [
     {
         portfolio : true,
         more_info : true,
+        key: 'vr-pots-app',
+        main_desc: 'Application en VR (Réalité Virtuelle) réalisée lors de mon stage à l\'université technologique de Cluj Napoca pour un musée. Le but de celle-ci est de permettre aux visiteurs du musée d\'être immergés dans un monde virtuel et de découvrir des poteries anciennes, en les manipulant et en les scannant pour en savoir plus sur ces anciens artefacts.',
+        image: 'assets/images/projects/vr-pots-app.png',
+        low_desc: 'Application de réalité virtuelle dédiée à un musée permettant la découverte de modèles 3D de poteries anciennes (Unity)',
+        name: 'Pots application - VR',
+        year: new Date('2023-01-20'),
+        parts: [
+        {
+            title: 'La réalité virtuelle pour améliorer l\'exploration culturelle',
+            desc: 'Commandée par un musée, cette application permet aux visiteurs de découvrir des poteries anciennes en les manipulant et en lisant des descriptions dans l\'environnement de l\'utilisateur. <br><br>Pour obtenir les modèles 3D, différents scans ont été réalisés sur des poteries réelles, puis importés dans l\'environnement. Le décors, quant à lui, a été créé de toutes pièces sur le logiciel Blender. <br><br>Différentes fonctionnalités ont été ajoutées à l\'application, comme la possibilité de scanner les pots pour obtenir leur description, de changer la langue de l\'application, d\'écouter un narrateur ou la possibilité de casser les pots avec suffisamment de force. Vous pouvez découvrir toutes les fonctionnalités en regardant la vidéo ci-contre.',
+            video: "https://www.youtube.com/embed/7EnldaDAZIc"
+        }],
+        skills: [
+            'unity',
+            'csharp',
+            'vr',
+            'blender',
+            'equipe',
+        ]
+    },
+    {
+        portfolio : true,
+        more_info : true,
         key: 'bronze-matrix',
         main_desc: 'Application en AR (Réalité Augmenté) réalisée dans le cadre de mon stage et d\'un travail de recherche dans l\'université technologique de Cluj Napoca. Le but de celle-ci est de permettre aux visiteurs d\'un musée de visualiser des objets en 3D dans le monde réel sur un moule en bronze vieux de 2000 ans.',
         image: 'assets/images/projects/bronze-matrix-logo.jpg',
@@ -65,7 +88,8 @@ export const projectListTemplate: ProjectTemplate[] = [
         skills: [
             'unity',
             'csharp',
-            'vr-ar',
+            'ar',
+            'blender',
             'recherche'
         ]
     },
