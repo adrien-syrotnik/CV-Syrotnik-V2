@@ -53,11 +53,9 @@ services:
     build:
       dockerfile: Dockerfile
       context: ./front
-      pull: true
-      no_cache: true
-    volumes:
-      - /app/node_modules
-      - ./front:/app
+    # volumes:
+    #   - /app/node_modules
+    #   - ./front:/app
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.syrotnik-cv-front.entrypoints=websecure"
