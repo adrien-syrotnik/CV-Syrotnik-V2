@@ -113,6 +113,11 @@ img.skill {
 body.dark {
     color: white;
     background-color: black;
+    .titre-cv {
+        color: white;
+        //back border
+        text-shadow: 2px 2px 4px #000000;
+    }
     a {
         color: #F2Ce3E;
     }

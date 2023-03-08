@@ -2,6 +2,17 @@
     width: 75%;
 }
 
+.titre-cv {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    position: absolute;
+    text-align: center;
+    align-self: center;
+    z-index: 5;
+}
 
 .submitButton {
     background-image: radial-gradient( circle farthest-corner at 10% 20%, rgb(255, 238, 5) 0%, rgb(252, 255, 88) 90%);
@@ -82,7 +93,6 @@
     }
 }
 
-
 .bg-fade {
     //background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(128, 248, 174, 1) 0%, rgba(223, 244, 148, 1) 90%);
 }
@@ -99,8 +109,6 @@
 .experience.collapsed .deploy-icon {
     transition: all ease-in-out 0.2s;
 }
-
-
 
 h1.title-home {
     margin-top: 2em;
