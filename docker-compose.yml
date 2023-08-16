@@ -53,6 +53,7 @@ services:
     build:
       dockerfile: Dockerfile
       context: ./front
+      cache_from: scratch
     pull_policy: build
     volumes:
       - /app/node_modules
