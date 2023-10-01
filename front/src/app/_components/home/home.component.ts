@@ -237,6 +237,15 @@ export class HomeComponent implements OnInit, OnDestroy {
     return Math.floor(Math.random() * 360)
   }
 
+
+  public CheckCurrentDate(date?: Date) {
+    //Return true if date is after today
+    if (date) {
+      return date > new Date();
+    }
+    return false;
+  }
+
   ngOnDestroy(): void {
     this.scrollSpy.dispose()
   }

@@ -9,6 +9,13 @@ export const experiences: ExperienceOrFormation[] = [
       company: 'CESI'
     },
     {
+      key: 'BERTRANDT-SAS',
+      date_begin: new Date("2023-09-04"),
+      date_end: new Date("2024-09-06"),
+      image: 'assets/images/bertrandt.png',
+      company: 'Bertrandt SAS'
+    },
+    {
       key: 'UNIVERSITE-TECHNIQUE-CLUJ-NAPOCA',
       date_begin: new Date("2022-09-19"),
       date_end: new Date("2023-02"),

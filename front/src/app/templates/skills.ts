@@ -20,9 +20,14 @@ export const listSkill : Skill[][] = [
     ],
     [
       {
-        image: '/assets/images/angular_logo.png',
-        name: 'Angular',
-        id : 'angular'
+        image: 'https://img.icons8.com/ios/70/null/virtual-reality.png',
+        name: 'Réalité Virtuelle',
+        id : 'vr'
+      },
+      {
+        image: 'https://img.icons8.com/external-outline-andi-nur-abdillah/70/null/external-Augmented-Reality-virtual-reality-(outline)-outline-andi-nur-abdillah.png',
+        name: 'Réalité Augmentée',
+        id : 'ar'
       },
       {
         image: 'https://img.icons8.com/ios-filled/70/000000/c-sharp-logo.png',
@@ -35,19 +40,16 @@ export const listSkill : Skill[][] = [
         id : 'unity'
       },
       {
-        image: 'https://img.icons8.com/ios/70/null/virtual-reality.png',
-        name: 'Réalité Virtuelle',
-        id : 'vr'
-      },
-      {
-        image: 'https://img.icons8.com/external-outline-andi-nur-abdillah/70/null/external-Augmented-Reality-virtual-reality-(outline)-outline-andi-nur-abdillah.png',
-        name: 'Réalité Augmentée',
-        id : 'ar'
-      },
-      {
         image: 'https://img.icons8.com/color/70/null/blender-3d.png',
         name: 'Blender 3D',
         id : 'blender'
+      }
+    ],
+    [
+      {
+        image: '/assets/images/angular_logo.png',
+        name: 'Angular',
+        id : 'angular'
       },
       {
         image: 'https://img.icons8.com/color/70/null/javascript--v1.png',

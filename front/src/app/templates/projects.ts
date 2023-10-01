@@ -2,6 +2,43 @@ import { ProjectTemplate } from "../models/project";
 
 export const projectListTemplate: ProjectTemplate[] = [
     {
+        key: 'minecraft_modding',
+        portfolio: true,
+        main_desc: 'À l\'aide des commandes intégrés au jeu (datapack et command blocks), et à l\'aide d\'un ami, nous avons réalisé différents mini-jeux dans le jeu vidéo Minecraft. Vous pouvez retrouver nos créations sur <a href="https://linktr.ee/aidia_info" target="_blank">notre lientr.ee</a>.',
+        image: 'assets/images/grass.png',
+        low_desc: 'Réaliser des mini-jeux dans le jeu vidéo Minecraft',
+        name: 'Modding Minecraft',
+        year: new Date('2016-02'),
+        yearEnd: new Date('2023-09'),
+        parts: [{
+            title: 'Lucky Block',
+            desc: 'Reprise du célèbre mod <u>Lucky Block</u>, nous avons décidé de le recréer dans Minecraft. <br/><br/>Le but est simple : casser des blocs de chance qui peuvent vous donner des objets, des monstres ou encore des pièges.<br/><br/>Vous pouvez voir un exemple du jeu via la vidéo ci-jointe.',
+            video: 'https://www.youtube.com/embed/6N_YOckSHXU?si=0V2ocIeqkTNrGp7L'
+        },{
+            title: 'SSL (Super Smash Licence)',
+            desc: 'Inspiré du célèbre jeu Super Smash Bros, nous avons réalisé un jeu similaire avec des personnages du jeu vidéo qui nous tenaient à cœur.<br/><br/> <i>Link</i> de la série <u>The Legend of Zelda</u>, <i>Doomfist</i> du jeu <u>Overwatch</u>, <i>Edward Kenway</i> de la saga <u>Assassin\'s Creed</u> ou le personnage de notre jeu vidéo <a href="/project/emergency_exit">Emergency Exit</a>, nous avons créé un total de 10 personnages jouables aux capacités uniques !<br/><br/> Vous pouvez voir une démonstration à partir de la vidéo ci-jointe.',
+            video: 'https://www.youtube.com/embed/wZZJa_QlNus'
+        }, {
+            title: 'Mario Kart Minecraft',
+            desc: 'Pour ce projet, nous avions pour but de recopier exactement le jeu <u>Mario Kart</u>.<br/><br/>En passant par la construction des circuits, la reproduction des karts et le système d\'objet, nous avons réussi à finalement reproduire ce jeu dans Minecraft.<br/><br/>Étant assez limités, nous avons utilisé des cochons en guise de kart par exemple.<br/><br/>Vous pouvez voir un exemple du jeu via la vidéo ci-jointe.',
+            video: 'https://www.youtube.com/embed/0EbF0eRnaA8'
+        }, {
+            title: 'Sheep Wars',
+            desc: 'Cette fois-ci, ce jeu n\'est certainement pas connu de tout le monde. <u>SheepWars</u> était un mode de jeu que j\'avais découvert sur un ancien serveur Minecraft. Ce jeu nous ayant manqués, et pour tester nos capacités, nous avons donc décidé de reproduire cet ancien mini-jeu.<br/><br/>Le but est assez simple : 2 équipes s\'affrontent sur un terrain dans lequel nous pouvons obtenir des moutons que nous pouvons lancer et ayant certains pouvoirs.<br/><br/> Nous avons par exemple le <i>Mouton Incendiaire</i> qui est représenté sur les images ci-contre, qui après un certain temps explose et répand du feu autour de lui. Le but final : éliminer toute l\'équipe adverse !',
+            images: ['assets/images/sw_launch1.png', 'assets/images/sw_launch2.png', 'assets/images/sw_explo2.png', 'assets/images/sw_explo1.png']
+            //template: this.createCarousel('oui',[{desc:'oui', img :'assets/images/new_photo.jpg', title: ''},{desc:'oui', img :'assets/images/new_photo.jpg', title: ''}])
+        }],
+        skills: [
+            'equipe',
+            'recherche',
+        ],
+        keywords: [
+            'Command Blocks / Datapack',
+            'Game design'
+        ],
+        more_info: true
+    },
+    {
         portfolio : true,
         more_info : true,
         github : 'https://github.com/adrien-syrotnik/Tech-and-Sorcery',
@@ -203,39 +240,6 @@ export const projectListTemplate: ProjectTemplate[] = [
         ],
         more_info: true
     }, 
-    {
-        key: 'minecraft_modding',
-        portfolio: true,
-        main_desc: 'À l\'aide des commandes intégrés au jeu (datapack et command blocks), et à l\'aide d\'un ami, nous avons réalisé différents mini-jeux dans le jeu vidéo Minecraft.',
-        image: 'assets/images/grass.png',
-        low_desc: 'Réaliser des mini-jeux dans le jeu vidéo Minecraft',
-        name: 'Modding Minecraft',
-        year: new Date('2016-02'),
-        yearEnd: new Date('2021-10'),
-        parts: [{
-            title: 'SSL (Super Smash Licence)',
-            desc: 'Inspiré du célèbre jeu Super Smash Bros, nous avons réalisé un jeu similaire avec des personnages du jeu vidéo qui nous tenaient à cœur.<br/><br/> <i>Link</i> de la série <u>The Legend of Zelda</u>, <i>Doomfist</i> du jeu <u>Overwatch</u>, <i>Edward Kenway</i> de la saga <u>Assassin\'s Creed</u> ou le personnage de notre jeu vidéo <a href="/project/emergency_exit">Emergency Exit</a>, nous avons créé un total de 10 personnages jouables aux capacités uniques !<br/><br/> Vous pouvez voir une démonstration à partir de la vidéo ci-jointe.',
-            video: 'https://www.youtube.com/embed/wZZJa_QlNus'
-        }, {
-            title: 'Mario Kart Minecraft',
-            desc: 'Pour ce projet, nous avions pour but de recopier exactement le jeu <u>Mario Kart</u>.<br/><br/>En passant par la construction des circuits, la reproduction des karts et le système d\'objet, nous avons réussi à finalement reproduire ce jeu dans Minecraft.<br/><br/>Étant assez limités, nous avons utilisé des cochons en guise de kart par exemple.<br/><br/>Vous pouvez voir un exemple du jeu via la vidéo ci-jointe.',
-            video: 'https://www.youtube.com/embed/0EbF0eRnaA8'
-        }, {
-            title: 'Sheep Wars',
-            desc: 'Cette fois-ci, ce jeu n\'est certainement pas connu de tout le monde. <u>SheepWars</u> était un mode de jeu que j\'avais découvert sur un ancien serveur Minecraft. Ce jeu nous ayant manqués, et pour tester nos capacités, nous avons donc décidé de reproduire cet ancien mini-jeu.<br/><br/>Le but est assez simple : 2 équipes s\'affrontent sur un terrain dans lequel nous pouvons obtenir des moutons que nous pouvons lancer et ayant certains pouvoirs.<br/><br/> Nous avons par exemple le <i>Mouton Incendiaire</i> qui est représenté sur les images ci-contre, qui après un certain temps explose et répand du feu autour de lui. Le but final : éliminer toute l\'équipe adverse !',
-            images: ['assets/images/sw_launch1.png', 'assets/images/sw_launch2.png', 'assets/images/sw_explo2.png', 'assets/images/sw_explo1.png']
-            //template: this.createCarousel('oui',[{desc:'oui', img :'assets/images/new_photo.jpg', title: ''},{desc:'oui', img :'assets/images/new_photo.jpg', title: ''}])
-        }],
-        skills: [
-            'equipe',
-            'recherche',
-        ],
-        keywords: [
-            'Command Blocks / Datapack',
-            'Game design'
-        ],
-        more_info: true
-    },
     {
         key: 'speedrun',
         portfolio: true,

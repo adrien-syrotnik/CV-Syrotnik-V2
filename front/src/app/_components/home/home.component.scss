@@ -40,6 +40,10 @@
     background-image: radial-gradient( circle farthest-corner at 10% 20%, rgb(255, 215, 104) 10%, #F2Ce3E 90%);
 }
 
+.current-experience {
+    border: 2px solid black;
+}
+
 .nav-link.active {
     background-color: black;
 }

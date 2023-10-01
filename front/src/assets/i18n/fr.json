@@ -30,6 +30,10 @@
         "UNIVERSITE-TECHNIQUE-CLUJ-NAPOCA": {
             "NAME": "Stage développeur VR - AR",
             "DESC": "Stage à l'étranger (Erasmus+) en Roumanie, au cours duquel j'ai dû réaliser différentes applications utilisant la VR et l'AR (réalité virtuelle et augmentée)."
+        },
+        "BERTRANDT-SAS" : {
+            "NAME": "Alternance développeur VR - AR",
+            "DESC": "Alternance au sein de la société Bertrandt SAS à Paris, au cours de laquelle je dois réaliser différentes applications utilisant la VR et l'AR (réalité virtuelle et augmentée). J'ai pu travailler dans les secteurs de l'aéronautique et de l'automobile."
         }
     },
     "HOBBIES-DESC": {

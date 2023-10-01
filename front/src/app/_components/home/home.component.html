@@ -9,9 +9,6 @@
 
 <div class="container-fluid" id="home-page">
 
-
-
-
     <div class="row justify-content-center" style="position: relative;">
         <!-- <h1 class="col text-center" style=" font-family:;">SYROTNIK ADRIEN</h1> -->
         <h1 class="col titre-cv">Syrotnik Adrien</h1>
@@ -64,7 +61,7 @@
                 <h1 class="col text-center title-home" [innerHtml]="'TITLES.EXPERIENCE' | translate" data-aos="zoom-in"></h1>
             </div>
             <div class="row accordion my-4" [class.justify-content-end]="i%2 == 0" [class.justify-content-start]="i%2 == 1" *ngFor="let experience of experiences; let i = index">
-                <div class="col-12 col-lg-5 col-md-12 p-3 border-round experience collapsed" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapseExp'+i" aria-expanded="true" [attr.aria-controls]="'#collapseExp'+i" [attr.data-aos]="i%2 == 0 ? 'fade-left' : 'fade-right'">
+                <div [class.current-experience]="CheckCurrentDate(experience.date_end)" class="col-12 col-lg-5 col-md-12 p-3 border-round experience collapsed" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapseExp'+i" aria-expanded="true" [attr.aria-controls]="'#collapseExp'+i" [attr.data-aos]="i%2 == 0 ? 'fade-left' : 'fade-right'">
                     <div class="container-fluid p-0">
                         <div class="row justify-content-center align-items-center">
                             <div class="col-4 col-md-2 col-lg-2 mb-lg-0 mb-md-2 mb-2">
@@ -130,10 +127,9 @@
             </div>
             <div class="row justify-content-evenly" *ngFor="let lvlRow of skills">
 
-
                 <ng-container *ngFor="let skill of lvlRow">
 
-                    <div data-aos="zoom-in-down" data-aos-offset="0" class="col-lg-3 col-5 col-md-5 my-3 text-center">
+                    <div data-aos="zoom-in-down" data-aos-offset="0" class="col-lg-2 col-5 col-md-5 my-4 text-center">
 
                         <img class="skill" src="{{ skill.image }}" data-bs-toggle="tooltip" data-bs-placement="top" title="{{ skill.name | translate }}">
 

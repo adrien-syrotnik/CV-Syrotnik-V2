@@ -2,6 +2,16 @@ import { Certificate } from "../models/certificate";
 
 export const certificates : Certificate[] = [
     {
+        date : new Date('2023-05-14'),
+        name : 'Unity Mobile AR Development',
+        url : 'https://www.credly.com/badges/b441371d-a151-4963-94f5-566f7138ab13',
+        delivered_by : {
+            name : 'Unity Technologies',
+            url : 'https://unity.com/'
+        },
+        image : 'assets/images/certificates/Unity_Mobile_AR_Development_Badge.png'
+    },
+    {
         date : new Date('2022-06-26'),
         name : 'Unity Junior Programmer',
         url : 'https://www.credly.com/badges/a62c57ac-0c47-4a09-9b56-d9ab5755bf1f',
