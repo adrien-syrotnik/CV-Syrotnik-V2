@@ -65,7 +65,8 @@ CREATE TABLE `category` (
 INSERT INTO `category` (`id`, `name`, `game_id`, `created_at`, `updated_at`) VALUES
 (1, 'ANY% (In Game)', 1, '2022-04-24 01:21:21', '2022-04-26 11:53:58'),
 (3, 'ANY% to credit', 1, '2022-04-25 13:59:53', '2022-04-25 13:59:53'),
-(4, 'ANY% (LiveSplit)', 1, '2022-04-26 11:54:48', '2022-04-26 11:54:48');
+(4, 'ANY% (LiveSplit)', 1, '2022-04-26 11:54:48', '2022-04-26 11:54:48'),
+(5, 'ANY%', 2, '2023-10-18 23:31:17', '2023-10-18 23:31:17');
 
 -- --------------------------------------------------------
 
@@ -89,8 +90,8 @@ CREATE TABLE `game` (
 --
 
 INSERT INTO `game` (`id`, `url_name`, `name`, `released_year`, `studio`, `platforms`, `created_at`, `updated_at`) VALUES
-(1, 'emergency_exit', 'Emergency Exit', 2019, 'Aidia Info', 'PC', '2022-04-24 01:20:16', '2022-04-24 01:20:16');
--- (2, 'blood_rush', 'Blood Rush', 2023, 'MaxEstLa', 'PC', '2022-04-24 01:20:16', '2022-04-24 01:20:16');
+(1, 'emergency_exit', 'Emergency Exit', 2019, 'Aidia Info', 'PC', '2022-04-24 01:20:16', '2022-04-24 01:20:16'),
+(2, 'blood_rush', 'Blood Rush', 2023, 'MaxEstLa', 'PC', '2023-10-18 23:05:14', '2023-10-18 23:05:14');
 
 -- --------------------------------------------------------
 
