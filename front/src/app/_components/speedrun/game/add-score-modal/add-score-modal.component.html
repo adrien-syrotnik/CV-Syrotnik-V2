@@ -2,35 +2,55 @@
     <h4 class="modal-title">Submit un score pour {{ gameInfo.name }}</h4>
     <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
 </div>
-<div class="modal-body">
+<div class="modal-body row justify-content-center">
     <div class="bg-danger">
         {{ error }}
     </div>
     <span *ngIf="submitting">Envoie des données...</span>
-    <form *ngIf="!submitting" #form="ngForm" (submit)="onSubmit()" enctype='multipart/form-data' class="col-xl-2">
+    <form *ngIf="!submitting" #form="ngForm" (submit)="onSubmit()" enctype='multipart/form-data' class="col-10">
 
-        <input (change)="data.image = $any($event).target.files[0]" name="image" type="file"/>
-        <input (change)="data.video = $any($event).target.files[0]" name="video" type="file"/>
+        <div class="m-2">
+            <label>Image - </label>
+            <input (change)="data.image = $any($event).target.files[0]" name="image" type="file"/>
+        </div>
+        <div class="m-2">
+            <label>Video - </label>
+            <input (change)="data.video = $any($event).target.files[0]" name="video" type="file"/>
+        </div>
 
-        <label>Pseudo</label>
-        <input type="text" [(ngModel)]="data.pseudo" name="pseudo" required/>
+        <div class="m-2">
+            <label>Pseudo - </label>
+            <input type="text" [(ngModel)]="data.pseudo" name="pseudo" required/>
+        </div>
+        
+        <div class="m-2">
+            <label>Description - </label>
+            <input type="text" [(ngModel)]="data.desc" name="desc"/>
+        </div>
+    
+        <div class="m-2">
+            <label>Link - </label>
+            <input type="text" [(ngModel)]="data.link" name="link"/>
+        </div>
+        
 
-        <label>Description</label>
-        <input type="text" [(ngModel)]="data.desc" name="desc"/>
-
-        <label>Link</label>
-        <input type="text" [(ngModel)]="data.link" name="link"/>
-
-        <label>Category</label>
-        <select [(ngModel)]="data.category_id" name="category" required>
-            <option *ngFor="let category of gameCategories" [value]="category.id">{{ category.name }}</option>
-        </select>
-
-
-        <label>Score</label>
-        <input type="text" mask="Hh:m0:s0:000||m0:s0:000" [dropSpecialCharacters]="false" [(ngModel)]="data.score" name="score" required/>
-
-        <button [disabled]="!form.valid" type="submit">Submit</button>
+        <div class="m-2">
+            <label>Category - </label>
+            <select [(ngModel)]="data.category_id" name="category" required>
+                <option *ngFor="let category of gameCategories" [value]="category.id">{{ category.name }}</option>
+            </select>
+        </div>
+        
+        <div class="m-2">
+            <label>Score - </label>
+            <!-- <input type="text" mask="Hh:m0:s0:000||m0:s0:000" [dropSpecialCharacters]="false" [(ngModel)]="data.score" name="score" required/> -->
+            <input type="text" mask="m0:s0:000" [dropSpecialCharacters]="false" [(ngModel)]="data.score" name="score" required/>
+        </div>
+        
+        <div class="m-2 text-center">
+            <button [disabled]="!form.valid" class="btn btn-primary" type="submit">Submit</button>
+        </div>
+        
     </form>
 </div>
 <div class="modal-footer">

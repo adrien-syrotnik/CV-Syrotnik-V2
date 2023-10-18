@@ -6,9 +6,9 @@
 
         </div> 
 
-        <div class="col-xl-8 offset-xl-2 game-list">
+        <div class="col-xl-8 offset-xl-2 game-list row justify-content-center">
 
-            <div class="tile" *ngFor="let game of games">
+            <div class="tile col-md-3 col-12" *ngFor="let game of games">
                 <a [routerLink]="game.url_name"><img src="/assets/games/{{game.url_name}}.png"></a>
                 <a [routerLink]="game.url_name">{{ game.name }}</a>
                 <p>{{ game.released_year }}</p>
