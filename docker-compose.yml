@@ -45,6 +45,7 @@ services:
       - "traefik.http.services.syrotnik-cv-api.loadbalancer.server.port=80"
       - "traefik.http.routers.syrotnik-cv-api.tls.certresolver=production"
       - "traefik.http.routers.syrotnik-cv-api.service=syrotnik-cv-api"
+    restart: always
 
   front:
     stdin_open: true
@@ -66,6 +67,7 @@ services:
       - "traefik.http.services.syrotnik-cv-front.loadbalancer.server.port=80"
       - "traefik.http.routers.syrotnik-cv-front.tls.certresolver=production"
       - "traefik.http.routers.syrotnik-cv-front.service=syrotnik-cv-front"
+    restart: always
 
 volumes:
     db_data:
