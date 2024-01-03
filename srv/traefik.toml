@@ -1,0 +1,18 @@
+[entryPoints]
+  [entryPoints.web]
+    address = ":80"
+
+  [entryPoints.websecure]
+    address = ":443"
+
+
+[providers.docker]
+
+[api]
+  insecure = true
+
+[certificatesResolvers.adriens.acme]
+  email = "adrien.syrotnik@gmail.com"
+  storage = "acme.json"
+  [certificatesResolvers.adriens.acme.httpChallenge]
+    entryPoint = "web"

@@ -1,0 +1,113 @@
+version: '3.8'
+
+x-common-variables: &common-variables
+  # Docker compose version (enable env file if not working)
+  DB_HOST: ${DB_HOST}
+  DB_USER: ${DB_USER}
+  DB_PASSWORD: ${DB_PASSWORD}
+  DB_NAME: ${DB_NAME}
+  MYSQL_DATABASE: syrotnik_cv
+  MYSQL_USER: ${DB_USER}
+  MYSQL_PASSWORD: ${DB_PASSWORD}
+
+services:
+  reverse-proxy:
+    restart: always
+    image: traefik:latest
+    ports:
+      # The HTTP port
+      - "80:80"
+      - "443:443"
+      # The Web UI (enabled by --api.insecure=true)
+      - "8080:8080"
+    volumes:
+      # So that Traefik can listen to the Docker events
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./srv/traefik.toml:/etc/traefik/traefik.toml
+      - ./srv/acme.json:/acme.jsonq
+    # labels:
+    # - "traefik.http.routers.dashboard.rule=Host(`traefik.home.adriens.net`)"
+    # - "traefik.http.routers.dashboard.service=dashboard@internal"
+    # - "traefik.http.routers.dashboard.entrypoints=http"
+    # - "traefik.http.routers.dashboard.middlewares=auth"
+    # - "traefik.http.middlewares.auth.basicauth.users=adriens:$$apr1$vDJIEf8j$RWwQOdKcfTh0oGkp05Zq00"
+
+    # - "traefik.http.routers.nas.entrypoints=websecure"
+    # - "traefik.http.routers.nas.rule=Host(`nas.adriens.net`)"
+    # - "traefik.http.routers.nas.service=nas@file"
+    # - "traefik.http.routers.nas.tls=true"
+    # - "traefik.http.routers.nas.tls.certresolver=adriens"
+
+
+  mysql_db:
+    build:
+      dockerfile: Dockerfile
+      context: "./"
+    restart: always
+    cap_add:
+      - SYS_NICE
+    volumes:
+      - db_data:/var/lib/mysql:rw
+    ports:
+      - "9906:3306"
+    environment:
+      <<: *common-variables
+      MYSQL_ROOT_PASSWORD: MYSQL_ROOT_PASSWORD
+      MYSQL_HOST: mysql_db
+
+  api:
+    build:
+      dockerfile: Dockerfile
+      context: "./back"
+    depends_on:
+      - mysql_db
+    volumes:
+      - /app/node_modules
+      - ./back:/app
+    environment:
+      <<: *common-variables
+      MYSQL_HOST_IP: mysql_db
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.syrotnik-cv-api.entrypoints=websecure,web"
+      - "traefik.http.routers.syrotnik-cv-api.rule=Host(`back.adrien-syrotnik.fr`)"
+      - "traefik.http.services.syrotnik-cv-api.loadbalancer.server.port=80"
+      # - "traefik.http.routers.home.tls=true"
+      - "traefik.http.routers.syrotnik-cv-api.tls.certresolver=adriens"
+      - "traefik.http.routers.syrotnik-cv-api.service=syrotnik-cv-api"
+
+
+
+      # - "traefik.enable=true"
+      # - "traefik.http.routers.home.rule=Host(`home.wilson.net`)"
+      # - "traefik.http.routers.home.entrypoints=websecure"
+      # - "traefik.http.routers.home.tls=true"
+      # - "traefik.http.routers.home.tls.certresolver=wilson"
+      # - "traefik.http.services.home.loadbalancer.server.port=8123"
+    restart: always
+
+  front:
+    stdin_open: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    build:
+      dockerfile: Dockerfile
+      context: ./front
+      args:
+        - no-cache
+    pull_policy: build
+    volumes:
+      - /app/node_modules
+      - ./front:/app
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.syrotnik-cv-front.entrypoints=websecure,web"
+      - "traefik.http.routers.syrotnik-cv-front.rule=Host(`cv.adrien-syrotnik.fr`)"
+      - "traefik.http.services.syrotnik-cv-front.loadbalancer.server.port=80"
+      # - "traefik.http.routers.home.tls=true"
+      - "traefik.http.routers.syrotnik-cv-front.tls.certresolver=adriens"
+      - "traefik.http.routers.syrotnik-cv-front.service=syrotnik-cv-front"
+    restart: always
+
+volumes:
+    db_data:
