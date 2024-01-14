@@ -2,6 +2,39 @@ import { ProjectTemplate } from "../models/project";
 
 export const projectListTemplate: ProjectTemplate[] = [
     {
+        portfolio: true,
+        more_info: true,
+        github: 'https://github.com/adrien-syrotnik/casino-ai-svelte',
+        key: 'casino-ai',
+        main_desc: 'Conception d\'une machine à sous en ligne, intégrant des thèmes générés par intelligence artificielle, permettant aux utilisateurs de personnaliser leur expérience de jeu. Le projet inclut également des animations pour accroître le réalisme, avec un rendement de 500% pour une expérience de jeu divertissante, accompagné d\'un bonus aléatoire offrant entre 3 et 9 symboles jokers.',
+        image: 'assets/images/projects/casino-ai.jpg',
+        low_desc: 'Machine à sous en ligne avec thèmes générés par une IA (Svelte / Python)',
+        name: 'Casino AI',
+        year: new Date('2024-01-14'),
+        parts: [{
+            title: 'Présentation de la machine à sous',
+            desc: 'Casino AI, ou "Dynamic Slot", est une machine à sous en ligne réalisée avec le framework Svelte. <br><br>L\'objectif principal de ce projet était de créer une machine à sous en ligne intégrant des images générées par une intelligence artificielle. L\'objectif ultime était de permettre à l\'utilisateur de personnaliser la machine sur laquelle il souhaite jouer, même si elle n\'existe pas encore. <br><br> Pour atteindre cet objectif, j\'ai utilisé plusieurs intelligences artificielles, notamment <a href="https://huggingface.co/dataautogpt3/OpenDalleV1.1">OpenDalleV1.1</a>, qui est hébergée localement sur ma machine. Cette intelligence artificielle est employée pour générer des images de la machine en fonction d\'un thème choisi par l\'utilisateur. <br> Par la suite, pour optimiser les résultats, l\'API d\'OpenAI a été mise à contribution. <a href="https://openai.com/research/gpt-4">GPT-4</a> a été utilisé pour générer des textes liés au thème choisi par l\'utilisateur, et ces textes ont ensuite été employés comme descriptions pour la génération d\'images avec <a href="https://openai.com/dall-e-3">DALL-E 3</a>. <br><br> Vous pouvez essayer la machine à sous directement sur cette page ou en suivant ce <a href="https://casino-ai.adrien-syrotnik.fr" target="_blank">lien</a>.',
+            template: `<iframe id='webgl_iframe' src="https://slot.adrien-syrotnik.fr"  width="810"
+            height="700"></iframe>`
+        },
+        {
+            title: 'Animations et rendement',
+            desc: 'Afin d\'apporter un réalisme accru à la machine à sous, j\'ai intégré des animations. <br><br> Lorsque l\'utilisateur démarre la machine, les rouleaux se mettent en mouvement, s\'arrêtant un à un. Les gains de chaque tour s\'affichent, et les crédits sont actualisés. En cas de gros gains, une animation spécifique est également déclenchée. <br><br> En ce qui concerne le rendement pour le joueur, celui-ci est fixé à 500% (soit 5€ pour chaque 1€ misé). Mon objectif était principalement d\'offrir une expérience de jeu divertissante plutôt que réaliste. <br><br> Enfin, un bonus est disponible de manière aléatoire (avec une probabilité de 5%). Ce bonus permet d\'obtenir entre 3 et 9 wilds (symboles jokers) sur la machine.',
+            images: [
+                'assets/images/projects/casino-ai/slot_1.png',
+                'assets/images/projects/casino-ai/slot_2.png',
+                'assets/images/projects/casino-ai/slot_3.png',
+                'assets/images/projects/casino-ai/slot_4.png',
+            ]
+        }],
+        skills: [
+            'svelte',
+            'python',
+            'ai'
+        ]
+    },
+
+    {
         key: 'minecraft_modding',
         portfolio: true,
         main_desc: 'À l\'aide des commandes intégrés au jeu (datapack et command blocks), et à l\'aide d\'un ami, nous avons réalisé différents mini-jeux dans le jeu vidéo Minecraft. Vous pouvez retrouver nos créations sur <a href="https://linktr.ee/aidia_info" target="_blank">notre lientr.ee</a>.',
@@ -14,7 +47,7 @@ export const projectListTemplate: ProjectTemplate[] = [
             title: 'Lucky Block',
             desc: 'Reprise du célèbre mod <u>Lucky Block</u>, nous avons décidé de le recréer dans Minecraft. <br/><br/>Le but est simple : casser des blocs de chance qui peuvent vous donner des objets, des monstres ou encore des pièges.<br/><br/>Vous pouvez voir un exemple du jeu via la vidéo ci-jointe.',
             video: 'https://www.youtube.com/embed/6N_YOckSHXU?si=0V2ocIeqkTNrGp7L'
-        },{
+        }, {
             title: 'SSL (Super Smash Licence)',
             desc: 'Inspiré du célèbre jeu Super Smash Bros, nous avons réalisé un jeu similaire avec des personnages du jeu vidéo qui nous tenaient à cœur.<br/><br/> <i>Link</i> de la série <u>The Legend of Zelda</u>, <i>Doomfist</i> du jeu <u>Overwatch</u>, <i>Edward Kenway</i> de la saga <u>Assassin\'s Creed</u> ou le personnage de notre jeu vidéo <a href="/project/emergency_exit">Emergency Exit</a>, nous avons créé un total de 10 personnages jouables aux capacités uniques !<br/><br/> Vous pouvez voir une démonstration à partir de la vidéo ci-jointe.',
             video: 'https://www.youtube.com/embed/wZZJa_QlNus'
@@ -39,9 +72,9 @@ export const projectListTemplate: ProjectTemplate[] = [
         more_info: true
     },
     {
-        portfolio : true,
-        more_info : true,
-        github : 'https://github.com/adrien-syrotnik/Tech-and-Sorcery',
+        portfolio: true,
+        more_info: true,
+        github: 'https://github.com/adrien-syrotnik/Tech-and-Sorcery',
         key: 'tech-and-sorcery',
         main_desc: 'Jeu VR basé sur le jeu Blade and Sorcery, qui devait être réalisé pour finaliser le parcours VR présent sur le site Unity learn. Le but du jeu est d\'utiliser des armes et des sorts pour tuer des adversaires qui apparaissent sous forme de vague.',
         image: 'assets/images/projects/tech-and-sorcery-logo.png',
@@ -80,8 +113,8 @@ export const projectListTemplate: ProjectTemplate[] = [
         ]
     },
     {
-        portfolio : true,
-        more_info : true,
+        portfolio: true,
+        more_info: true,
         key: 'vr-pots-app',
         main_desc: 'Application en VR (Réalité Virtuelle) réalisée lors de mon stage à l\'université technologique de Cluj Napoca pour un musée. Le but de celle-ci est de permettre aux visiteurs du musée d\'être immergés dans un monde virtuel et de découvrir des poteries anciennes, en les manipulant et en les scannant pour en savoir plus sur ces anciens artefacts.',
         image: 'assets/images/projects/vr-pots-app.png',
@@ -89,11 +122,11 @@ export const projectListTemplate: ProjectTemplate[] = [
         name: 'Pots application - VR',
         year: new Date('2023-01-20'),
         parts: [
-        {
-            title: 'La réalité virtuelle pour améliorer l\'exploration culturelle',
-            desc: 'Commandée par un musée, cette application permet aux visiteurs de découvrir des poteries anciennes en les manipulant et en lisant des descriptions dans l\'environnement de l\'utilisateur. <br><br>Pour obtenir les modèles 3D, différents scans ont été réalisés sur des poteries réelles, puis importés dans l\'environnement. Le décors, quant à lui, a été créé de toutes pièces sur le logiciel Blender. <br><br>Différentes fonctionnalités ont été ajoutées à l\'application, comme la possibilité de scanner les pots pour obtenir leur description, de changer la langue de l\'application, d\'écouter un narrateur ou la possibilité de casser les pots avec suffisamment de force. Vous pouvez découvrir toutes les fonctionnalités en regardant la vidéo ci-contre.',
-            video: "https://www.youtube.com/embed/7EnldaDAZIc"
-        }],
+            {
+                title: 'La réalité virtuelle pour améliorer l\'exploration culturelle',
+                desc: 'Commandée par un musée, cette application permet aux visiteurs de découvrir des poteries anciennes en les manipulant et en lisant des descriptions dans l\'environnement de l\'utilisateur. <br><br>Pour obtenir les modèles 3D, différents scans ont été réalisés sur des poteries réelles, puis importés dans l\'environnement. Le décors, quant à lui, a été créé de toutes pièces sur le logiciel Blender. <br><br>Différentes fonctionnalités ont été ajoutées à l\'application, comme la possibilité de scanner les pots pour obtenir leur description, de changer la langue de l\'application, d\'écouter un narrateur ou la possibilité de casser les pots avec suffisamment de force. Vous pouvez découvrir toutes les fonctionnalités en regardant la vidéo ci-contre.',
+                video: "https://www.youtube.com/embed/7EnldaDAZIc"
+            }],
         skills: [
             'unity',
             'csharp',
@@ -103,8 +136,8 @@ export const projectListTemplate: ProjectTemplate[] = [
         ]
     },
     {
-        portfolio : true,
-        more_info : true,
+        portfolio: true,
+        more_info: true,
         key: 'bronze-matrix',
         main_desc: 'Application en AR (Réalité Augmenté) réalisée dans le cadre de mon stage et d\'un travail de recherche dans l\'université technologique de Cluj Napoca. Le but de celle-ci est de permettre aux visiteurs d\'un musée de visualiser des objets en 3D dans le monde réel sur un moule en bronze vieux de 2000 ans.',
         image: 'assets/images/projects/bronze-matrix-logo.jpg',
@@ -112,16 +145,16 @@ export const projectListTemplate: ProjectTemplate[] = [
         name: 'Bronze Matrix - AR',
         year: new Date('2022-09-11'),
         parts: [
-        {
-            title: 'Réalité augmentée et travaux de recherche',
-            desc: 'Cette application a été conçue dans le cadre d\'un travail de recherche intitulé : <u>"Mise en valeur du patrimoine culturel par la réalité étendue : L\'étude de cas de la matrice dacienne à motifs creux"</u>. <br><br> L\'objectif de cet article était de voir comment la réalité étendue (XR), c\'est-à-dire la réalité virtuelle et la réalité augmentée, pouvait être utilisée pour améliorer l\'expérience des visiteurs d\'un musée. Pour ce faire, une application en réalité augmentée a été réalisée, permettant aux visiteurs de visualiser des objets en 3D sur un moule en bronze vieux de 2000 ans. <br><br> Des animaux ont été gravés sur le moule et l\'application permet de faire ressortir les modèles 3D de chaque animal. Si l\'utilisateur clique dessus, une description et une animation apparaissent. L\'utilisateur a la possibilité de faire pivoter les modèles 3D ou encore de changer les matériaux qui les composent. Enfin, une partie histoire est disponible, permettant à l\'utilisateur d\'observer avec des photos, comment l\'objet a été trouvé. <br><br> Cette application a été réalisée en utilisant Unity et Vuforia.',
-            images: [
-                'assets/images/projects/bronze-matrix/matrix_project_1.jpg',
-                'assets/images/projects/bronze-matrix/matrix_project_2.jpg',
-                'assets/images/projects/bronze-matrix/matrix_project_3.jpg',
-                'assets/images/projects/bronze-matrix/matrix_project_4.jpg',
-            ]
-        }],
+            {
+                title: 'Réalité augmentée et travaux de recherche',
+                desc: 'Cette application a été conçue dans le cadre d\'un travail de recherche intitulé : <u>"Mise en valeur du patrimoine culturel par la réalité étendue : L\'étude de cas de la matrice dacienne à motifs creux"</u>. <br><br> L\'objectif de cet article était de voir comment la réalité étendue (XR), c\'est-à-dire la réalité virtuelle et la réalité augmentée, pouvait être utilisée pour améliorer l\'expérience des visiteurs d\'un musée. Pour ce faire, une application en réalité augmentée a été réalisée, permettant aux visiteurs de visualiser des objets en 3D sur un moule en bronze vieux de 2000 ans. <br><br> Des animaux ont été gravés sur le moule et l\'application permet de faire ressortir les modèles 3D de chaque animal. Si l\'utilisateur clique dessus, une description et une animation apparaissent. L\'utilisateur a la possibilité de faire pivoter les modèles 3D ou encore de changer les matériaux qui les composent. Enfin, une partie histoire est disponible, permettant à l\'utilisateur d\'observer avec des photos, comment l\'objet a été trouvé. <br><br> Cette application a été réalisée en utilisant Unity et Vuforia.',
+                images: [
+                    'assets/images/projects/bronze-matrix/matrix_project_1.jpg',
+                    'assets/images/projects/bronze-matrix/matrix_project_2.jpg',
+                    'assets/images/projects/bronze-matrix/matrix_project_3.jpg',
+                    'assets/images/projects/bronze-matrix/matrix_project_4.jpg',
+                ]
+            }],
         skills: [
             'unity',
             'csharp',
@@ -131,10 +164,10 @@ export const projectListTemplate: ProjectTemplate[] = [
         ]
     },
     {
-        portfolio : true,
-        more_info : true,
+        portfolio: true,
+        more_info: true,
         key: 'os-game',
-        github : 'https://github.com/adrien-syrotnik/One-Shot',
+        github: 'https://github.com/adrien-syrotnik/One-Shot',
         main_desc: 'Souhaitant réaliser un jeu en ligne, ce jeu avait pour but de tester mes récentes compétences en Unity. En plus de cela, j\'ai appris à réaliser un jeu en ligne en utilisant Netcode et Unity Services.',
         image: 'assets/images/projects/one-shot-logo.png',
         low_desc: 'Mini-jeu simple multijoueur (Unity / Netcode)',
@@ -152,10 +185,10 @@ export const projectListTemplate: ProjectTemplate[] = [
         ]
     },
     {
-        portfolio : true,
-        more_info : true,
+        portfolio: true,
+        more_info: true,
         key: 'basketttooo',
-        github : 'https://github.com/adrien-syrotnik/Basketttooo-Counting-Prototype',
+        github: 'https://github.com/adrien-syrotnik/Basketttooo-Counting-Prototype',
         main_desc: 'Réalisation d\'un mini-jeu basé sur le basketball.',
         image: 'assets/images/projects/basketttooo-logo.png',
         low_desc: 'Création d\'un jeu de basket (Unity)',
@@ -175,8 +208,8 @@ export const projectListTemplate: ProjectTemplate[] = [
         ]
     },
     {
-        portfolio : true,
-        more_info : true,
+        portfolio: true,
+        more_info: true,
         key: 'tuto-tank',
         main_desc: 'Réalisation d\'un tutoriel sur Unity me permettant de créer un jeu de tank en local.',
         image: 'assets/images/tuto-tank.png',
@@ -195,7 +228,7 @@ export const projectListTemplate: ProjectTemplate[] = [
     },
     {
         key: 'online_resume_v2',
-        github : 'https://github.com/adrien-syrotnik/CV-Syrotnik-V2',
+        github: 'https://github.com/adrien-syrotnik/CV-Syrotnik-V2',
         portfolio: true,
         main_desc: 'Étant en plein stage concernant Angular, je voulais changer mon site web et en même temps progresser sur ce framework. J\'ai donc décidé de le faire sous Angular, bien que cela ne reflète pas l\'intégralité du framework. Un meilleur design, un dark mode et différentes traductions étaient mes principaux objectifs concernant ce projet.',
         image: 'assets/images/resume-angular.png',
@@ -239,7 +272,7 @@ export const projectListTemplate: ProjectTemplate[] = [
             'Game design'
         ],
         more_info: true
-    }, 
+    },
     {
         key: 'speedrun',
         portfolio: true,
@@ -250,7 +283,7 @@ export const projectListTemplate: ProjectTemplate[] = [
         year: new Date('2022-04'),
         parts: [{
             title: 'Un site web : un backend et un frontend',
-            desc: 'Pour réaliser ce projet, il fallait pouvoir stocker les informations dans une base de données, et il fallait donc réaliser un backend en plus du frontend. J\'ai décidé de réaliser le backend en utilisant le framework Express.js, et le frontend en utilisant Angular.js. <br/><br/> Le frontend s\'est également fait en collaboration avec Arthur Joris, la même personne ayant développée Emergency Exit avec moi. <br/><br/>Vous pouvez retrouver le site web via le lien suivant : <a href="https://syrotnik.online/speedrun" target="_blank">syrotnik.online/speedrun</a>',
+            desc: 'Pour réaliser ce projet, il fallait pouvoir stocker les informations dans une base de données, et il fallait donc réaliser un backend en plus du frontend. J\'ai décidé de réaliser le backend en utilisant le framework Express.js, et le frontend en utilisant Angular.js. <br/><br/> Le frontend s\'est également fait en collaboration avec Arthur Joris, la même personne ayant développée Emergency Exit avec moi. <br/><br/>Vous pouvez retrouver le site web via le lien suivant : <a href="https://cv.adrien-syrotnik.fr/speedrun" target="_blank">cv.adrien-syrotnik.fr/speedrun</a>',
             images: ['assets/images/speedrun-site1.png', 'assets/images/speedrun-site2.png']
         }, {
             title: 'Comment chronométrer précisément ?',

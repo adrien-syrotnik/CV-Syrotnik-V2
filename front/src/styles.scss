@@ -143,12 +143,13 @@ body.dark {
         color: white;
     }
     .skill {
-        opacity: 0.5;
+        opacity: 0.9;
         filter: grayscale(1) invert(1);
         transition: opacity 0.2s ease-in-out;
     }
     .skill:hover {
         opacity: 1;
+        filter: grayscale(1) invert(1) drop-shadow(1px 1px 5px);
     }
     .link-account {
         opacity: 1;

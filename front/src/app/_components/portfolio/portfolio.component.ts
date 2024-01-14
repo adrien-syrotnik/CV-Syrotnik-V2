@@ -35,7 +35,7 @@ export class PortfolioComponent implements OnInit, OnDestroy {
     name : 'CodinGame'
   },{
     image : 'assets/images/new_photo.jpg',
-    link : 'https://syrotnik.online/',
+    link : 'https://cv.adrien-syrotnik.fr',
     name : 'Mon CV en ligne'
   }];
 
