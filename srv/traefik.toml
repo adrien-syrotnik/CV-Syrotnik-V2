@@ -8,9 +8,6 @@
 
 [providers.docker]
 
-[api]
-  insecure = true
-
 [certificatesResolvers.adriens.acme]
   email = "adrien.syrotnik@gmail.com"
   storage = "acme.json"

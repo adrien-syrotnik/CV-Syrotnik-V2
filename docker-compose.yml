@@ -19,7 +19,7 @@ services:
       - "80:80"
       - "443:443"
       # The Web UI (enabled by --api.insecure=true)
-      - "8080:8080"
+      # - "8080:8080"
     volumes:
       # So that Traefik can listen to the Docker events
       - /var/run/docker.sock:/var/run/docker.sock
@@ -37,9 +37,6 @@ services:
     # - "traefik.http.routers.nas.service=nas@file"
     # - "traefik.http.routers.nas.tls=true"
     # - "traefik.http.routers.nas.tls.certresolver=adriens"
-    networks:
-      - traefik
-      - default
 
 
   mysql_db:
@@ -115,9 +112,7 @@ services:
 volumes:
     db_data:
 
-
 networks:
   default:
-    name: traefik_proxy
-    external: true
+    name: traefik
       
