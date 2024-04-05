@@ -24,7 +24,8 @@ services:
       # So that Traefik can listen to the Docker events
       - /var/run/docker.sock:/var/run/docker.sock
       - ./srv/traefik.toml:/etc/traefik/traefik.toml
-      - ./srv/acme.json:/acme.jsonq
+      - ./srv/acme.json:/acme.json
+      - "./srv:/srv"
     # labels:
     # - "traefik.http.routers.dashboard.rule=Host(`traefik.home.adriens.net`)"
     # - "traefik.http.routers.dashboard.service=dashboard@internal"

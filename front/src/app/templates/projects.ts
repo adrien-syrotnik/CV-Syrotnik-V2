@@ -4,76 +4,6 @@ export const projectListTemplate: ProjectTemplate[] = [
     {
         portfolio: true,
         more_info: true,
-        github: 'https://github.com/adrien-syrotnik/casino-ai-svelte',
-        key: 'casino-ai',
-        main_desc: 'Conception d\'une machine à sous en ligne, intégrant des thèmes générés par intelligence artificielle, permettant aux utilisateurs de personnaliser leur expérience de jeu. Le projet inclut également des animations pour accroître le réalisme, avec un rendement de 500% pour une expérience de jeu divertissante, accompagné d\'un bonus aléatoire offrant entre 3 et 9 symboles jokers.',
-        image: 'assets/images/projects/casino-ai.jpg',
-        low_desc: 'Machine à sous en ligne avec thèmes générés par une IA (Svelte / Python)',
-        name: 'Casino AI',
-        year: new Date('2024-01-14'),
-        parts: [{
-            title: 'Présentation de la machine à sous',
-            desc: 'Casino AI, ou "Dynamic Slot", est une machine à sous en ligne réalisée avec le framework Svelte. <br><br>L\'objectif principal de ce projet était de créer une machine à sous en ligne intégrant des images générées par une intelligence artificielle. L\'objectif ultime était de permettre à l\'utilisateur de personnaliser la machine sur laquelle il souhaite jouer, même si elle n\'existe pas encore. <br><br> Pour atteindre cet objectif, j\'ai utilisé plusieurs intelligences artificielles, notamment <a href="https://huggingface.co/dataautogpt3/OpenDalleV1.1">OpenDalleV1.1</a>, qui est hébergée localement sur ma machine. Cette intelligence artificielle est employée pour générer des images de la machine en fonction d\'un thème choisi par l\'utilisateur. <br> Par la suite, pour optimiser les résultats, l\'API d\'OpenAI a été mise à contribution. <a href="https://openai.com/research/gpt-4">GPT-4</a> a été utilisé pour générer des textes liés au thème choisi par l\'utilisateur, et ces textes ont ensuite été employés comme descriptions pour la génération d\'images avec <a href="https://openai.com/dall-e-3">DALL-E 3</a>. <br><br> Vous pouvez essayer la machine à sous directement sur cette page ou en suivant ce <a href="https://slot.adrien-syrotnik.fr" target="_blank">lien</a>.',
-            template: `<iframe id='webgl_iframe' src="https://slot.adrien-syrotnik.fr"  width="810"
-            height="700"></iframe>`
-        },
-        {
-            title: 'Animations et rendement',
-            desc: 'Afin d\'apporter un réalisme accru à la machine à sous, j\'ai intégré des animations. <br><br> Lorsque l\'utilisateur démarre la machine, les rouleaux se mettent en mouvement, s\'arrêtant un à un. Les gains de chaque tour s\'affichent, et les crédits sont actualisés. En cas de gros gains, une animation spécifique est également déclenchée. <br><br> En ce qui concerne le rendement pour le joueur, celui-ci est fixé à 500% (soit 5€ pour chaque 1€ misé). Mon objectif était principalement d\'offrir une expérience de jeu divertissante plutôt que réaliste. <br><br> Enfin, un bonus est disponible de manière aléatoire (avec une probabilité de 5%). Ce bonus permet d\'obtenir entre 3 et 9 wilds (symboles jokers) sur la machine.',
-            images: [
-                'assets/images/projects/casino-ai/slot_1.png',
-                'assets/images/projects/casino-ai/slot_2.png',
-                'assets/images/projects/casino-ai/slot_3.png',
-                'assets/images/projects/casino-ai/slot_4.png',
-            ]
-        }],
-        skills: [
-            'svelte',
-            'python',
-            'ai'
-        ]
-    },
-
-    {
-        key: 'minecraft_modding',
-        portfolio: true,
-        main_desc: 'À l\'aide des commandes intégrés au jeu (datapack et command blocks), et à l\'aide d\'un ami, nous avons réalisé différents mini-jeux dans le jeu vidéo Minecraft. Vous pouvez retrouver nos créations sur <a href="https://linktr.ee/aidia_info" target="_blank">notre lientr.ee</a>.',
-        image: 'assets/images/grass.png',
-        low_desc: 'Réaliser des mini-jeux dans le jeu vidéo Minecraft',
-        name: 'Modding Minecraft',
-        year: new Date('2016-02'),
-        yearEnd: new Date('2023-09'),
-        parts: [{
-            title: 'Lucky Block',
-            desc: 'Reprise du célèbre mod <u>Lucky Block</u>, nous avons décidé de le recréer dans Minecraft. <br/><br/>Le but est simple : casser des blocs de chance qui peuvent vous donner des objets, des monstres ou encore des pièges.<br/><br/>Vous pouvez voir un exemple du jeu via la vidéo ci-jointe.',
-            video: 'https://www.youtube.com/embed/6N_YOckSHXU?si=0V2ocIeqkTNrGp7L'
-        }, {
-            title: 'SSL (Super Smash Licence)',
-            desc: 'Inspiré du célèbre jeu Super Smash Bros, nous avons réalisé un jeu similaire avec des personnages du jeu vidéo qui nous tenaient à cœur.<br/><br/> <i>Link</i> de la série <u>The Legend of Zelda</u>, <i>Doomfist</i> du jeu <u>Overwatch</u>, <i>Edward Kenway</i> de la saga <u>Assassin\'s Creed</u> ou le personnage de notre jeu vidéo <a href="/project/emergency_exit">Emergency Exit</a>, nous avons créé un total de 10 personnages jouables aux capacités uniques !<br/><br/> Vous pouvez voir une démonstration à partir de la vidéo ci-jointe.',
-            video: 'https://www.youtube.com/embed/wZZJa_QlNus'
-        }, {
-            title: 'Mario Kart Minecraft',
-            desc: 'Pour ce projet, nous avions pour but de recopier exactement le jeu <u>Mario Kart</u>.<br/><br/>En passant par la construction des circuits, la reproduction des karts et le système d\'objet, nous avons réussi à finalement reproduire ce jeu dans Minecraft.<br/><br/>Étant assez limités, nous avons utilisé des cochons en guise de kart par exemple.<br/><br/>Vous pouvez voir un exemple du jeu via la vidéo ci-jointe.',
-            video: 'https://www.youtube.com/embed/0EbF0eRnaA8'
-        }, {
-            title: 'Sheep Wars',
-            desc: 'Cette fois-ci, ce jeu n\'est certainement pas connu de tout le monde. <u>SheepWars</u> était un mode de jeu que j\'avais découvert sur un ancien serveur Minecraft. Ce jeu nous ayant manqués, et pour tester nos capacités, nous avons donc décidé de reproduire cet ancien mini-jeu.<br/><br/>Le but est assez simple : 2 équipes s\'affrontent sur un terrain dans lequel nous pouvons obtenir des moutons que nous pouvons lancer et ayant certains pouvoirs.<br/><br/> Nous avons par exemple le <i>Mouton Incendiaire</i> qui est représenté sur les images ci-contre, qui après un certain temps explose et répand du feu autour de lui. Le but final : éliminer toute l\'équipe adverse !',
-            images: ['assets/images/sw_launch1.png', 'assets/images/sw_launch2.png', 'assets/images/sw_explo2.png', 'assets/images/sw_explo1.png']
-            //template: this.createCarousel('oui',[{desc:'oui', img :'assets/images/new_photo.jpg', title: ''},{desc:'oui', img :'assets/images/new_photo.jpg', title: ''}])
-        }],
-        skills: [
-            'equipe',
-            'recherche',
-        ],
-        keywords: [
-            'Command Blocks / Datapack',
-            'Game design'
-        ],
-        more_info: true
-    },
-    {
-        portfolio: true,
-        more_info: true,
         github: 'https://github.com/adrien-syrotnik/Tech-and-Sorcery',
         key: 'tech-and-sorcery',
         main_desc: 'Jeu VR basé sur le jeu Blade and Sorcery, qui devait être réalisé pour finaliser le parcours VR présent sur le site Unity learn. Le but du jeu est d\'utiliser des armes et des sorts pour tuer des adversaires qui apparaissent sous forme de vague.',
@@ -183,6 +113,101 @@ export const projectListTemplate: ProjectTemplate[] = [
             'csharp',
             'recherche'
         ]
+    },
+    {
+        portfolio: true,
+        more_info: false,
+        key: 'geo-game-guesser',
+        main_desc: 'Conception d\'un site web permettant de jouer à un jeu de géographie. Le but est de trouver l\'emplacement précis du joueur sur une carte d\'un jeu vidéo. Le site web est réalisé en utilisant le framework Svelte, et les jeux testés sont : Counter-Strike 2 et Zelda Minish Cap.',
+        image: 'assets/images/projects/geo-game-guesser.jpg',
+        low_desc: 'Jeu de géographie des jeux vidéo (Svelte)',
+        name: 'Geo Game Guesser',
+        year: new Date('2024-04-05'),
+        parts: [
+        {
+            title: 'Fonctionnement du jeu',
+            desc: 'Basé sur le principe du jeu <a href="https://www.geoguessr.com/fr" target="_blank">GeoGuessr</a>, et repris de l\'idée du site web <a href="https://www.lostgamer.io/" target="_blank">LostGamer</a>, le but de ce jeu est de trouver l\'emplacement exact du joueur sur une carte d\'un jeu vidéo. <br><br> Pour ce faire, j\'ai utilisé le framework Svelte pour réaliser le site web, et utilisé les librairies <a href="https://leafletjs.com/" target="_blank">Leaflet</a> et <a href="https://threejs.org/" target="_blank">Three.js</a> pour la partie cartographie et 3D (vue 360°). <br><br> Les jeux testés sont Counter-Strike 2 et Zelda Minish Cap, pour tester à la fois des jeux en 3D et en 2D, ce qui diffère du site LostGamer qui ne propose que des jeux en 3D. <br><br> Afin de réaliser des images 360° panoramiques de CS2, j\'ai réalisé plusieurs captures d\'écran du jeu, puis je les ai assemblées pour obtenir une image panoramique (stitching) en utilisant la librairie openCV sur Python.',
+            images: [
+                'assets/images/projects/geo-game-guesser/1.png',
+                'assets/images/projects/geo-game-guesser/2.png',
+                'assets/images/projects/geo-game-guesser/3.png',
+                'assets/images/projects/geo-game-guesser/4.png',
+            ]
+        }],
+        skills: [
+            'svelte',
+            'python'
+        ]
+    },
+    {
+        portfolio: true,
+        more_info: true,
+        github: 'https://github.com/adrien-syrotnik/casino-ai-svelte',
+        key: 'casino-ai',
+        main_desc: 'Conception d\'une machine à sous en ligne, intégrant des thèmes générés par intelligence artificielle, permettant aux utilisateurs de personnaliser leur expérience de jeu. Le projet inclut également des animations pour accroître le réalisme, avec un rendement de 500% pour une expérience de jeu divertissante, accompagné d\'un bonus aléatoire offrant entre 3 et 9 symboles jokers.',
+        image: 'assets/images/projects/casino-ai.jpg',
+        low_desc: 'Machine à sous en ligne avec thèmes générés par une IA (Svelte / Python)',
+        name: 'Casino AI',
+        year: new Date('2024-01-14'),
+        parts: [{
+            title: 'Présentation de la machine à sous',
+            desc: 'Casino AI, ou "Dynamic Slot", est une machine à sous en ligne réalisée avec le framework Svelte. <br><br>L\'objectif principal de ce projet était de créer une machine à sous en ligne intégrant des images générées par une intelligence artificielle. L\'objectif ultime était de permettre à l\'utilisateur de personnaliser la machine sur laquelle il souhaite jouer, même si elle n\'existe pas encore. <br><br> Pour atteindre cet objectif, j\'ai utilisé plusieurs intelligences artificielles, notamment <a href="https://huggingface.co/dataautogpt3/OpenDalleV1.1">OpenDalleV1.1</a>, qui est hébergée localement sur ma machine. Cette intelligence artificielle est employée pour générer des images de la machine en fonction d\'un thème choisi par l\'utilisateur. <br> Par la suite, pour optimiser les résultats, l\'API d\'OpenAI a été mise à contribution. <a href="https://openai.com/research/gpt-4">GPT-4</a> a été utilisé pour générer des textes liés au thème choisi par l\'utilisateur, et ces textes ont ensuite été employés comme descriptions pour la génération d\'images avec <a href="https://openai.com/dall-e-3">DALL-E 3</a>. <br><br> Vous pouvez essayer la machine à sous directement sur cette page ou en suivant ce <a href="https://slot.adrien-syrotnik.fr" target="_blank">lien</a>.',
+            template: `<iframe id='webgl_iframe' src="https://slot.adrien-syrotnik.fr"  width="810"
+            height="700"></iframe>`
+        },
+        {
+            title: 'Animations et rendement',
+            desc: 'Afin d\'apporter un réalisme accru à la machine à sous, j\'ai intégré des animations. <br><br> Lorsque l\'utilisateur démarre la machine, les rouleaux se mettent en mouvement, s\'arrêtant un à un. Les gains de chaque tour s\'affichent, et les crédits sont actualisés. En cas de gros gains, une animation spécifique est également déclenchée. <br><br> En ce qui concerne le rendement pour le joueur, celui-ci est fixé à 500% (soit 5€ pour chaque 1€ misé). Mon objectif était principalement d\'offrir une expérience de jeu divertissante plutôt que réaliste. <br><br> Enfin, un bonus est disponible de manière aléatoire (avec une probabilité de 5%). Ce bonus permet d\'obtenir entre 3 et 9 wilds (symboles jokers) sur la machine.',
+            images: [
+                'assets/images/projects/casino-ai/slot_1.png',
+                'assets/images/projects/casino-ai/slot_2.png',
+                'assets/images/projects/casino-ai/slot_3.png',
+                'assets/images/projects/casino-ai/slot_4.png',
+            ]
+        }],
+        skills: [
+            'svelte',
+            'python',
+            'ai'
+        ]
+    },
+
+    {
+        key: 'minecraft_modding',
+        portfolio: true,
+        main_desc: 'À l\'aide des commandes intégrés au jeu (datapack et command blocks), et à l\'aide d\'un ami, nous avons réalisé différents mini-jeux dans le jeu vidéo Minecraft. Vous pouvez retrouver nos créations sur <a href="https://linktr.ee/aidia_info" target="_blank">notre lientr.ee</a>.',
+        image: 'assets/images/grass.png',
+        low_desc: 'Réaliser des mini-jeux dans le jeu vidéo Minecraft',
+        name: 'Modding Minecraft',
+        year: new Date('2016-02'),
+        yearEnd: new Date('2023-09'),
+        parts: [{
+            title: 'Lucky Block',
+            desc: 'Reprise du célèbre mod <u>Lucky Block</u>, nous avons décidé de le recréer dans Minecraft. <br/><br/>Le but est simple : casser des blocs de chance qui peuvent vous donner des objets, des monstres ou encore des pièges.<br/><br/>Vous pouvez voir un exemple du jeu via la vidéo ci-jointe.',
+            video: 'https://www.youtube.com/embed/6N_YOckSHXU?si=0V2ocIeqkTNrGp7L'
+        }, {
+            title: 'SSL (Super Smash Licence)',
+            desc: 'Inspiré du célèbre jeu Super Smash Bros, nous avons réalisé un jeu similaire avec des personnages du jeu vidéo qui nous tenaient à cœur.<br/><br/> <i>Link</i> de la série <u>The Legend of Zelda</u>, <i>Doomfist</i> du jeu <u>Overwatch</u>, <i>Edward Kenway</i> de la saga <u>Assassin\'s Creed</u> ou le personnage de notre jeu vidéo <a href="/project/emergency_exit">Emergency Exit</a>, nous avons créé un total de 10 personnages jouables aux capacités uniques !<br/><br/> Vous pouvez voir une démonstration à partir de la vidéo ci-jointe.',
+            video: 'https://www.youtube.com/embed/wZZJa_QlNus'
+        }, {
+            title: 'Mario Kart Minecraft',
+            desc: 'Pour ce projet, nous avions pour but de recopier exactement le jeu <u>Mario Kart</u>.<br/><br/>En passant par la construction des circuits, la reproduction des karts et le système d\'objet, nous avons réussi à finalement reproduire ce jeu dans Minecraft.<br/><br/>Étant assez limités, nous avons utilisé des cochons en guise de kart par exemple.<br/><br/>Vous pouvez voir un exemple du jeu via la vidéo ci-jointe.',
+            video: 'https://www.youtube.com/embed/0EbF0eRnaA8'
+        }, {
+            title: 'Sheep Wars',
+            desc: 'Cette fois-ci, ce jeu n\'est certainement pas connu de tout le monde. <u>SheepWars</u> était un mode de jeu que j\'avais découvert sur un ancien serveur Minecraft. Ce jeu nous ayant manqués, et pour tester nos capacités, nous avons donc décidé de reproduire cet ancien mini-jeu.<br/><br/>Le but est assez simple : 2 équipes s\'affrontent sur un terrain dans lequel nous pouvons obtenir des moutons que nous pouvons lancer et ayant certains pouvoirs.<br/><br/> Nous avons par exemple le <i>Mouton Incendiaire</i> qui est représenté sur les images ci-contre, qui après un certain temps explose et répand du feu autour de lui. Le but final : éliminer toute l\'équipe adverse !',
+            images: ['assets/images/sw_launch1.png', 'assets/images/sw_launch2.png', 'assets/images/sw_explo2.png', 'assets/images/sw_explo1.png']
+            //template: this.createCarousel('oui',[{desc:'oui', img :'assets/images/new_photo.jpg', title: ''},{desc:'oui', img :'assets/images/new_photo.jpg', title: ''}])
+        }],
+        skills: [
+            'equipe',
+            'recherche',
+        ],
+        keywords: [
+            'Command Blocks / Datapack',
+            'Game design'
+        ],
+        more_info: true
     },
     {
         portfolio: true,
