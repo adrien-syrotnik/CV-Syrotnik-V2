@@ -39,7 +39,7 @@ export const projectListTemplate: ProjectTemplate[] = [
         skills: [
             'unity',
             'csharp',
-            'vr-ar'
+            'vr'
         ]
     },
     {
