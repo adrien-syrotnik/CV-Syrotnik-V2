@@ -35,14 +35,14 @@ export const listSkill: Skill[][] = [
       id: 'ar'
     },
     {
-      image: 'https://img.icons8.com/ios-filled/70/000000/c-sharp-logo.png',
-      name: 'C#',
-      id: 'csharp'
-    },
-    {
       image: 'https://img.icons8.com/ios-filled/70/000000/unity.png',
       name: 'Unity',
       id: 'unity'
+    },
+    {
+      image: 'https://img.icons8.com/ios-filled/70/000000/c-sharp-logo.png',
+      name: 'C#',
+      id: 'csharp'
     },
     {
       image: 'https://img.icons8.com/color/70/null/blender-3d.png',
@@ -56,6 +56,12 @@ export const listSkill: Skill[][] = [
       image: 'https://img.icons8.com/external-photo3ideastudio-lineal-color-photo3ideastudio/64/external-ai-digital-business-photo3ideastudio-lineal-color-photo3ideastudio.png',
       name: 'Intelligence Artificielle',
       id: 'ai'
+    },
+    //Docker
+    {
+      image: 'https://img.icons8.com/color/70/000000/docker.png',
+      name: 'Docker',
+      id: 'docker'
     },
     //Python
     {
@@ -79,6 +85,12 @@ export const listSkill: Skill[][] = [
       image: 'https://img.icons8.com/doodle/70/svetle.png',
       name: 'Svelte',
       id: 'svelte'
+    },
+    //React native
+    {
+      image: 'https://img.icons8.com/color/70/000000/react-native.png',
+      name: 'React Native',
+      id: 'react-native'
     },
     {
       image: 'https://img.icons8.com/color/70/000000/bootstrap.png',
