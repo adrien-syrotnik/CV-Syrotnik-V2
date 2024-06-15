@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Project } from 'src/app/models/project';
 import { ProjectStorageService } from 'src/app/_services/project-storage.service';
@@ -11,7 +11,8 @@ declare var bootstrap : any;
 @Component({
   selector: 'app-project',
   templateUrl: './project.component.html',
-  styleUrls: ['./project.component.scss']
+  styleUrls: ['./project.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ProjectComponent implements OnInit {
 

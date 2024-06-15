@@ -4,6 +4,26 @@ export const projectListTemplate: ProjectTemplate[] = [
   {
     portfolio: true,
     more_info: true,
+    github: '',
+    key: 'carmino',
+    main_desc:
+      "Jeu réalisé dans le cadre d'une gaming jam avec l'aide de 2 autres personnes, le but était de réaliser un jeu en 60h sur un thème donné. Le thème de cette jam était : \"One Ability\", avec une intégration d'un objet, ici : \"Card\". Le but du jeu est de se déplacer dans une ville et de passer des barrages de police en utilisant des cartes volées aux autres personnages.",
+    image: 'assets/images/projects/carmino-logo.png',
+    low_desc: 'Jeu vidéo réalisé en 60h (Unity / C#)',
+    name: 'Carmino',
+    year: new Date('2024-06-09'),
+    parts: [
+      {
+        title: '2 Développeurs et 1 Game Designer',
+        desc: 'Carmino a été réalisé dans le cadre d\'une gaming jam, avec l\'aide de 2 autres personnes, dont 2 développeurs et 1 game designer. <br><br> Le but de cette jam était de réaliser un jeu en 60h sur un thème donné. Le thème de cette jam était : "One Ability", avec une intégration d\'un objet, ici : "Card". <br><br> Nous avons donc réaliser un jeu dans lequel le joueur doit se déplacer dans une ville et passer des barrages de police en utilisant des cartes volées aux autres personnages. De type "Puzzle", le joueur doit donc réfléchir à la manière d\'utiliser les cartes pour passer les barrages et les portes. <br><br> Le jeu a été réalisé sur Unity, et l\'ensemble des modèles 3D ont été réalisés par le game designer. <br><br>Vous pouvez retrouver le jeu sur la page itch.io du jeu : <a href="https://deltainstudio.itch.io/carmino" target="_blank">Carmino</a>.',
+        template: `<iframe allowtransparency="true" webkitallowfullscreen="true" mozallowfullscreen="true" msallowfullscreen="true" allowfullscreen="true" scrolling="no" src="https://html-classic.itch.zone/html/10674772/index.html" id="game_drop" allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated" frameborder="0" width="960" height="642"></iframe>`,
+      },
+    ],
+    skills: ['unity', 'csharp', 'equipe'],
+  },
+  {
+    portfolio: true,
+    more_info: true,
     github: 'https://github.com/adrien-syrotnik/Tech-and-Sorcery',
     key: 'tech-and-sorcery',
     main_desc:
