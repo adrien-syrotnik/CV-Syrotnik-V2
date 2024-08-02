@@ -24,7 +24,7 @@ export class Tests3DComponent implements OnInit {
 
   @ViewChild('threeContainer', { static: true }) threeContainer!: ElementRef;
 
-  private timeToChangeColor = 300;
+  private timeToChangeColor = 1000;
 
   constructor(private route: ActivatedRoute,
     private projectStorage: ProjectStorageService,
@@ -51,18 +51,8 @@ export class Tests3DComponent implements OnInit {
 
     var scene = new THREE.Scene();
 
-    // const camera = new THREE.PerspectiveCamera(75, container.clientWidth / container.clientHeight, 0.1, 1000);
-    // camera.position.set(15, 15, 30);
-    // Orthographic camera setup
-    const aspect = container.clientWidth / container.clientHeight;
-    const frustumSize = 10;
-    const camera = new THREE.OrthographicCamera(
-      frustumSize * aspect / -2, frustumSize * aspect / 2,
-      frustumSize / 2, frustumSize / -2,
-      0.1, 1000
-    );
+    const camera = new THREE.PerspectiveCamera(75, container.clientWidth / container.clientHeight, 0.1, 1000);
     camera.position.set(15, 15, 30);
-
 
     var controls = new OrbitControls(camera, renderer.domElement);
     controls.minDistance = 10;
@@ -85,23 +75,21 @@ export class Tests3DComponent implements OnInit {
       linewidth: 5,
     });
 
-
-    const scaleFactor = 0.3;
-
     var wireframe = new Wireframe(lineGeometry, matLine);
     wireframe.computeLineDistances();
-    wireframe.scale.set(scaleFactor, scaleFactor, scaleFactor);
+    wireframe.scale.set(1, 1, 1);
     scene.add(wireframe);
 
     var wireframe2 = new Wireframe(lineGeometry, matLine2);
     wireframe2.computeLineDistances();
-    wireframe2.scale.set(scaleFactor, scaleFactor, scaleFactor);
+    wireframe2.scale.set(1.01, 1.01, 1.01);
     scene.add(wireframe2);
+
 
 
     const onWindowResize = () => {
 
-      // camera.aspect = window.innerWidth / window.innerHeight;
+      camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
 
       // renderer will set this eventually
@@ -115,75 +103,57 @@ export class Tests3DComponent implements OnInit {
     var nextColorBlack = true;
 
 
-    const animateCube = async (from: string, to: string, time: number, matLineToChange: LineMaterial, wireframeToChange: Wireframe) => {
-      var startTime = Date.now();
-      var endTime = startTime + time / 2;
+    const animateCube = async (from:string, to:string, time:number, matLineToChange:LineMaterial) => {
+      const startTime = Date.now();
+      const endTime = startTime + time;
       let t = 0;
       let color = new THREE.Color(from);
       let nextColor = new THREE.Color(to);
+
+      const frameRate = 60;
+
       while (Date.now() < endTime) {
         t = Math.min((Date.now() - startTime) / time, 1);
         color = new THREE.Color().lerpColors(color, nextColor, t);
         matLineToChange.color.set(color);
 
-        // const factor = 0.04;
-        // wireframeToChange.scale.set(1 + t * factor, 1 + t * factor, 1 + t * factor);
+        //Rotate cube to do 1 turn using t
+        wireframe.rotation.x += 0.05 / frameRate;
+        wireframe.rotation.y += 0.05 / frameRate;
 
-        //change rotation
-        // wireframeToChange.rotation.x += 0.001;
-
-        //Change position
-        wireframeToChange.position.x += 0.0015;
-
-        await new Promise(resolve => setTimeout(resolve, 1000 / 60));
+        await new Promise(resolve => setTimeout(resolve, 1000 / frameRate));
       }
 
-      //restart for the next half time
-      startTime = Date.now();
-      endTime = startTime + time / 2;
-      t = 0;
-      color = new THREE.Color(to);
-      nextColor = new THREE.Color(from);
-      while (Date.now() < endTime) {
-        t = Math.min((Date.now() - startTime) / time, 1);
-        color = new THREE.Color().lerpColors(color, nextColor, t);
-        matLineToChange.color.set(color);
-
-        // const factor = 0.04;
-        // wireframeToChange.scale.set(1 + (1 - t) * factor, 1 + (1 - t) * factor, 1 + (1 - t) * factor);
-
-        //change rotation
-        // wireframeToChange.rotation.x += 0.001;
-
-        //Change position
-        wireframeToChange.position.x += 0.0015;
-
-        await new Promise(resolve => setTimeout(resolve, 1000 / 60));
-      }
-
-
-      //Reset
-      // wireframeToChange.scale.set(1, 1, 1);
-      // wireframeToChange.rotation.x = 0;
-      wireframeToChange.position.x = 0;
-      //reset color to white
-      matLineToChange.color.set(new THREE.Color('white'));
+      //Once finish, reset rotation
+      wireframe.rotation.x = 0;
+      wireframe.rotation.y = 0;
     }
 
     // Animation loop
-    const animateColors = (matLine: LineMaterial, wireframe: Wireframe, nextColorBlack: boolean) => {
-      //change color
-      // if (nextColorBlack) {
-        animateCube('white', 'black', this.timeToChangeColor, matLine, wireframe);
-        nextColorBlack = false;
-      // } else {
-      //   animateCube('black', 'white', this.timeToChangeColor, matLine, wireframe);
-      //   nextColorBlack = true;
-      // }
+    const animateColors = () => {
 
+      // requestAnimationFrame(animate);
+      // wireframe.rotation.x += 0.01;
+      // wireframe.rotation.y += 0.01;
+
+      //change color
+      if (nextColorBlack) {
+        animateCube('white', 'black', this.timeToChangeColor, matLine);
+        animateCube('black', 'white', this.timeToChangeColor, matLine2);
+        nextColorBlack = false;
+      } else {
+        animateCube('black', 'white', this.timeToChangeColor, matLine);
+        animateCube('white', 'black', this.timeToChangeColor, matLine2);
+        nextColorBlack = true;
+      }
+
+      console.log(nextColorBlack);
+
+      renderer.render(scene, camera);
+      
       //Wait animation before next color change
       setTimeout(() => {
-        animateColors(matLine, wireframe, nextColorBlack);
+        animateColors();
       }, this.timeToChangeColor);
     }
 
@@ -191,17 +161,13 @@ export class Tests3DComponent implements OnInit {
     // Animation loop
     const animate = () => {
       requestAnimationFrame(animate);
+      wireframe.rotation.x += 0.01;
+      wireframe.rotation.y += 0.01;
+
       renderer.render(scene, camera);
     }
 
-    //Animate instant 1
-    animateColors(matLine, wireframe, nextColorBlack);
-
-    //wait half time before starting the second animation
-    setTimeout(() => {
-      animateColors(matLine2, wireframe2, nextColorBlack);
-    }, this.timeToChangeColor / 2);
-
+    animateColors();
     animate();
     window.addEventListener('resize', onWindowResize, false);
     onWindowResize();
