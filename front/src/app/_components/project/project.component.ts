@@ -16,8 +16,6 @@ declare var bootstrap : any;
 })
 export class ProjectComponent implements OnInit {
 
-
-
   project : Project;
   constructor(private route: ActivatedRoute,
               private projectStorage: ProjectStorageService,
@@ -27,31 +25,7 @@ export class ProjectComponent implements OnInit {
     
 
     this.project = this.projectStorage.listProject.find((p) => p.key == this.route.snapshot.paramMap.get('key')) as Project;
-
-
-  //   let partsFiltered: {
-  //     title?: string | undefined;
-  //     desc: string;
-  //     template?: string | undefined;
-  //     video?: any;
-  // }[] = [];
-  //   this.project.parts?.forEach((part) => {
-  //     let newPart : {
-  //       title?: string | undefined;
-  //       desc: string;
-  //       template?: string | undefined;
-  //       video?: any;
-  //   } = part;
-  //     if(part.video)
-  //       newPart.video = this.sanitizer.bypassSecurityTrustResourceUrl(part.video);
-  //     partsFiltered.push(newPart)
-  //   });
-  //   this.project.parts = partsFiltered;
-  //   console.log(this.project.parts)
   }
-
-
-   
 
   ngOnInit(): void {
     setTimeout(() => {

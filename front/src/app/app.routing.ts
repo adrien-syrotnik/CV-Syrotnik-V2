@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ChatGPTComponent } from './_components/chatGPT/chatGPT.component';
 import { HomeComponent } from './_components/home/home.component';
 import { PortfolioComponent } from './_components/portfolio/portfolio.component';
 import { ProjectComponent } from './_components/project/project.component';
@@ -15,9 +14,6 @@ export const appRoutes: Routes = [{
 },
 {
   path: 'portfolio', component: PortfolioComponent
-},
-{
-  path: 'chatgpt', component: ChatGPTComponent
 },
 {
   path: 'speedrun',
