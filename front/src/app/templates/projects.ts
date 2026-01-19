@@ -135,7 +135,7 @@ export const projectListTemplate: ProjectTemplate[] = [
     image: 'assets/images/projects/sport-dehors/logo-sport-dehors.jpg',
     low_desc: 'Application mobile de recherche de terrains de sport (React Native)',
     name: 'Sport Dehors',
-    // year: new Date('2024-04-05'),
+    year: new Date('2024-04-05'),
     parts: [
       {
         title: 'Application multi-plateforme',
@@ -239,7 +239,7 @@ export const projectListTemplate: ProjectTemplate[] = [
           'assets/images/sw_explo2.png',
           'assets/images/sw_explo1.png',
         ],
-        //template: this.createCarousel('oui',[{desc:'oui', img :'assets/images/new_photo.jpg', title: ''},{desc:'oui', img :'assets/images/new_photo.jpg', title: ''}])
+        //template: this.createCarousel('oui',[{desc:'oui', img :'assets/images/new_photo.png', title: ''},{desc:'oui', img :'assets/images/new_photo.png', title: ''}])
       },
     ],
     skills: ['equipe', 'recherche'],

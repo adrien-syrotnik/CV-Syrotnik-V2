@@ -11,7 +11,7 @@
 
     <div class="row justify-content-center" style="position: relative;">
         <!-- <h1 class="col text-center" style=" font-family:;">SYROTNIK ADRIEN</h1> -->
-        <h1 class="col titre-cv">Syrotnik Adrien</h1>
+        <h1 class="col titre-cv">Syrotnik Λdrien</h1>
         <div id="mainSquare" class="border-round" style="margin-top: 7em; margin-bottom: 7em; height: 100px; width: 100px; background-image: radial-gradient( circle farthest-corner at 10% 20%, rgb(255, 215, 104) 10%, #F2Ce3E 90%);"></div>
     </div>
 
@@ -23,7 +23,7 @@
 
         <div class="col-8 col-md-6 col-lg-3 text-center mx-3 p-3 mb-lg-3 mb-md-4">
 
-            <img src="assets/images/new_photo.jpg" alt="" class="w-100 border-round">
+            <img src="assets/images/new_photo.png" alt="" class="w-100 border-round">
 
         </div>
 
@@ -68,7 +68,7 @@
                                 <img src="{{ experience.image }}" alt="" class="w-100">
                             </div>
                             <div class="col-11 col-lg-9 order-3 order-lg-2">
-                                <h5 class="text-center" [class.text-lg-end]="i%2 == 0">{{ experience.date_begin | date:"MM/YYYY" }} - {{ experience.date_end | date:"MM/YYYY" }}</h5>
+                                <h5 class="text-center" [class.text-lg-end]="i%2 == 0">{{ experience.date_begin | date:"MM/YYYY" }} - {{ experience.date_end ? (experience.date_end | date:"MM/YYYY") : ('En cours' | translate) }}</h5>
                                 <strong>{{ experience.company | translate }}</strong> : {{ 'EXPERIENCES.'+experience.key+'.NAME' | translate}}
                             </div>
                             <div class="col-2 col-sm-2 col-md-1 col-lg-1 order-2 order-md-2 order-lg-3">

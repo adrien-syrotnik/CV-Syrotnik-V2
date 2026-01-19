@@ -2,6 +2,32 @@ import { Skill } from "../models/skill";
 
 export const listSkill: Skill[][] = [
   [
+    //n8n
+    {
+      image: '/assets/images/n8n-logo.png',
+      name: 'n8n',
+      id: 'n8n'
+    },
+    //AI
+    {
+      image: 'https://img.icons8.com/external-photo3ideastudio-lineal-color-photo3ideastudio/64/external-ai-digital-business-photo3ideastudio-lineal-color-photo3ideastudio.png',
+      name: 'Intelligence Artificielle',
+      id: 'ai'
+    },
+    //Docker
+    {
+      image: 'https://img.icons8.com/color/70/000000/docker.png',
+      name: 'Docker',
+      id: 'docker'
+    },
+    //Python
+    {
+      image: 'https://img.icons8.com/color/70/000000/python--v1.png',
+      name: 'Python',
+      id: 'python'
+    }
+  ],
+  [
     {
       image: 'https://img.icons8.com/ios/70/project-management.png',
       name: 'Management de projet',
@@ -25,53 +51,6 @@ export const listSkill: Skill[][] = [
   ],
   [
     {
-      image: 'https://img.icons8.com/ios/70/null/virtual-reality.png',
-      name: 'Réalité Virtuelle',
-      id: 'vr'
-    },
-    {
-      image: 'https://img.icons8.com/external-outline-andi-nur-abdillah/70/null/external-Augmented-Reality-virtual-reality-(outline)-outline-andi-nur-abdillah.png',
-      name: 'Réalité Augmentée',
-      id: 'ar'
-    },
-    {
-      image: 'https://img.icons8.com/ios-filled/70/000000/unity.png',
-      name: 'Unity',
-      id: 'unity'
-    },
-    {
-      image: 'https://img.icons8.com/ios-filled/70/000000/c-sharp-logo.png',
-      name: 'C#',
-      id: 'csharp'
-    },
-    {
-      image: 'https://img.icons8.com/color/70/null/blender-3d.png',
-      name: 'Blender 3D',
-      id: 'blender'
-    }
-  ],
-  [
-    //AI
-    {
-      image: 'https://img.icons8.com/external-photo3ideastudio-lineal-color-photo3ideastudio/64/external-ai-digital-business-photo3ideastudio-lineal-color-photo3ideastudio.png',
-      name: 'Intelligence Artificielle',
-      id: 'ai'
-    },
-    //Docker
-    {
-      image: 'https://img.icons8.com/color/70/000000/docker.png',
-      name: 'Docker',
-      id: 'docker'
-    },
-    //Python
-    {
-      image: 'https://img.icons8.com/color/70/000000/python--v1.png',
-      name: 'Python',
-      id: 'python'
-    },  
-  ],
-  [
-    {
       image: '/assets/images/angular_logo.png',
       name: 'Angular',
       id: 'angular'
@@ -89,7 +68,7 @@ export const listSkill: Skill[][] = [
     //React native
     {
       image: 'https://img.icons8.com/color/70/000000/react-native.png',
-      name: 'React Native',
+      name: 'React / React Native',
       id: 'react-native'
     },
     {
@@ -131,6 +110,33 @@ export const listSkill: Skill[][] = [
       image: 'https://img.icons8.com/ios/70/000000/php-logo.png',
       name: 'PHP',
       id: 'php'
+    }
+  ],
+  [
+    {
+      image: 'https://img.icons8.com/ios/70/null/virtual-reality.png',
+      name: 'Réalité Virtuelle',
+      id: 'vr'
+    },
+    {
+      image: 'https://img.icons8.com/external-outline-andi-nur-abdillah/70/null/external-Augmented-Reality-virtual-reality-(outline)-outline-andi-nur-abdillah.png',
+      name: 'Réalité Augmentée',
+      id: 'ar'
+    },
+    {
+      image: 'https://img.icons8.com/ios-filled/70/000000/unity.png',
+      name: 'Unity',
+      id: 'unity'
+    },
+    {
+      image: 'https://img.icons8.com/ios-filled/70/000000/c-sharp-logo.png',
+      name: 'C#',
+      id: 'csharp'
+    },
+    {
+      image: 'https://img.icons8.com/color/70/null/blender-3d.png',
+      name: 'Blender 3D',
+      id: 'blender'
     }
   ],
   [

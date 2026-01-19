@@ -9,9 +9,9 @@
     },
     "ABOUT": {
         "RESUME_FILE": "Adrien Syrotnik resume.pdf",
-        "TITLE": "In alternation, computer engineer specialized in virtual and augmented reality",
-        "DESC": "Hello, I'm Adrien Syrotnik, I'm 22 years old and I'm in my fifth year of studies in computer engineering at CESI in Reims. My professional goal is to become an engineer specializing in the field of 3D and virtual reality.<br><br> During my studies, I have acquired skills by working on projects using Unity and Unreal Engine engines. I also have knowledge in software development (C++, C#), Web 2.0 (HTML, CSS, Angular), Web 3.0 (Solidity, Web3.js), network and artificial intelligence.<br><br> I possess essential skills to be an engineer, such as problem-solving, analysis, and critical thinking. I am capable of understanding clients' needs, designing technical solutions, and working effectively in a team or autonomously.<br><br/> I'm currently doing a work-study program at Bertrandt in Paris. If you are interested in my profile, do not hesitate to contact me via the <a href='#contact'>contact</a> section. You can also check out my CV in PDF format via this <a href='assets/dl/Adrien Syrotnik resume.pdf' download='Adrien Syrotnik resume.pdf'>link</a> and my portfolio accessible via this <a href='/portfolio' target='_blank'>link</a>.",
-        "SHORT_DESC": "I am Adrien Syrotnik, a 22 years old student in 5th year of studies in computer engineering at CESI in Reims. My professional goal is to become an engineer specialized in 3D and virtual reality. <br>I have acquired skills working on projects using Unity and Unreal Engine as well as in the fields of Web 2.0, Web 3.0, networking and artificial intelligence. I have skills such as problem solving, analysis and critical thinking.<br>I'm currently doing a work-study program at Bertrandt in Paris."
+        "TITLE": "Entrepreneur - AI Automation",
+        "DESC": "Hello, I am Adrien Syrotnik, 24 years old, entrepreneur since January 2025. I created Sinortica, specialized in AI automations to improve business productivity.<br><br>Graduated as a computer engineer from CESI Reims, I developed expertise in virtual/augmented reality (Unity, Unreal Engine), Web development (Angular, Solidity), and AI. My experience at Bertrandt in Paris allowed me to work on innovative VR/AR projects for the aeronautics and automotive industries.<br><br>Today, I put this expertise at the service of companies to design custom technical solutions.<br/><br/>Contact me via the <a href='#contact'>contact</a> section. Check out my resume <a href='assets/dl/CV Adrien Syrotnik.pdf' download='CV Adrien Syrotnik.pdf'>here</a> and my portfolio <a href='/portfolio' target='_blank'>here</a>.",
+        "SHORT_DESC": "24-year-old entrepreneur, founder of Sinortica specialized in AI automations. Graduated as a computer engineer from CESI, expert in VR/AR, Web development, and AI. Experience at Bertrandt Paris in designing innovative technical solutions."
     },
     "EXPERIENCES": {
         "ADEE": {
@@ -30,14 +30,23 @@
             "NAME": "VR - AR developer Internship",
             "DESC": "Internship abroad (Erasmus+) in Romania, during which I had to realize different applications using VR and AR (virtual and augmented reality)."
         },
-        "BERTRANDT-SAS" : {
-            "NAME": "VR - AR developper Work-study program",
-            "DESC": "Work-study program at Bertrandt SAS in Paris, during which I had to develop a AR and VR application using Unity and C#. I was able to work in the aeronautics and automotive sectors."
+        "BERTRANDT-SAS-ALTERNANCE" : {
+            "NAME": "VR - AR developer Work-study program",
+            "DESC": "Work-study program at Bertrandt SAS in Paris, during which I created various applications using VR and AR (virtual and augmented reality). I worked in the aeronautics and automotive sectors."
+        },
+        "BERTRANDT-SAS-CDI" : {
+            "NAME": "Augmented Reality Engineer",
+            "DESC": "Permanent position at Bertrandt SAS in Paris. I designed and managed augmented and virtual reality application projects in various business sectors. I also participated in the design of a CV/Job offer matching solution based on artificial intelligence (LLM and RAG)."
+        },
+        "SINORTICA": {
+            "NAME": "Software development micro-enterprise",
+            "DESC": "Creation of my micro-enterprise specialized in the development of AI software solutions. Analysis of clients' business processes to automate certain tasks using artificial intelligence and thus improve their productivity."
         }
     },
     "HOBBIES-DESC": {
         "VIDEOGAMES": "As a big video game fan, I like to play solo as much as in a team like on LOL or CS GO.",
         "CRYPTO": "I'm interested in crypto-currencies, both financially and technologically",
+        "3D-PRINTING": "I like to model and print 3D objects, whether for fun or for personal projects.",
         "PROGRAM": "I love developing small programs or then customizing games like <u>Minecraft</u>.",
         "PIANO": "I like playing piano from time to time."
     },

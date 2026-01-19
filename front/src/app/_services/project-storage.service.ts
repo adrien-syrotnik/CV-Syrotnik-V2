@@ -83,15 +83,18 @@ export class ProjectStorageService {
     ]
 
     this.mainSkills = [
+      this.getSkill('ai'),
+      this.getSkill('n8n'),
       this.getSkill('recherche'),
       this.getSkill('equipe'),
-      this.getSkill('angular'),
+      this.getSkill('react-native'),
       this.getSkill('gitlab'),
       this.getSkill('nodejs'),
       this.getSkill('csharp')
     ];
     this.funSkills = [
-      this.getSkill('unity')
+      this.getSkill('ai'),
+      this.getSkill('n8n')
     ];
   }
 

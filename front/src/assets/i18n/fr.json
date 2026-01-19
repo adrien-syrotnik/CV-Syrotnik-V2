@@ -10,11 +10,11 @@
     },
     "ABOUT": {
         "RESUME_FILE": "CV Adrien Syrotnik.pdf",
-        "TITLE": "En alternance, ingénieur informatique spécialisé dans la réalité virtuelle et augmentée",
-        "DESC": "Bonjour, je suis Adrien Syrotnik, j'ai 22 ans et je suis en 5ème année d'études en ingénierie informatique au CESI à Reims. Mon objectif professionnel est de devenir ingénieur spécialisé dans le domaine de la 3D et de la réalité virtuelle.<br><br> Au cours de ma formation, j'ai acquis des compétences en travaillant sur des projets utilisant les moteurs Unity et Unreal Engine. J'ai également des connaissances en développement logiciel (C++, C#), Web 2.0 (HTML, CSS, Angular), Web 3.0 (Solidity, Web3.js), réseau et intelligence artificielle.<br><br>Je possède des compétences essentielles pour être un ingénieur, telles que la résolution de problèmes, l'analyse et la pensée critique. Je suis capable de comprendre les besoins des clients, de concevoir des solutions techniques et de travailler de manière efficace en équipe ou de manière autonome.<br/><br/>Actuellement, je suis en alternance au sein de la société Bertrandt à Paris. Si vous êtes intéressé par mon profil, n'hésitez pas à me contacter via la partie <a href='#contact'>contact</a>. Vous pouvez également consulter mon CV en format PDF via ce <a href='assets/dl/CV Adrien Syrotnik.pdf' download='CV Adrien Syrotnik.pdf'>lien</a> et mon portfolio accessible via ce <a href='/portfolio' target='_blank'>lien</a>.",
-        "SHORT_DESC": "Je suis Adrien Syrotnik, un étudiant de 22 ans en 5ème année d'études en ingénierie informatique au CESI à Reims. Mon objectif professionnel est de devenir ingénieur spécialisé dans le domaine de la 3D et de la réalité virtuelle.<br>J'ai acquis des compétences en travaillant sur des projets utilisant les moteurs Unity et Unreal Engine ainsi que dans les domaines du Web 2.0, du Web 3.0, du réseau et de l'intelligence artificielle. Je possède des compétences telles que la résolution de problèmes, l'analyse et la pensée critique.<br>Actuellement, je suis en alternance au sein de la société Bertrandt à Paris."
+        "TITLE": "Entrepreneur et Automatisations IA",
+        "DESC": "Bonjour, je suis Adrien Syrotnik, 24 ans, entrepreneur depuis janvier 2025. J'ai créé Sinortica, spécialisée dans les automatisations IA pour améliorer la productivité des entreprises.<br><br>Diplômé ingénieur informatique du CESI Reims, j'ai développé une expertise en réalité virtuelle/augmentée (Unity, Unreal Engine), développement Web (Angular, Solidity) et IA. Mon expérience chez Bertrandt à Paris m'a permis de travailler sur des projets innovants en VR/AR pour l'aéronautique et l'automobile.<br><br>Aujourd'hui, je mets cette expertise au service des entreprises pour concevoir des solutions techniques sur mesure.<br/><br/>Contactez-moi via la partie <a href='#contact'>contact</a>. Consultez mon CV <a href='assets/dl/CV Adrien Syrotnik.pdf' download='CV Adrien Syrotnik.pdf'>ici</a> et mon portfolio <a href='/portfolio' target='_blank'>ici</a>.",
+        "SHORT_DESC": "Entrepreneur de 24 ans, fondateur de Sinortica spécialisée dans les automatisations IA. Diplômé ingénieur informatique du CESI, expert en VR/AR, développement Web et IA. Expérience chez Bertrandt Paris en conception de solutions techniques innovantes."
     },
-    "EXPERIENCES": {
+        "EXPERIENCES": {
         "ADEE": {
             "NAME": "Stage développeur Web FullStack",
             "DESC": "Stage durant lequel je devais continuer le développement une application web de gestion de projet, fait en PHP, HTML, CSS et JS. De plus, je devais m'occuper de la migration de leur base de données en passant de mySQL à SQLServer."
@@ -31,14 +31,23 @@
             "NAME": "Stage développeur VR - AR",
             "DESC": "Stage à l'étranger (Erasmus+) en Roumanie, au cours duquel j'ai dû réaliser différentes applications utilisant la VR et l'AR (réalité virtuelle et augmentée)."
         },
-        "BERTRANDT-SAS" : {
+        "BERTRANDT-SAS-ALTERNANCE" : {
             "NAME": "Alternance développeur VR - AR",
-            "DESC": "Alternance au sein de la société Bertrandt SAS à Paris, au cours de laquelle je dois réaliser différentes applications utilisant la VR et l'AR (réalité virtuelle et augmentée). J'ai pu travailler dans les secteurs de l'aéronautique et de l'automobile."
+            "DESC": "Alternance au sein de la société Bertrandt SAS à Paris, au cours de laquelle j'ai réalisé différentes applications utilisant la VR et l'AR (réalité virtuelle et augmentée). J'ai pu travailler dans les secteurs de l'aéronautique et de l'automobile."
+        },
+        "BERTRANDT-SAS-CDI" : {
+            "NAME": "Ingénieur Réalité Augmentée",
+            "DESC": "Poste en CDI au sein de la société Bertrandt SAS à Paris. J'ai conçu et géré des projets d'applications en réalité augmentée et virtuelle dans différents secteurs d'activité. J'ai également participé à la conception d'une solution de matching CV/Offres d'emploi basée sur l'intelligence artificielle (LLM et RAG)."
+        },
+        "SINORTICA": {
+            "NAME": "Micro-entreprise de développement logiciel",
+            "DESC": "Création de ma micro-entreprise spécialisée dans le développement de solutions logicielles IA. Analyse des processus métier des clients pour automatiser certaines tâches à l'aide de l'intelligence artificielle et ainsi améliorer leur productivité."
         }
     },
     "HOBBIES-DESC": {
         "VIDEOGAMES": "Grand fan de jeu vidéo, j'aime autant jouer en solo qu'en équipe comme sur LOL ou CS GO.",
         "CRYPTO": "Je m'intéresse aux cryptomonnaies, autant au niveau financier, qu'à son niveau technologique.",
+        "3D-PRINTING": "J'aime bien modéliser et imprimer des objets en 3D, que ce soit pour le fun ou pour des projets personnels.",
         "PROGRAM": "J'adore développer ! Comme des petits programmes ou alors customiser des jeux comme <u>Minecraft</u>.",
         "PIANO": "J'aime jouer du piano de temps en temps."
     },

@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from "@angular/core";
+import { ChangeDetectionStrategy, Component, OnDestroy, OnInit } from "@angular/core";
 import { DomSanitizer } from "@angular/platform-browser";
 import { Certificate } from "src/app/models/certificate";
 import { LinkAccount } from "src/app/models/link-account";
@@ -12,7 +12,8 @@ declare var bootstrap: any;
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.scss']
+  styleUrls: ['./portfolio.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PortfolioComponent implements OnInit, OnDestroy {
 
@@ -34,7 +35,7 @@ export class PortfolioComponent implements OnInit, OnDestroy {
     link : 'https://www.codingame.com/profile/d315760989a8705b0b09cea559975f003735224',
     name : 'CodinGame'
   },{
-    image : 'assets/images/new_photo.jpg',
+    image : 'assets/images/new_photo.png',
     link : 'https://cv.adrien-syrotnik.fr',
     name : 'Mon CV en ligne'
   }];
@@ -56,7 +57,11 @@ export class PortfolioComponent implements OnInit, OnDestroy {
     this.funSkills = this.projectStorage.funSkills;
     this.mainSkills = this.projectStorage.mainSkills;
 
-    this.projects.sort();
+    this.projects.sort((a, b) => {
+      if(a.year == undefined || b.year == undefined)
+        return 0;
+      return b.year.getFullYear() - a.year.getFullYear();
+    });
 
     this.yearOld = new Date(Date.now() - new Date("2001-10-27").getTime()).getUTCFullYear() - 1970;
   }
