@@ -13,10 +13,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProjectComponent } from './_components/project/project.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProjectStorageService } from './_services/project-storage.service';
-import { SpeedrunComponent } from './_components/speedrun/speedrun.component';
-import { GameService } from './_services/api/game.service';
-import { GameComponent } from './_components/speedrun/game/game.component';
-import { NgxMaskModule, IConfig } from 'ngx-mask'
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './app.routing';
 
@@ -24,13 +20,11 @@ import { registerLocaleData } from '@angular/common';
 
 import localeFr from '@angular/common/locales/fr';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ScoreInfoModalComponent } from './_components/speedrun/game/score-info-modal/add-score-modal/score-info-modal.component';
 import { PortfolioComponent } from './_components/portfolio/portfolio.component';
 import { FooterComponent } from './_components/footer/footer.component';
 
 import { GtagModule } from 'angular-gtag';
 import { CookieBannerComponent } from './_components/cookie-banner/cookie-banner.component';
-import { ChatGPTService } from './_services/chatgpt.service';
 
 registerLocaleData(localeFr);
 
@@ -47,7 +41,6 @@ export function createTranslateLoader(http: HttpClient) {
     HomeComponent,
     NavBarComponent,
     ProjectComponent,
-    ScoreInfoModalComponent,
     PortfolioComponent,
     FooterComponent,
     CookieBannerComponent
@@ -59,7 +52,6 @@ export function createTranslateLoader(http: HttpClient) {
     RouterModule.forRoot(appRoutes, {scrollPositionRestoration: 'enabled',anchorScrolling: 'enabled'}),
     FormsModule,
     HttpClientModule,
-    NgxMaskModule.forRoot(),
     GtagModule.forRoot({ trackingId: 'G-RXPYFFMF4Z', trackPageviews: true }),
     TranslateModule.forRoot({
       loader: {
@@ -74,7 +66,6 @@ export function createTranslateLoader(http: HttpClient) {
   providers: [
     TranslateStorage,
     ProjectStorageService,
-    ChatGPTService,
     {provide: LOCALE_ID, useValue: "fr-CA" }
   ],
   bootstrap: [AppComponent]

@@ -352,7 +352,7 @@ export const projectListTemplate: ProjectTemplate[] = [
     parts: [
       {
         title: 'Un site web : un backend et un frontend',
-        desc: 'Pour réaliser ce projet, il fallait pouvoir stocker les informations dans une base de données, et il fallait donc réaliser un backend en plus du frontend. J\'ai décidé de réaliser le backend en utilisant le framework Express.js, et le frontend en utilisant Angular.js. <br/><br/> Le frontend s\'est également fait en collaboration avec Arthur Joris, la même personne ayant développée Emergency Exit avec moi. <br/><br/>Vous pouvez retrouver le site web via le lien suivant : <a href="https://cv.adrien-syrotnik.fr/speedrun" target="_blank">cv.adrien-syrotnik.fr/speedrun</a>',
+        desc: 'Pour réaliser ce projet, il fallait pouvoir stocker les informations dans une base de données, et il fallait donc réaliser un backend en plus du frontend. J\'ai décidé de réaliser le backend en utilisant le framework Express.js, et le frontend en utilisant Angular.js. <br/><br/> Le frontend s\'est également fait en collaboration avec Arthur Joris, la même personne ayant développée Emergency Exit avec moi. <br/><br/>Ce site n\'est plus en ligne.',
         images: [
           'assets/images/speedrun-site1.png',
           'assets/images/speedrun-site2.png',
