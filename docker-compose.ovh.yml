@@ -25,10 +25,13 @@ services:
     labels:
       - traefik.enable=true
       - traefik.docker.network=perso
-      - traefik.http.routers.cv.rule=Host(`cv.adrien-syrotnik.fr`)
-      - traefik.http.routers.cv.entrypoints=websecure
-      - traefik.http.routers.cv.tls.certresolver=le
-      - traefik.http.services.cv.loadbalancer.server.port=8080
+      - traefik.http.routers.perso-cv.rule=Host(`cv.adrien-syrotnik.fr`)
+      - traefik.http.routers.perso-cv.entrypoints=websecure
+      - traefik.http.routers.perso-cv.tls.certresolver=le
+      - traefik.http.services.perso-cv.loadbalancer.server.port=8080
+      - traefik.http.routers.perso-cv.middlewares=perso-cv-ratelimit
+      - traefik.http.middlewares.perso-cv-ratelimit.ratelimit.average=50
+      - traefik.http.middlewares.perso-cv-ratelimit.ratelimit.burst=150
 
 networks:
   perso:
