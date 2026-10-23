@@ -11,6 +11,7 @@ RUN npx ng build --configuration production
 FROM nginxinc/nginx-unprivileged:alpine
 COPY docker/nginx.conf /etc/nginx/conf.d/default.conf
 COPY docker/security-headers.conf /etc/nginx/snippets/security-headers.conf
+COPY docker/carmino-headers.conf /etc/nginx/snippets/carmino-headers.conf
 COPY --from=build /app/dist/syrotnik-cv /usr/share/nginx/html
 EXPOSE 8080
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s \

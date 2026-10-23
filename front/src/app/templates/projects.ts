@@ -16,7 +16,7 @@ export const projectListTemplate: ProjectTemplate[] = [
       {
         title: '2 Développeurs et 1 Game Designer',
         desc: 'Carmino a été réalisé dans le cadre d\'une gaming jam, avec l\'aide de 2 autres personnes, dont 2 développeurs et 1 game designer. <br><br> Le but de cette jam était de réaliser un jeu en 60h sur un thème donné. Le thème de cette jam était : "One Ability", avec une intégration d\'un objet, ici : "Card". <br><br> Nous avons donc réaliser un jeu dans lequel le joueur doit se déplacer dans une ville et passer des barrages de police en utilisant des cartes volées aux autres personnages. De type "Puzzle", le joueur doit donc réfléchir à la manière d\'utiliser les cartes pour passer les barrages et les portes. <br><br> Le jeu a été réalisé sur Unity, et l\'ensemble des modèles 3D ont été réalisés par le game designer. <br><br>Vous pouvez retrouver le jeu sur la page itch.io du jeu : <a href="https://deltainstudio.itch.io/carmino" target="_blank">Carmino</a>.',
-        template: `<iframe allowtransparency="true" webkitallowfullscreen="true" mozallowfullscreen="true" msallowfullscreen="true" allowfullscreen="true" scrolling="no" src="https://html-classic.itch.zone/html/10674772/index.html" id="game_drop" allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated" frameborder="0" width="960" height="642"></iframe>`,
+        template: `<iframe allowtransparency="true" webkitallowfullscreen="true" mozallowfullscreen="true" msallowfullscreen="true" allowfullscreen="true" scrolling="no" src="assets/dl/Carmino/index.html" id="game_drop" allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated" frameborder="0" width="960" height="642"></iframe>`,
       },
     ],
     skills: ['unity', 'csharp', 'equipe'],
@@ -259,7 +259,7 @@ export const projectListTemplate: ProjectTemplate[] = [
     parts: [
       {
         title: 'Présentation',
-        desc: "Faisant suite à mon premier <a href=\"/project/online_resume_v1\">site web</a> réalisé en HTML/CSS, j'ai décidé de le refaire en Angular. <br><br> Mon objectif était de réaliser un site web plus moderne, avec un meilleur design, un mode sombre et des traductions en plusieurs langues. <br><br> En plus de cela, j'ai hébergé mon site web sur un serveur personnel, plus précisément sur un Raspberry Pi 4. Cela m'a donc permis de m'améliorer sur la partie serveur et d'utiliser Docker Compose. <br><br> Grâce à ce serveur, j'ai pu également héberger d'autres services comme Traefik, mon <a href=\"/project/speedrun\">site de speedrun</a> ou encore mon <a href=\"/project/casino-ai\">casino en ligne</a>.",
+        desc: "Faisant suite à mon premier <a href=\"/project/online_resume_v1\">site web</a> réalisé en HTML/CSS, j'ai décidé de le refaire en Angular. <br><br> Mon objectif était de réaliser un site web plus moderne, avec un meilleur design, un mode sombre et des traductions en plusieurs langues. <br><br> En plus de cela, j'ai d'abord hébergé mon site web sur un serveur personnel, un Raspberry Pi 4, avec Docker Compose et Traefik, aux côtés de mon <a href=\"/project/speedrun\">site de speedrun</a> et de mon <a href=\"/project/casino-ai\">casino en ligne</a>. <br><br> En 2026, je l'ai transformé en site statique et migré sur un VPS, dans un conteneur nginx durci (lecture seule, sans privilèges, isolé sur son propre réseau).",
       },
     ],
     skills: ['bootstrap', 'angular', 'docker', 'nodejs'],
@@ -279,9 +279,9 @@ export const projectListTemplate: ProjectTemplate[] = [
     parts: [
       {
         title: 'Réalisation',
-        desc: 'Créé à l\'aide du logiciel Unity, <i>Baskettooo</i> est un mini-jeu où le joueur devra essayer de marquer le plus de panier possible pour amasser un maximum de point dans un temps imparti.<br><br>Celui-ci a été réalisé dans le cadre de mes leçons réalisées sur Unity Learn.<br><br>Vous pouvez jouer au jeu via ce <a href="https://play.unity.com/mg/other/webgl-builds-213907" target="_blank">lien</a>.',
+        desc: 'Créé à l\'aide du logiciel Unity, <i>Baskettooo</i> est un mini-jeu où le joueur devra essayer de marquer le plus de panier possible pour amasser un maximum de point dans un temps imparti.<br><br>Celui-ci a été réalisé dans le cadre de mes leçons réalisées sur Unity Learn.<br><br>Vous pouvez jouer au jeu via ce <a href="https://play.unity.com/en/games/0787d9f9-a16a-419d-83b2-9be2bb41a348/counting-prototype-basketttooo" target="_blank">lien</a>.',
         template: `<iframe id='webgl_iframe' frameborder="0" allow="autoplay; fullscreen; vr" allowfullscreen="" allowvr=""
-            mozallowfullscreen="true" src="https://play.unity.com/webgl/07533c62-fd94-4775-828d-1d593af66945?screenshot=false&embedType=embed"  width="810"
+            mozallowfullscreen="true" src="https://play-prod.struckd.com/api/v1/games/game/0787d9f9-a16a-419d-83b2-9be2bb41a348/build/latest/frame"  width="810"
             height="640" onmousewheel="" webkitallowfullscreen="true"></iframe>`,
       },
     ],
