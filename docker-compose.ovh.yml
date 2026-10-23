@@ -1,0 +1,35 @@
+# CV (static site) behind the shared Traefik on the OVH VPS.
+services:
+  cv:
+    build:
+      context: .
+    image: cv-syrotnik:static
+    container_name: cv-syrotnik
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp:size=16m,mode=1777
+    cap_drop: [ALL]
+    security_opt:
+      - no-new-privileges:true
+    mem_limit: 64m
+    cpus: 0.25
+    pids_limit: 64
+    healthcheck:
+      test: ["CMD", "wget", "-qO", "/dev/null", "http://127.0.0.1:8080/healthz"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+    networks: [perso]
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=perso
+      - traefik.http.routers.cv.rule=Host(`cv.adrien-syrotnik.fr`)
+      - traefik.http.routers.cv.entrypoints=websecure
+      - traefik.http.routers.cv.tls.certresolver=le
+      - traefik.http.services.cv.loadbalancer.server.port=8080
+
+networks:
+  perso:
+    external: true
