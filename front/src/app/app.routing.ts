@@ -18,5 +18,9 @@ export const appRoutes: Routes = [{
   loadChildren: () => import('./modules/threejs/threejs.module').then(m => m.ThreePageModule)
 },
 {
+  path: 'speedrun',
+  loadChildren: () => import('./modules/speedrun/speedrun.module').then(m => m.SpeedrunModule)
+},
+{
   path: '**', redirectTo: ''
 }];

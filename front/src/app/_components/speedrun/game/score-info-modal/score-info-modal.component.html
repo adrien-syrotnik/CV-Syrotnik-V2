@@ -1,0 +1,33 @@
+<div class="modal-header"> 
+    <h4 class="modal-title">Score de {{ scoreInfos.pseudo }}</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
+</div>
+<div class="modal-body">
+
+    <h5 class="text-center">{{ gameInfos.name }}/{{ scoreInfos.category_name }}</h5>
+
+    <h5 class="text-center">{{ scoreInfos.score }} - {{ scoreInfos.created_at | date:'dd/MM/y' }}</h5>
+
+    <div *ngIf="scoreInfos.link && scoreInfos.link != 'null'">
+        <label>Lien : </label>
+        <a [href]="scoreInfos.link" target="_blank" rel="noopener noreferrer">{{ scoreInfos.link }}</a>
+    </div>
+
+    <div *ngIf="scoreInfos.image">
+        <label>Image : </label>
+        <div>
+            <img [src]="'/' + scoreInfos.image" class="w-100" alt="Preuve du score">
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+
+
+
+            
+

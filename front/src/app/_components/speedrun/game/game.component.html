@@ -1,0 +1,68 @@
+<div class="bg-danger" *ngIf="error">
+    {{ error }}
+</div>
+<div class="text-white container-fluid">
+    <div class="row g-2">
+
+        <div class="col-md-6 col-12 offset-md-3 top">
+
+        </div>
+
+        <div class="col-md-6 col-12 offset-md-2 results">
+            <div class="game-details">
+                <img src="/assets/games/{{gameInfo.url_name}}.png">
+                <div class="title">
+                    <h2>{{gameInfo.name}} ( {{gameInfo.released_year}} )</h2>
+                    <div class="author-block">
+                        <p *ngFor="let author of gameInfo.authors">{{author.first_name}} {{author.last_name}}</p>
+                    </div>
+                    <div class="studio-block">
+                        <p>{{gameInfo.studio}}</p>
+                    </div>
+                    <div class="plateform-block">
+                        <p class="platform">( 
+                            <span>{{gameInfo.platforms}}</span> )</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="game-scores">
+                <nav ngbNav #nav="ngbNav" [(activeId)]="activeCategory" class="nav-tabs tabs">
+                    <ng-container [ngbNavItem]="index" *ngFor="let category of gameCategories; let index = index">
+                        <a class="tab" ngbNavLink>{{ category.name }}</a>
+                        <ng-template ngbNavContent>
+                            <game-category [categoryId]="category.id" [gameInfo]="gameInfo"></game-category>
+                        </ng-template>
+                    </ng-container>
+                </nav>
+                <div [ngbNavOutlet]="nav" class="mt-2"></div>
+              </div>
+        </div>
+
+        <div class="col-md-2 col-12 sidebar">
+            <div class="game-stats">
+                <h2>STATISTIQUES DU JEU</h2>
+                <div class="values">
+                    <span class="number">{{gameStats.nb_players}}</span>
+                    <p>JOUEUR(S)</p>
+                </div>
+                <div class="values">
+                    <span class="number">{{gameStats.nb_runs}}</span>
+                    <p>RUN(S)</p>
+                </div>
+
+                <div class="values-line odd">
+                    <p>Temps de run cummulé :</p><span>{{convertMsToTime(gameStats.time_ms)}}</span>
+                </div>
+                <div class="values-line even">
+                    <p>Jeu ajouté le :</p><span>{{gameInfo.created_at | date:'d MMMM y'}}</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
